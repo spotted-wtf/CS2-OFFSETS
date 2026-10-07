@@ -1,0 +1,1881 @@
+{
+  "vphysics2.dll": {
+    "enums": {
+      "JointAxis_t": {
+        "type": "uint32",
+        "members": {
+          "JOINT_AXIS_X": 0,
+          "JOINT_AXIS_Y": 1,
+          "JOINT_AXIS_Z": 2,
+          "JOINT_AXIS_COUNT": 3
+        },
+        "alignment": 4
+      },
+      "JointMotion_t": {
+        "type": "uint32",
+        "members": {
+          "JOINT_MOTION_FREE": 0,
+          "JOINT_MOTION_COUNT": 2,
+          "JOINT_MOTION_LOCKED": 1
+        },
+        "alignment": 4
+      },
+      "PhysInterfaceId_t": {
+        "type": "uint32",
+        "members": {
+          "PIID_UNKNOWN": 0,
+          "PIID_NUM_TYPES": 7,
+          "PIID_IPHYSICSBODY": 1,
+          "PIID_IPHYSICSJOINT": 3,
+          "PIID_IPHYSAGGREGATE": 2,
+          "PIID_IPHYSICSPARTICLEROPE": 5,
+          "PIID_IPHYSICSRAGDOLLCONTROL": 6,
+          "PIID_IPHYSICSMOTIONCONTROLLER": 4
+        },
+        "alignment": 4
+      },
+      "PhysGenericShapeType_t": {
+        "type": "uint8",
+        "members": {
+          "GENERIC_SHAPE_AABB": 2,
+          "GENERIC_SHAPE_HULL": 4,
+          "GENERIC_SHAPE_POINT": 0,
+          "GENERIC_SHAPE_SPHERE": 1,
+          "GENERIC_SHAPE_CAPSULE": 3
+        },
+        "alignment": 1
+      },
+      "DynamicContinuousContactBehavior_t": {
+        "type": "uint8",
+        "members": {
+          "DYNAMIC_CONTINUOUS_NEVER": 2,
+          "DYNAMIC_CONTINUOUS_ALWAYS": 1,
+          "DYNAMIC_CONTINUOUS_ALLOW_IF_REQUESTED_BY_OTHER_BODY": 0
+        },
+        "alignment": 1
+      }
+    },
+    "classes": {
+      "Dop26_t": {
+        "fields": {
+          "m_flSupport": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeTri_t": {
+        "fields": {
+          "v2": 20,
+          "w1": 8,
+          "w2": 12,
+          "v1x": 16,
+          "nNode": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeQuad_t": {
+        "fields": {
+          "nNode": 0,
+          "vShape": 12,
+          "flSlack": 8
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnFace_t": {
+        "fields": {
+          "m_nEdge": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnHull_t": {
+        "fields": {
+          "m_Edges": 200,
+          "m_Faces": 224,
+          "m_Bounds": 20,
+          "m_nFlags": 160,
+          "m_Vertices": 176,
+          "m_flVolume": 104,
+          "m_vCentroid": 0,
+          "m_FacePlanes": 136,
+          "m_pRegionSVM": 168,
+          "m_flSurfaceArea": 108,
+          "m_MassProperties": 56,
+          "m_VertexPositions": 112,
+          "m_flMaxAngularRadius": 12,
+          "m_vOrthographicAreas": 44,
+          "m_flMinCentroidRadius": 16
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnMesh_t": {
+        "fields": {
+          "m_vMax": 12,
+          "m_vMin": 0,
+          "m_Nodes": 24,
+          "m_Wings": 96,
+          "m_nFlags": 180,
+          "m_Vertices": 48,
+          "m_Materials": 144,
+          "m_Triangles": 72,
+          "m_nDebugFlags": 184,
+          "m_flSurfaceArea": 188,
+          "m_TriangleEdgeFlags": 120,
+          "m_vOrthographicAreas": 168
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnNode_t": {
+        "fields": {
+          "m_vMax": 16,
+          "m_vMin": 0,
+          "m_nChildren": 12,
+          "m_nTriangleOffset": 28
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnWing_t": {
+        "fields": {
+          "m_nIndex": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FePrism_t": {
+        "fields": {
+          "nNode": 0,
+          "flVolume": 12
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnPlane_t": {
+        "fields": {
+          "m_vNormal": 0,
+          "m_flOffset": 12
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CRegionSVM": {
+        "fields": {
+          "m_Nodes": 24,
+          "m_Planes": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CovMatrix3": {
+        "fields": {
+          "m_flXY": 12,
+          "m_flXZ": 16,
+          "m_flYZ": 20,
+          "m_vDiag": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnVertex_t": {
+        "fields": {
+          "m_nEdge": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeSimdTri_t": {
+        "fields": {
+          "v2": 96,
+          "w1": 48,
+          "w2": 64,
+          "v1x": 80,
+          "nNode": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "OldFeEdge_t": {
+        "fields": {
+          "t": 16,
+          "c01": 28,
+          "c02": 32,
+          "c03": 36,
+          "c04": 40,
+          "invA": 12,
+          "m_flK": 0,
+          "m_nNode": 64,
+          "flThetaFactor": 24,
+          "flThetaRelaxed": 20,
+          "flAxialModelDist": 44,
+          "flAxialModelWeights": 48
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnCapsule_t": {
+        "fields": {
+          "m_vCenter": 0,
+          "m_flRadius": 24
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeBoxRigid_t": {
+        "fields": {
+          "nNode": 32,
+          "vSize": 36,
+          "nFlags": 50,
+          "tmFrame2": 0,
+          "nCollisionMask": 34,
+          "nVertexMapIndex": 48
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeEdgeDesc_t": {
+        "fields": {
+          "nEdge": 0,
+          "nSide": 4,
+          "nVirtElem": 12
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeNodeBase_t": {
+        "fields": {
+          "nNode": 0,
+          "nDummy": 2,
+          "nNodeX0": 8,
+          "nNodeX1": 10,
+          "nNodeY0": 12,
+          "nNodeY1": 14,
+          "qAdjust": 16
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeSDFRigid_t": {
+        "fields": {
+          "nNode": 28,
+          "nFlags": 34,
+          "m_nDepth": 72,
+          "m_nWidth": 64,
+          "m_nHeight": 68,
+          "vLocalMax": 12,
+          "vLocalMin": 0,
+          "m_Distances": 40,
+          "flBounciness": 24,
+          "nCollisionMask": 30,
+          "nVertexMapIndex": 32
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeSimdQuad_t": {
+        "fields": {
+          "nNode": 0,
+          "vShape": 48,
+          "f4Slack": 32,
+          "f4Weights": 240
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "IPhysicsBody": {
+        "fields": {},
+        "parent": null,
+        "metadata": []
+      },
+      "RnBodyDesc_t": {
+        "fields": {
+          "m_bEnabled": 199,
+          "m_vGravity": 204,
+          "m_bSleeping": 200,
+          "m_flMassInv": 108,
+          "m_nBodyType": 184,
+          "m_vPosition": 8,
+          "m_flGameMass": 112,
+          "m_nGameFlags": 192,
+          "m_nGameIndex": 188,
+          "m_sDebugName": 0,
+          "m_flTimeScale": 180,
+          "m_bDragEnabled": 202,
+          "m_qOrientation": 20,
+          "m_nMassPriority": 198,
+          "m_flGravityScale": 176,
+          "m_flMassScaleInv": 116,
+          "m_LocalInertiaInv": 72,
+          "m_flBuoyancyScale": 172,
+          "m_flLinearDamping": 124,
+          "m_vLinearVelocity": 36,
+          "m_flAngularDamping": 128,
+          "m_vAngularVelocity": 48,
+          "m_vLocalMassCenter": 60,
+          "m_flInertiaScaleInv": 120,
+          "m_flLinearDragScale": 132,
+          "m_flAngularDragScale": 136,
+          "m_bSpeculativeEnabled": 216,
+          "m_bHasShadowController": 217,
+          "m_bIsContinuousEnabled": 201,
+          "m_vLastAwakeForceAccum": 148,
+          "m_vLastAwakeTorqueAccum": 160,
+          "m_flLinearFluidDragScale": 140,
+          "m_nMinPositionIterations": 197,
+          "m_nMinVelocityIterations": 196,
+          "m_flAngularFluidDragScale": 144,
+          "m_nDynamicContinuousContactBehavior": 218
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnCompound_t": {
+        "fields": {
+          "m_Tree": 0,
+          "m_Hulls": 240,
+          "m_Bounds": 304,
+          "m_Meshes": 40,
+          "m_Spheres": 272,
+          "m_Capsules": 256,
+          "m_flVolume": 344,
+          "m_nShapeCount": 32,
+          "m_flSurfaceArea": 340,
+          "m_nHullBaseIndex": 24,
+          "m_nMeshBaseIndex": 28,
+          "m_vOrthographicAreas": 328,
+          "m_CompoundMaterialIndices": 288
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnHalfEdge_t": {
+        "fields": {
+          "m_nFace": 3,
+          "m_nNext": 0,
+          "m_nTwin": 1,
+          "m_nOrigin": 2
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnHullDesc_t": {
+        "fields": {
+          "m_Hull": 24
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnMeshDesc_t": {
+        "fields": {
+          "m_Mesh": 24
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnTriangle_t": {
+        "fields": {
+          "m_nIndex": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CFeJiggleBone": {
+        "fields": {
+          "m_nFlags": 0,
+          "m_vPoint0": 128,
+          "m_vPoint1": 140,
+          "m_flLength": 4,
+          "m_flMaxYaw": 44,
+          "m_flMinYaw": 40,
+          "m_flRadius0": 120,
+          "m_flRadius1": 124,
+          "m_flTipMass": 8,
+          "m_flBaseMass": 72,
+          "m_flMaxPitch": 60,
+          "m_flMinPitch": 56,
+          "m_flBaseMaxUp": 100,
+          "m_flBaseMinUp": 96,
+          "m_flYawBounce": 52,
+          "m_flAngleLimit": 36,
+          "m_flYawDamping": 16,
+          "m_flBaseDamping": 80,
+          "m_flBaseMaxLeft": 88,
+          "m_flBaseMinLeft": 84,
+          "m_flPitchBounce": 68,
+          "m_flYawFriction": 48,
+          "m_flAlongDamping": 32,
+          "m_flPitchDamping": 24,
+          "m_flYawStiffness": 12,
+          "m_nCollisionMask": 152,
+          "m_flBaseStiffness": 76,
+          "m_flPitchFriction": 64,
+          "m_flAlongStiffness": 28,
+          "m_flBaseMaxForward": 112,
+          "m_flBaseMinForward": 108,
+          "m_flBaseUpFriction": 104,
+          "m_flPitchStiffness": 20,
+          "m_flBaseLeftFriction": 92,
+          "m_flBaseForwardFriction": 116
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CFeMorphLayer": {
+        "fields": {
+          "m_Name": 0,
+          "m_Nodes": 16,
+          "m_Gravity": 64,
+          "m_InitPos": 40,
+          "m_nNameHash": 8,
+          "m_GoalDamping": 112,
+          "m_GoalStrength": 88
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeFitMatrix_t": {
+        "fields": {
+          "bone": 0,
+          "nEnd": 44,
+          "nNode": 46,
+          "vCenter": 32,
+          "nBeginDynamic": 48
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeFitWeight_t": {
+        "fields": {
+          "nNode": 4,
+          "nDummy": 6,
+          "flWeight": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeSimdPrism_t": {
+        "fields": {
+          "nNode": 0,
+          "flVolume": 48
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FourVectors2D": {
+        "fields": {
+          "x": 0,
+          "y": 16
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "IPhysicsJoint": {
+        "fields": {},
+        "parent": null,
+        "metadata": []
+      },
+      "RnShapeDesc_t": {
+        "fields": {
+          "m_UserFriendlyName": 8,
+          "m_nToolMaterialHash": 20,
+          "m_bUserFriendlyNameLong": 17,
+          "m_nSurfacePropertyIndex": 4,
+          "m_bUserFriendlyNameSealed": 16,
+          "m_nCollisionAttributeIndex": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeCtrlOffset_t": {
+        "fields": {
+          "vOffset": 0,
+          "nCtrlChild": 14,
+          "nCtrlParent": 12
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeDynKinLink_t": {
+        "fields": {
+          "m_nChild": 2,
+          "m_nParent": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeEffectDesc_t": {
+        "fields": {
+          "nType": 12,
+          "sName": 0,
+          "m_Params": 16,
+          "nNameHash": 8
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeFollowNode_t": {
+        "fields": {
+          "flWeight": 4,
+          "nChildNode": 2,
+          "nParentNode": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeHingeLimit_t": {
+        "fields": {
+          "nNode": 0,
+          "nFlags": 12,
+          "flWeight4": 16,
+          "flWeight5": 20,
+          "flAngleCenter": 24,
+          "flAngleExtents": 28
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeSoftParent_t": {
+        "fields": {
+          "flAlpha": 4,
+          "nParent": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeSourceEdge_t": {
+        "fields": {
+          "nNode": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnSphereDesc_t": {
+        "fields": {
+          "m_Sphere": 24
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeSphereRigid_t": {
+        "fields": {
+          "nNode": 16,
+          "nFlags": 22,
+          "vSphere": 0,
+          "nCollisionMask": 18,
+          "nVertexMapIndex": 20
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnBlendVertex_t": {
+        "fields": {
+          "m_nFlags": 12,
+          "m_nIndex0": 2,
+          "m_nIndex1": 6,
+          "m_nIndex2": 10,
+          "m_nWeight0": 0,
+          "m_nWeight1": 4,
+          "m_nWeight2": 8,
+          "m_nTargetIndex": 14
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnCapsuleDesc_t": {
+        "fields": {
+          "m_Capsule": 24
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "VPhysEntityId_t": {
+        "fields": {
+          "m_Id": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeCtrlOsOffset_t": {
+        "fields": {
+          "nCtrlChild": 2,
+          "nCtrlParent": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeFitInfluence_t": {
+        "fields": {
+          "flWeight": 4,
+          "nMatrixNode": 8,
+          "nVertexNode": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeKelagerBend2_t": {
+        "fields": {
+          "nNode": 16,
+          "flWeight": 0,
+          "flHeight0": 12,
+          "nReserved": 22
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeNodeStrayBox_t": {
+        "fields": {
+          "vMax": 16,
+          "vMin": 0,
+          "nNode": 28,
+          "nFlags": 12
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeNodeWindBase_t": {
+        "fields": {
+          "nNodeX0": 0,
+          "nNodeX1": 2,
+          "nNodeY0": 4,
+          "nNodeY1": 6
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeSimdNodeBase_t": {
+        "fields": {
+          "nNode": 0,
+          "nDummy": 40,
+          "nNodeX0": 8,
+          "nNodeX1": 16,
+          "nNodeY0": 24,
+          "nNodeY1": 32,
+          "qAdjust": 48
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeTreeChildren_t": {
+        "fields": {
+          "nChild": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeWeightedNode_t": {
+        "fields": {
+          "nNode": 0,
+          "nWeight": 2
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FourCovMatrices3": {
+        "fields": {
+          "m_flXY": 48,
+          "m_flXZ": 64,
+          "m_flYZ": 80,
+          "m_vDiag": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "IPhysicsBodyList": {
+        "fields": {},
+        "parent": null,
+        "metadata": []
+      },
+      "RnCompoundDesc_t": {
+        "fields": {
+          "m_Compound": 24
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnCompoundTree_t": {
+        "fields": {
+          "m_Nodes": 0,
+          "m_nStartIterationIndex": 16
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeAxialEdgeBend_t": {
+        "fields": {
+          "te": 0,
+          "tv": 4,
+          "nNode": 28,
+          "flDist": 8,
+          "flWeight": 12
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeBandBendLimit_t": {
+        "fields": {
+          "nNode": 8,
+          "flDistMax": 4,
+          "flDistMin": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeBoneMergeLink_t": {
+        "fields": {
+          "m_nChildNode": 4,
+          "m_nParentHash": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeBuildBoxRigid_t": {
+        "fields": {
+          "m_nPriority": 64,
+          "m_nVertexMapHash": 68,
+          "m_nAntitunnelGroupBits": 72
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeBuildSDFRigid_t": {
+        "fields": {
+          "m_nPriority": 80,
+          "m_nVertexMapHash": 84,
+          "m_nAntitunnelGroupBits": 88
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeRodConstraint_t": {
+        "fields": {
+          "nNode": 0,
+          "flMaxDist": 4,
+          "flMinDist": 8,
+          "flWeight0": 12,
+          "flRelaxationFactor": 16
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeVertexMapDesc_t": {
+        "fields": {
+          "sName": 0,
+          "nColor": 12,
+          "nFlags": 16,
+          "nNameHash": 8,
+          "nMapOffset": 24,
+          "nVertexBase": 20,
+          "nVertexCount": 22,
+          "vCenterOfMass": 32,
+          "nNodeListCount": 50,
+          "nNodeListOffset": 28,
+          "nScaleSourceNode": 48,
+          "flVolumetricSolveStrength": 44
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "PhysFeModelDesc_t": {
+        "fields": {
+          "m_Rods": 360,
+          "m_Tris": 1368,
+          "m_Quads": 168,
+          "m_Ropes": 96,
+          "m_Prisms": 240,
+          "m_Twists": 384,
+          "m_Effects": 1616,
+          "m_CtrlHash": 0,
+          "m_CtrlName": 24,
+          "m_InitPose": 336,
+          "m_SimdRods": 288,
+          "m_SimdTris": 216,
+          "m_BoxRigids": 1424,
+          "m_FreeNodes": 1104,
+          "m_NodeBases": 120,
+          "m_SDFRigids": 1400,
+          "m_SimdQuads": 192,
+          "m_flWindage": 1768,
+          "m_AxialEdges": 576,
+          "m_FitWeights": 1152,
+          "m_LocalForce": 912,
+          "m_LockToGoal": 1664,
+          "m_SimdPrisms": 264,
+          "m_VertexMaps": 1568,
+          "m_flWindDrag": 1772,
+          "m_nNodeCount": 64,
+          "m_nRopeCount": 88,
+          "m_nTreeDepth": 84,
+          "m_nTriCount1": 1392,
+          "m_nTriCount2": 1394,
+          "m_CtrlOffsets": 624,
+          "m_DynKinLinks": 456,
+          "m_FitMatrices": 1128,
+          "m_FollowNodes": 672,
+          "m_HingeLimits": 408,
+          "m_JiggleBones": 1296,
+          "m_MorphLayers": 1520,
+          "m_SkelParents": 1688,
+          "m_SourceElems": 1320,
+          "m_TreeParents": 1032,
+          "m_nQuadCount1": 80,
+          "m_nQuadCount2": 82,
+          "m_KelagerBends": 1248,
+          "m_LockToParent": 1640,
+          "m_MorphSetData": 1544,
+          "m_SimdRodsAnim": 312,
+          "m_SphereRigids": 984,
+          "m_TreeChildren": 1080,
+          "m_flLocalDrag1": 1824,
+          "m_flLocalForce": 56,
+          "m_nStaticNodes": 66,
+          "m_CtrlOsOffsets": 648,
+          "m_LocalRotation": 888,
+          "m_NodeInvMasses": 600,
+          "m_SimdNodeBases": 144,
+          "m_AnimStrayRadii": 1200,
+          "m_BoneMergeLinks": 480,
+          "m_NodeIntegrator": 720,
+          "m_NodeStrayBoxes": 552,
+          "m_ReverseOffsets": 1176,
+          "m_VertexSetNames": 1472,
+          "m_nReservedUint8": 1396,
+          "m_nSimdTriCount1": 72,
+          "m_nSimdTriCount2": 74,
+          "m_CollisionPlanes": 696,
+          "m_CtrlSoftOffsets": 1272,
+          "m_DynNodeFriction": 864,
+          "m_VertexMapValues": 1592,
+          "m_flLocalRotation": 60,
+          "m_nSimdQuadCount1": 76,
+          "m_nSimdQuadCount2": 78,
+          "m_AntiTunnelProbes": 504,
+          "m_DynNodeVertexSet": 1448,
+          "m_DynNodeWindBases": 1712,
+          "m_SpringIntegrator": 744,
+          "m_nExtraIterations": 1399,
+          "m_nStaticNodeFlags": 48,
+          "m_flMotionSmoothCDT": 1820,
+          "m_nDynamicNodeFlags": 52,
+          "m_AntiTunnelBytecode": 432,
+          "m_LegacyStretchForce": 816,
+          "m_NodeCollisionRadii": 840,
+          "m_SimdAnimStrayRadii": 1224,
+          "m_TreeCollisionMasks": 1056,
+          "m_flInternalPressure": 1760,
+          "m_SelfCollisionLayers": 1736,
+          "m_WorldCollisionNodes": 1008,
+          "m_flDefaultExpAirDrag": 1792,
+          "m_flDefaultVelAirDrag": 1788,
+          "m_nRotLockStaticNodes": 68,
+          "m_SimdSpringIntegrator": 768,
+          "m_TaperedCapsuleRigids": 960,
+          "m_WorldCollisionParams": 792,
+          "m_nExtraGoalIterations": 1398,
+          "m_AntiTunnelTargetNodes": 528,
+          "m_flDefaultGravityScale": 1784,
+          "m_flDefaultTimeDilation": 1764,
+          "m_flDefaultThreadStretch": 1780,
+          "m_RigidColliderPriorities": 1496,
+          "m_TaperedCapsuleStretches": 936,
+          "m_flDefaultExpQuadAirDrag": 1800,
+          "m_flDefaultSurfaceStretch": 1776,
+          "m_flDefaultVelQuadAirDrag": 1796,
+          "m_flRodVelocitySmoothRate": 1804,
+          "m_flQuadVelocitySmoothRate": 1808,
+          "m_nExtraPressureIterations": 1397,
+          "m_nFirstPositionDrivenNode": 70,
+          "m_flAddWorldCollisionRadius": 1812,
+          "m_GoalDampedSpringIntegrators": 1344,
+          "m_nRodVelocitySmoothIterations": 1828,
+          "m_nQuadVelocitySmoothIterations": 1830,
+          "m_flDefaultVolumetricSolveAmount": 1816,
+          "m_nNodeBaseJiggleboneDependsCount": 86
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CFeNamedJiggleBone": {
+        "fields": {
+          "m_transform": 16,
+          "m_jiggleBone": 52,
+          "m_nJiggleParent": 48,
+          "m_strParentBone": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CGenericShapeProxy": {
+        "fields": {
+          "m_verts": 48
+        },
+        "parent": null,
+        "metadata": []
+      },
+      "FeCollisionPlane_t": {
+        "fields": {
+          "m_Plane": 4,
+          "flStrength": 20,
+          "nChildNode": 2,
+          "nCtrlParent": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeCtrlSoftOffset_t": {
+        "fields": {
+          "flAlpha": 16,
+          "vOffset": 4,
+          "nCtrlChild": 2,
+          "nCtrlParent": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeMorphLayerDepr_t": {
+        "fields": {
+          "m_Name": 0,
+          "m_Nodes": 16,
+          "m_nFlags": 136,
+          "m_Gravity": 64,
+          "m_InitPos": 40,
+          "m_nNameHash": 8,
+          "m_GoalDamping": 112,
+          "m_GoalStrength": 88
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeNodeIntegrator_t": {
+        "fields": {
+          "flGravity": 12,
+          "flPointDamping": 0,
+          "flAnimationForceAttraction": 4,
+          "flAnimationVertexAttraction": 8
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeProxyVertexMap_t": {
+        "fields": {
+          "m_Name": 0,
+          "m_flWeight": 8
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeVertexMapBuild_t": {
+        "fields": {
+          "m_Color": 12,
+          "m_Weights": 24,
+          "m_nNameHash": 8,
+          "m_VertexMapName": 0,
+          "m_nScaleSourceNode": 20,
+          "m_flVolumetricSolveStrength": 16
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnSoftbodySpring_t": {
+        "fields": {
+          "m_flLength": 4,
+          "m_nParticle": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeAnimStrayRadius_t": {
+        "fields": {
+          "nNode": 0,
+          "flMaxDist": 4,
+          "flRelaxationFactor": 8
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeAntiTunnelProbe_t": {
+        "fields": {
+          "flBias": 24,
+          "nBegin": 12,
+          "nCount": 10,
+          "nFlags": 4,
+          "flWeight": 0,
+          "nProbeNode": 8,
+          "flCurvatureRadius": 20,
+          "flActivationDistance": 16
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeHingeLimitBuild_t": {
+        "fields": {
+          "nNode": 0,
+          "nFlags": 12,
+          "flLimitCW": 16,
+          "flLimitCCW": 20
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeStiffHingeBuild_t": {
+        "fields": {
+          "nNode": 20,
+          "flMaxAngle": 0,
+          "flStrength": 4,
+          "flMotionBias": 8
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeTwistConstraint_t": {
+        "fields": {
+          "nNodeEnd": 2,
+          "nNodeOrient": 0,
+          "flSwingRelax": 8,
+          "flTwistRelax": 4
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "PhysicsParticleId_t": {
+        "fields": {
+          "m_Value": 0
+        },
+        "parent": null,
+        "metadata": []
+      },
+      "RnSoftbodyCapsule_t": {
+        "fields": {
+          "m_vCenter": 0,
+          "m_flRadius": 24,
+          "m_nParticle": 28
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CFeIndexedJiggleBone": {
+        "fields": {
+          "m_nNode": 0,
+          "m_jiggleBone": 8,
+          "m_nJiggleParent": 4
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeBuildSphereRigid_t": {
+        "fields": {
+          "m_nPriority": 32,
+          "m_nVertexMapHash": 36,
+          "m_nAntitunnelGroupBits": 40
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeSpringIntegrator_t": {
+        "fields": {
+          "nNode": 0,
+          "flNodeWeight0": 16,
+          "flSpringDamping": 12,
+          "flSpringConstant": 8,
+          "flSpringRestLength": 4
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "IPhysicsParticleRope": {
+        "fields": {},
+        "parent": null,
+        "metadata": []
+      },
+      "RnCompoundTreeNode_t": {
+        "fields": {
+          "m_vMax": 12,
+          "m_vMin": 0,
+          "m_nType": 0,
+          "m_nSubtreeEndOrCompoundId": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "RnSoftbodyParticle_t": {
+        "fields": {
+          "m_flMassInv": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeNodeReverseOffset_t": {
+        "fields": {
+          "vOffset": 0,
+          "nBoneCtrl": 12,
+          "nTargetNode": 14
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeSimdRodConstraint_t": {
+        "fields": {
+          "nNode": 0,
+          "f4MaxDist": 16,
+          "f4MinDist": 32,
+          "f4Weight0": 48,
+          "f4RelaxationFactor": 64
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "VertexPositionColor_t": {
+        "fields": {
+          "m_vPosition": 0
+        },
+        "parent": null,
+        "metadata": []
+      },
+      "CFeVertexMapBuildArray": {
+        "fields": {
+          "m_Array": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "IPhysAggregateInstance": {
+        "fields": {
+          "m_pSkeleton": 8,
+          "m_bIsAxisAligned": 16
+        },
+        "parent": null,
+        "metadata": []
+      },
+      "IPhysicsRagdollControl": {
+        "fields": {},
+        "parent": null,
+        "metadata": []
+      },
+      "VertexPositionNormal_t": {
+        "fields": {
+          "m_vNormal": 12,
+          "m_vPosition": 0
+        },
+        "parent": null,
+        "metadata": []
+      },
+      "constraint_axislimit_t": {
+        "fields": {
+          "flMaxRotation": 4,
+          "flMinRotation": 0,
+          "flMotorMaxTorque": 12,
+          "flMotorTargetAngSpeed": 8
+        },
+        "parent": null,
+        "metadata": []
+      },
+      "FeSimdAnimStrayRadius_t": {
+        "fields": {
+          "nNode": 0,
+          "flMaxDist": 16,
+          "flRelaxationFactor": 32
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeTaperedCapsuleRigid_t": {
+        "fields": {
+          "nNode": 32,
+          "nFlags": 38,
+          "vSphere": 0,
+          "nCollisionMask": 34,
+          "nVertexMapIndex": 36
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeAntiTunnelGroupBuild_t": {
+        "fields": {
+          "m_nCollisionMask": 4,
+          "m_nVertexMapHash": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeAntiTunnelProbeBuild_t": {
+        "fields": {
+          "flBias": 8,
+          "nFlags": 16,
+          "flWeight": 0,
+          "nProbeNode": 20,
+          "flCurvature": 12,
+          "targetNodes": 24,
+          "flActivationDistance": 4
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeRigidColliderIndices_t": {
+        "fields": {
+          "m_nBoxRigidIndex": 4,
+          "m_nSDFRigidIndex": 6,
+          "m_nSphereRigidIndex": 2,
+          "m_nCollisionPlaneIndex": 8,
+          "m_nTaperedCapsuleRigidIndex": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeSimdSpringIntegrator_t": {
+        "fields": {
+          "nNode": 0,
+          "flNodeWeight0": 64,
+          "flSpringDamping": 48,
+          "flSpringConstant": 32,
+          "flSpringRestLength": 16
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeWorldCollisionParams_t": {
+        "fields": {
+          "nListEnd": 10,
+          "nListBegin": 8,
+          "flWorldFriction": 0,
+          "flGroundFriction": 4
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "IPhysicsMotionController": {
+        "fields": {},
+        "parent": null,
+        "metadata": []
+      },
+      "IPhysicsPlayerController": {
+        "fields": {},
+        "parent": null,
+        "metadata": []
+      },
+      "constraint_hingeparams_t": {
+        "fields": {
+          "hingeAxis": 24,
+          "constraint": 40,
+          "worldPosition": 0,
+          "worldAxisDirection": 12
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeSimdRodConstraintAnim_t": {
+        "fields": {
+          "nNode": 0,
+          "f4Weight0": 16,
+          "f4RelaxationFactor": 32
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeTaperedCapsuleStretch_t": {
+        "fields": {
+          "nNode": 0,
+          "nDummy": 6,
+          "flRadius": 8,
+          "nCollisionMask": 4
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CollisionDetailLayerInfo_t": {
+        "fields": {
+          "m_bIsQueryOnly": 16,
+          "m_bNotPickable": 56,
+          "m_sDescription": 0,
+          "m_sFriendlyName": 8,
+          "m_sParentDetailLayer": 24,
+          "m_vecSubtreeDetailLayers": 32
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          },
+          {
+            "name": "MVDataOutlinerLeafNameFn",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeModelSelfCollisionLayer_t": {
+        "fields": {
+          "m_Name": 0,
+          "m_Nodes": 8,
+          "m_nFlags": 36,
+          "m_nEndIdx": 40,
+          "m_flParentReaction": 32
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "FeBuildTaperedCapsuleRigid_t": {
+        "fields": {
+          "m_nPriority": 48,
+          "m_nVertexMapHash": 52,
+          "m_nAntitunnelGroupBits": 56
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "constraint_breakableparams_t": {
+        "fields": {
+          "isActive": 20,
+          "strength": 0,
+          "forceLimit": 4,
+          "torqueLimit": 8,
+          "bodyMassScale": 12
+        },
+        "parent": null,
+        "metadata": []
+      },
+      "vphysics_save_cphysicsbody_t": {
+        "fields": {
+          "m_nOldPointer": 224
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "vphysics_save_ragdoll_control_t": {
+        "fields": {
+          "m_nBodyCount": 52,
+          "m_flMaxStretch": 8,
+          "m_bIgnoreTeleport": 14,
+          "m_vForceAccumulator": 40,
+          "m_flMaxSpringFrequency": 4,
+          "m_flMinSpringFrequency": 0,
+          "m_bRequiresDynamicBodies": 13,
+          "m_vLinearVelocityAccumulator": 16,
+          "m_bSolidCollisionAtZeroWeight": 12,
+          "m_vAngularVelocityAccumulator": 28
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CollisionDetailLayerInfo_t__Name_t": {
+        "fields": {
+          "m_nNameToken": 0,
+          "m_sNameString": 8
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      }
+    }
+  }
+}

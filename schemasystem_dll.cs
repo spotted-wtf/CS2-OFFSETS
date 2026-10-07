@@ -1,0 +1,141 @@
+public static partial class cs2_dumper {
+    public static partial class schemas {
+        public static partial class schemasystem_dll {
+            public static partial class ResourceId_t {
+                public const long m_Value = 0x0;
+            }
+            public static partial class CExampleSchemaVData_Monomorphic {
+                public const long m_nExample1 = 0x0;
+                public const long m_nExample2 = 0x4;
+            }
+            public static partial class CSchemaSystemInternalRegistration {
+                public const long m_KV3 = 0x168;
+                public const long m_Color = 0xE0;
+                public const long m_QAngle = 0x40;
+                public const long m_Vector = 0x8;
+                public const long m_Vector2D = 0x0;
+                public const long m_Vector4D = 0xE4;
+                public const long m_VectorWS = 0x14;
+                public const long m_CTransform = 0x100;
+                public const long m_CUtlString = 0x138;
+                public const long m_CUtlSymbol = 0x140;
+                public const long m_Quaternion = 0x30;
+                public const long m_pKeyValues = 0x120;
+                public const long m_DegreeEuler = 0x64;
+                public const long m_RadianEuler = 0x58;
+                public const long m_matrix3x4_t = 0x80;
+                public const long m_stringToken = 0x144;
+                public const long m_matrix3x4a_t = 0xB0;
+                public const long m_ResourceTypes = 0x160;
+                public const long m_VectorAligned = 0x20;
+                public const long m_RotationVector = 0x4C;
+                public const long m_CUtlBinaryBlock = 0x128;
+                public const long m_QuaternionStorage = 0x70;
+                public const long m_stringTokenWithStorage = 0x148;
+            }
+            public static partial class CExampleSchemaVData_PolymorphicBase {
+                public const long m_nBase = 0x8;
+            }
+            public static partial class CExampleSchemaVData_PolymorphicDerivedA {
+                public const long m_nDerivedA = 0x10;
+            }
+            public static partial class CExampleSchemaVData_PolymorphicDerivedB {
+                public const long m_nDerivedB = 0x10;
+            }
+            public static partial class InfoForResourceTypeCResourceManifestInternal {
+
+            }
+            public static partial class fieldtype_t {
+                public const long FIELD_SHIM = 0x3F;
+                public const long FIELD_TICK = 0x10;
+                public const long FIELD_TIME = 0xF;
+                public const long FIELD_VOID = 0x0;
+                public const long FIELD_INPUT = 0x12;
+                public const long FIELD_INT16 = 0x7;
+                public const long FIELD_INT32 = 0x5;
+                public const long FIELD_INT64 = 0x1A;
+                public const long FIELD_UINT8 = 0x39;
+                public const long FIELD_CUSTOM = 0xB;
+                public const long FIELD_HMODEL = 0x2A;
+                public const long FIELD_HVDATA = 0x49;
+                public const long FIELD_QANGLE = 0x27;
+                public const long FIELD_STRING = 0x2;
+                public const long FIELD_UINT16 = 0x3A;
+                public const long FIELD_UINT32 = 0x25;
+                public const long FIELD_UINT64 = 0x21;
+                public const long FIELD_UNUSED = 0x18;
+                public const long FIELD_VECTOR = 0x3;
+                public const long FIELD_BOOLEAN = 0x6;
+                public const long FIELD_COLOR32 = 0x9;
+                public const long FIELD_CSTRING = 0x1E;
+                public const long FIELD_EHANDLE = 0xD;
+                public const long FIELD_FLOAT32 = 0x1;
+                public const long FIELD_FLOAT64 = 0x22;
+                public const long FIELD_HSCRIPT = 0x1F;
+                public const long FIELD_SCALE32 = 0x4A;
+                public const long FIELD_VARIANT = 0x20;
+                public const long FIELD_VMATRIX = 0x14;
+                public const long FIELD_CLASSPTR = 0xC;
+                public const long FIELD_EMBEDDED = 0xA;
+                public const long FIELD_FUNCTION = 0x13;
+                public const long FIELD_INTERVAL = 0x17;
+                public const long FIELD_RESOURCE = 0x1C;
+                public const long FIELD_V8_ARRAY = 0x33;
+                public const long FIELD_V8_VALUE = 0x31;
+                public const long FIELD_VECTOR2D = 0x19;
+                public const long FIELD_VECTOR4D = 0x1B;
+                public const long FIELD_CHARACTER = 0x8;
+                public const long FIELD_HMATERIAL = 0x29;
+                public const long FIELD_MATRIX3X4 = 0x3E;
+                public const long FIELD_SOUNDNAME = 0x11;
+                public const long FIELD_TYPECOUNT = 0x53;
+                public const long FIELD_UTLSTRING = 0x35;
+                public const long FIELD_V8_OBJECT = 0x32;
+                public const long FIELD_AMMO_INDEX = 0x43;
+                public const long FIELD_CTRANSFORM = 0x3B;
+                public const long FIELD_QUATERNION = 0x4;
+                public const long FIELD_ENGINE_TICK = 0x4D;
+                public const long FIELD_ENGINE_TIME = 0x4C;
+                public const long FIELD_TYPEUNKNOWN = 0x1D;
+                public const long FIELD_CONDITION_ID = 0x44;
+                public const long FIELD_GLOBALSYMBOL = 0x4F;
+                public const long FIELD_HRENDERTEXTURE = 0x37;
+                public const long FIELD_UTLSTRINGTOKEN = 0x26;
+                public const long FIELD_WORLD_GROUP_ID = 0x4E;
+                public const long FIELD_HPOSTPROCESSING = 0x3D;
+                public const long FIELD_MODIFIER_HANDLE = 0x46;
+                public const long FIELD_POSITION_VECTOR = 0xE;
+                public const long FIELD_ROTATION_VECTOR = 0x47;
+                public const long FIELD_CMOTIONTRANSFORM = 0x40;
+                public const long FIELD_STRING_AND_TOKEN = 0x4B;
+                public const long FIELD_V8_CALLBACK_INFO = 0x34;
+                public const long FIELD_ATTACHMENT_HANDLE = 0x42;
+                public const long FIELD_QANGLE_WORLDSPACE = 0x2E;
+                public const long FIELD_HNMGRAPHDEFINITION = 0x50;
+                public const long FIELD_VMATRIX_WORLDSPACE = 0x15;
+                public const long FIELD_HSCRIPT_LIGHTBINDING = 0x30;
+                public const long FIELD_HSCRIPT_NEW_INSTANCE = 0x24;
+                public const long FIELD_MATRIX3X4_WORLDSPACE = 0x16;
+                public const long FIELD_CTRANSFORM_WORLDSPACE = 0x3C;
+                public const long FIELD_QUATERNION_WORLDSPACE = 0x2F;
+                public const long FIELD_NETWORK_QUANTIZED_FLOAT = 0x2C;
+                public const long FIELD_POSITIVEINTEGER_OR_NULL = 0x23;
+                public const long FIELD_NETWORK_QUANTIZED_VECTOR = 0x2B;
+                public const long FIELD_HPARTICLESYSTEMDEFINITION = 0x38;
+                public const long FIELD_NETWORK_QUANTIZED_VECTORWS = 0x51;
+                public const long FIELD_ROTATION_VECTOR_WORLDSPACE = 0x48;
+                public const long DEPRECATED_FIELD_AI_SCHEDULE_BITS = 0x45;
+                public const long FIELD_CMOTIONTRANSFORM_WORLDSPACE = 0x41;
+                public const long FIELD_DIRECTION_VECTOR_WORLDSPACE = 0x2D;
+                public const long FIELD_NETWORK_ORIGIN_CELL_QUANTIZED_VECTOR = 0x28;
+                public const long FIELD_NETWORK_ORIGIN_CELL_QUANTIZED_VECTORWS = 0x52;
+                public const long FIELD_NETWORK_ORIGIN_CELL_QUANTIZED_POSITION_VECTOR = 0x36;
+            }
+            public static partial class ThreeState_t {
+                public const long TRS_NONE = 0x2;
+                public const long TRS_TRUE = 0x1;
+                public const long TRS_FALSE = 0x0;
+            }
+        }
+    }
+}

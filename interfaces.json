@@ -1,0 +1,175 @@
+{
+  "host.dll": {
+    "HostUtils001": 1374464,
+    "Source2Host001": 1311440,
+    "GameModelInfo001": 1310640,
+    "GameSystem2HostHook": 1310704,
+    "DebugDrawQueueManager001": 1310576,
+    "PredictionDiffManager001": 1310976,
+    "SaveRestoreDataVersion001": 1311280,
+    "SinglePlayerSharedMemory001": 1311328
+  },
+  "tier0.dll": {
+    "VEngineCvar007": 3851888,
+    "TestScriptMgr001": 3807584,
+    "VProcessUtils002": 3807264,
+    "VStringTokenSystem001": 4010752
+  },
+  "client.dll": {
+    "LegacyGameUI001": 35905760,
+    "Source2Client002": 39175072,
+    "Source2ClientUI001": 35899744,
+    "ClientToolsInfo_001": 35854256,
+    "GameClientExports001": 35841112,
+    "Source2ClientConfig001": 38507184,
+    "Source2ClientPrediction001": 39200528,
+    "EmptyWorldService001_Client": 35738144,
+    "ClientBugBugServic001_Client": 35854304
+  },
+  "server.dll": {
+    "NavGameTest001": 31788488,
+    "Source2Server001": 31650464,
+    "customnavsystem001": 31089904,
+    "ServerToolsInfo_001": 31653048,
+    "Source2GameClients001": 31650272,
+    "Source2GameDirector001": 33134384,
+    "Source2GameEntities001": 31650912,
+    "Source2ServerConfig001": 34688152,
+    "EntitySubclassUtilsV001": 31165376,
+    "EmptyWorldService001_Server": 31494400
+  },
+  "engine2.dll": {
+    "BugService001": 9287664,
+    "EngineGameUI001": 6424288,
+    "HostStateMgr001": 6436160,
+    "INETSUPPORT_001": 6405168,
+    "ToolService_001": 6435760,
+    "BugBugService001": 6434176,
+    "InputService_001": 9289504,
+    "KeyValueCache001": 6436336,
+    "SoundService_001": 6434768,
+    "StatsService_001": 9550976,
+    "VProfService_001": 6435824,
+    "GameUIService_001": 9288768,
+    "RenderService_001": 9549440,
+    "MapListService_001": 9547152,
+    "NetworkService_001": 6434704,
+    "BenchmarkService001": 6433920,
+    "EngineServiceMgr001": 9553664,
+    "ScreenshotService001": 9550144,
+    "NetworkP2PService_001": 9548384,
+    "SplitScreenService_001": 6435504,
+    "NetworkClientService_001": 9547552,
+    "NetworkServerService_001": 9548816,
+    "Source2EngineToClient001": 6422512,
+    "Source2EngineToServer001": 6422728,
+    "GameEventSystemClientV001": 9554400,
+    "GameEventSystemServerV001": 9554704,
+    "SimpleEngineLoopService_001": 6436432,
+    "GameResourceServiceClientV001": 6434240,
+    "GameResourceServiceServerV001": 6434336,
+    "VENGINE_GAMEUIFUNCS_VERSION005": 6424432,
+    "ClientServerEngineLoopService_001": 9555504,
+    "ClientServerSharedHandleSystem001": 9552960,
+    "Source2EngineToClientStringTable001": 6422608,
+    "Source2EngineToServerStringTable001": 6422768
+  },
+  "vscript.dll": {
+    "VScriptManager010": 1303600
+  },
+  "localize.dll": {
+    "Localize_001": 364832
+  },
+  "panorama.dll": {
+    "PanoramaUIEngine001": 5805552
+  },
+  "v8system.dll": {
+    "Source2V8System001": 214928
+  },
+  "navsystem.dll": {
+    "NavSystem001": 1228800
+  },
+  "particles.dll": {
+    "ParticleSystemMgr003": 6663856
+  },
+  "vphysics2.dll": {
+    "VPhysics2_Interface_001": 4591200
+  },
+  "imemanager.dll": {
+    "IMEManager001": 228000
+  },
+  "meshsystem.dll": {
+    "MeshSystem001": 1575600
+  },
+  "steamaudio.dll": {
+    "SteamAudio001": 3522976
+  },
+  "inputsystem.dll": {
+    "InputSystemVersion001": 289728,
+    "InputStackSystemVersion001": 282256
+  },
+  "matchmaking.dll": {
+    "GameTypes001": 1773520,
+    "MATCHFRAMEWORK_001": 1806496
+  },
+  "scenesystem.dll": {
+    "SceneUtils_001": 6776672,
+    "SceneSystem_002": 9567008,
+    "RenderingPipelines_001": 6773248
+  },
+  "soundsystem.dll": {
+    "SoundSystem001": 5460816,
+    "VMixEditTool001": 93601151,
+    "SoundOpSystem001": 5462672,
+    "SoundOpSystemEdit001": 5462432,
+    "SoundBugBugService001_Client": 5462960
+  },
+  "pulse_system.dll": {
+    "IPulseSystem_001": 2326816
+  },
+  "schemasystem.dll": {
+    "SchemaSystem_001": 485136
+  },
+  "networksystem.dll": {
+    "NetworkSystemVersion001": 2691488,
+    "NetworkMessagesVersion001": 2768688,
+    "SerializedEntitiesVersion001": 2691728,
+    "FlattenedSerializersVersion001": 2587216
+  },
+  "worldrenderer.dll": {
+    "WorldRendererMgr001": 2321664
+  },
+  "resourcesystem.dll": {
+    "ResourceSystem013": 561840
+  },
+  "scenefilecache.dll": {
+    "SceneFileCache002": 1168504,
+    "ResponseRulesCache001": 1168208
+  },
+  "animationsystem.dll": {
+    "AnimationSystem_001": 8615416,
+    "AnimationSystemUtils_001": 8648408
+  },
+  "materialsystem2.dll": {
+    "TextLayout_001": 1359040,
+    "FontManager_001": 1456352,
+    "MaterialUtils_001": 1359152,
+    "VMaterialSystem2_001": 1455408,
+    "PostProcessingSystem_001": 1358944
+  },
+  "filesystem_stdio.dll": {
+    "VFileSystem017": 2180048,
+    "VAsyncFileSystem2_001": 2180624
+  },
+  "panoramauiclient.dll": {
+    "PanoramaUIClient001": 2557712
+  },
+  "rendersystemdx11.dll": {
+    "RenderUtils_001": 4410320,
+    "RenderDeviceMgr001": 4408048,
+    "VRenderDeviceMgrBackdoor001": 4408208
+  },
+  "panorama_text_pango.dll": {
+    "PanoramaTextServices001": 2861520
+  }
+}

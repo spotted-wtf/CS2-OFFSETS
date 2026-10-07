@@ -1,0 +1,35 @@
+class cs2_dumper:
+    class schemas:
+        class panorama_dll:
+            class EStyleNodeType:
+                ROOT = 0x0
+                DEFINE = 0x3
+                IMPORT = 0x4
+                PROPERTY = 0x2
+                KEYFRAMES = 0x5
+                EXPRESSION = 0x1
+                WHITESPACE = 0x8
+                EXPRESSION_URL = 0xA
+                STYLE_SELECTOR = 0x7
+                EXPRESSION_TEXT = 0x9
+                REFERENCE_PANEL = 0xF
+                EXPRESSION_CONCAT = 0xB
+                KEYFRAME_SELECTOR = 0x6
+                REFERENCE_CONTENT = 0xC
+                REFERENCE_COMPILED = 0xD
+                COMPILER_CONDITIONAL = 0x10
+                REFERENCE_PASSTHROUGH = 0xE
+            class ELayoutNodeType:
+                ROOT = 0x0
+                PANEL = 0x7
+                STYLES = 0x1
+                INCLUDE = 0x5
+                SCRIPTS = 0x3
+                SNIPPET = 0x6
+                SNIPPETS = 0x4
+                SCRIPT_BODY = 0x2
+                PANEL_ATTRIBUTE = 0x8
+                REFERENCE_CONTENT = 0xA
+                REFERENCE_COMPILED = 0xB
+                PANEL_ATTRIBUTE_VALUE = 0x9
+                REFERENCE_PASSTHROUGH = 0xC

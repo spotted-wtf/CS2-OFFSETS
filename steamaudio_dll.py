@@ -1,0 +1,96 @@
+class cs2_dumper:
+    class schemas:
+        class steamaudio_dll:
+            class CSteamAudioProbeData:
+                m_pProbeBatch = 0x0
+            class CSteamAudioProbeGrid:
+                m_nx = 0x1C
+                m_ny = 0x20
+                m_nz = 0x24
+                m_aabb = 0x0
+                m_flSpacing = 0x18
+                m_vecProbes = 0x40
+                m_vecLineSegments = 0x28
+            class CSteamAudioSceneData:
+                m_pScene = 0x0
+                m_pStaticMesh = 0x8
+            class SteamAudioPathSettings_t:
+                m_nNumVisSamples = 0x0
+                m_flProbePathRange = 0xC
+                m_flProbeVisRadius = 0x4
+                m_flProbeVisThreshold = 0x8
+            class CSteamAudioAmbisonicsField:
+                m_field = 0x0
+            class CSteamAudioBakedReverbData:
+                m_grid = 0x20
+                m_scene = 0x8
+                m_nBands = 0x0
+                m_probes = 0x18
+                m_movables = 0x180
+                m_compressedData = 0xC0
+                m_reverbSettings = 0x78
+                m_clusteredProbes = 0xA0
+                m_vecClusterForProbe = 0xA8
+                m_compressedClusteredData = 0x120
+                m_reverbClusteringSettings = 0x8C
+                m_reverbCompressionSettings = 0x98
+            class SteamAudioReverbSettings_t:
+                m_nNumRays = 0x0
+                m_nNumBounces = 0x4
+                m_bExportScene = 0x10
+                m_flIRDuration = 0x8
+                m_nAmbisonicsOrder = 0xC
+            class CSteamAudioBakedPathingData:
+                m_nBands = 0x0
+                m_probes = 0x8
+                m_movables = 0x10
+            class CSteamAudioCompressedReverb:
+                m_nBins = 0x8
+                m_nBands = 0x4
+                m_nProbes = 0xC
+                m_nChannels = 0x0
+                m_vecDictionary = 0x28
+                m_pCompressedData = 0x58
+                m_vecCompressedData = 0x40
+                m_vecNumSingularValues = 0x10
+            class CSteamAudioProbeLineSegment:
+                m_vEnd = 0xC
+                m_vStart = 0x0
+                m_vecIntervals = 0x18
+                m_vecProbeIndices = 0x30
+            class CSteamAudioBakedMaterialsData:
+                m_probes = 0x0
+                m_vecMaterialTokens = 0x8
+                m_vecMaterialWeights = 0x20
+            class CSteamAudioBakedOcclusionData:
+                m_probes = 0x10
+                m_settings = 0x0
+                m_vecPathingRatio = 0x18
+                m_vecPathingDeviation = 0x30
+                m_vecReflectionEnergy = 0x48
+            class CSteamAudioBakedDimensionsData:
+                m_probes = 0x18
+                m_vecSize = 0x38
+                m_movables = 0x80
+                m_settings = 0x0
+                m_vecInOut = 0x20
+                m_vecOutsideField = 0x50
+                m_vecInsideSmallSizeField = 0x68
+            class SteamAudioReverbClusteringSettings_t:
+                m_flDepthThreshold = 0x8
+                m_bEnableClustering = 0x0
+                m_nCubeMapResolution = 0x4
+            class SteamAudioReverbCompressionSettings_t:
+                m_flQuality = 0x4
+                m_bEnableCompression = 0x0
+            class SteamAudioCustomDataOcclusionSettings_t:
+                m_bEnablePathing = 0x0
+                m_nReflectionRays = 0x4
+                m_bEnableReflections = 0x1
+                m_nReflectionBounces = 0x8
+            class SteamAudioCustomDataDimensionsSettings_t:
+                m_flSizeThreshold = 0xC
+                m_flInsideThreshold = 0x10
+                m_flOutsideThreshold = 0x8
+                m_nAmbisonicsOrderOutsideField = 0x0
+                m_nAmbisonicsOrderInsideSizeField = 0x4

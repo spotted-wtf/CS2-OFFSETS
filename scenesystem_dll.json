@@ -1,0 +1,214 @@
+{
+  "scenesystem.dll": {
+    "enums": {
+      "DisableShadows_t": {
+        "type": "uint8",
+        "members": {
+          "kDisableShadows_All": 1,
+          "kDisableShadows_None": 0,
+          "kDisableShadows_Baked": 2,
+          "kDisableShadows_Realtime": 3,
+          "kDisableShadows_ReallyNone": 4
+        },
+        "alignment": 1
+      },
+      "DecalRtEncoding_t": {
+        "type": "uint8",
+        "members": {
+          "kDecalMax": 2,
+          "kDecalMin": 0,
+          "kDecalBlood": 0,
+          "kDecalCloak": 1,
+          "kDecalDefault": 0,
+          "kDecalInvalid": 255
+        },
+        "alignment": 1
+      },
+      "ESilhouetteType_t": {
+        "type": "uint32",
+        "members": {
+          "SILHOUETTE_LPV": 4,
+          "SILHOUETTE_NONE": 0,
+          "SILHOUETTE_LIGHT": 1,
+          "SILHOUETTE_ENVMAP": 2
+        },
+        "alignment": 4
+      },
+      "SceneStatsSections_t": {
+        "type": "uint32",
+        "members": {
+          "SCENE_STATS_ALL": 255,
+          "SCENE_STATS_NONE": 0,
+          "SCENE_STATS_FRAME": 1,
+          "SCENE_STATS_CULLING": 4,
+          "SCENE_STATS_DEFAULT": 127,
+          "SCENE_STATS_GEOMETRY": 2,
+          "SCENE_STATS_LIGHTING": 16,
+          "SCENE_STATS_INTERNALS": 64,
+          "SCENE_STATS_MATERIALS": 8,
+          "SCENE_STATS_RAYTRACING": 32,
+          "SCENE_STATS_RENDERDEVICE": 128
+        },
+        "alignment": 4
+      },
+      "ESceneObjectVisualization": {
+        "type": "uint32",
+        "members": {
+          "SCENEOBJECT_VIS_LOD": 4,
+          "SCENEOBJECT_VIS_NONE": 0,
+          "SCENEOBJECT_VIS_OBJECT": 1,
+          "SCENEOBJECT_VIS_MATERIAL": 2,
+          "SCENEOBJECT_VIS_INSTANCING": 5,
+          "SCENEOBJECT_VIS_TEXTURE_SIZE": 3
+        },
+        "alignment": 4
+      },
+      "ESceneObjectMeshletVisualization": {
+        "type": "uint32",
+        "members": {
+          "SCENEOBJECT_MESHLET_VIS_NONE": 0,
+          "SCENEOBJECT_MESHLET_VIS_CULLED": 2,
+          "SCENEOBJECT_MESHLET_VIS_MESHLET": 1
+        },
+        "alignment": 4
+      },
+      "ESceneViewDebugOverlaysListenerDataType_t": {
+        "type": "uint32",
+        "members": {
+          "k_ESceneViewDebugOverlaysListenerDataType_Line": 4,
+          "k_ESceneViewDebugOverlaysListenerDataType_Sphere": 1,
+          "k_ESceneViewDebugOverlaysListenerDataType_Text3D": 6,
+          "k_ESceneViewDebugOverlaysListenerDataType_Capsule": 2,
+          "k_ESceneViewDebugOverlaysListenerDataType_Unknown": 0,
+          "k_ESceneViewDebugOverlaysListenerDataType_BoxAngles": 3,
+          "k_ESceneViewDebugOverlaysListenerDataType_SolidBoxAngles": 5
+        },
+        "alignment": 4
+      }
+    },
+    "classes": {
+      "SceneViewId_t": {
+        "fields": {
+          "m_nViewId": 0,
+          "m_nFrameCount": 8
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CSSDSMsg_EndFrame": {
+        "fields": {
+          "m_Views": 0
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CSSDSMsg_PreLayer": {
+        "fields": {},
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CSSDSMsg_LayerBase": {
+        "fields": {
+          "m_viewId": 0,
+          "m_ViewName": 16,
+          "m_nLayerId": 24,
+          "m_LayerName": 32,
+          "m_displayText": 40
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CSSDSMsg_PostLayer": {
+        "fields": {},
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CSSDSMsg_ViewRender": {
+        "fields": {
+          "m_viewId": 0,
+          "m_ViewName": 16
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CSSDSMsg_ViewTarget": {
+        "fields": {
+          "m_Name": 0,
+          "m_nDepth": 36,
+          "m_nWidth": 16,
+          "m_nFormat": 44,
+          "m_nHeight": 20,
+          "m_TextureId": 8,
+          "m_nNumMipLevels": 32,
+          "m_nRequestedWidth": 24,
+          "m_nRequestedHeight": 28,
+          "m_nMultisampleNumSamples": 40
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CSSDSEndFrameViewInfo": {
+        "fields": {
+          "m_nViewId": 0,
+          "m_ViewName": 8
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      },
+      "CSSDSMsg_ViewTargetList": {
+        "fields": {
+          "m_viewId": 0,
+          "m_Targets": 24,
+          "m_ViewName": 16
+        },
+        "parent": null,
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ]
+      }
+    }
+  }
+}
