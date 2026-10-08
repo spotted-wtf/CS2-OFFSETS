@@ -1,20 +1,20 @@
 export namespace cs2_dumper {
     export namespace offsets {
         export namespace client_dll {
-            export const dwWeaponC4 = 0x24C6AF0;
-            export const dwCSGOInput = 0x2578160;
-            export const dwGameRules = 0x255EE50;
-            export const dwPlantedC4 = 0x24CA930;
-            export const dwEntityList = 0x2717828;
-            export const dwGlobalVars = 0x222DE98;
-            export const dwPrediction = 0x2562710;
-            export const dwViewAngles = 0x25787E8;
-            export const dwViewMatrix = 0x2567FA0;
-            export const dwViewRender = 0x2568968;
-            export const dwGlowManager = 0x255EE60;
-            export const dwLocalPlayerPawn = 0x2562808;
-            export const dwGameEntitySystem = 0x2717828;
-            export const dwLocalPlayerController = 0x253A068;
+            export const dwWeaponC4 = 0x24C0800;
+            export const dwCSGOInput = 0x2572460;
+            export const dwGameRules = 0x255BE80;
+            export const dwPlantedC4 = 0x24C2248;
+            export const dwEntityList = 0x2711598;
+            export const dwGlobalVars = 0x2228090;
+            export const dwPrediction = 0x255C2D0;
+            export const dwViewAngles = 0x2572AE8;
+            export const dwViewMatrix = 0x2561CD0;
+            export const dwViewRender = 0x2562698;
+            export const dwGlowManager = 0x2558BA0;
+            export const dwLocalPlayerPawn = 0x255C3C8;
+            export const dwGameEntitySystem = 0x2711598;
+            export const dwLocalPlayerController = 0x25338A8;
             export const dwGameEntitySystem_highestEntityIndex = 0x2120;
         }
         export namespace engine2_dll {

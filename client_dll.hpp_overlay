@@ -1259,9 +1259,10 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_bLeftHanded = 0x1DB8;
                 inline constexpr std::ptrdiff_t m_bPrevHelmet = 0x15CF;
                 inline constexpr std::ptrdiff_t m_bResumeZoom = 0x1EA1;
-                inline constexpr std::ptrdiff_t m_iIDEntIndex = 0x36CC;
+                inline constexpr std::ptrdiff_t m_flModifier0 = 0x3510;
+                inline constexpr std::ptrdiff_t m_iIDEntIndex = 0x36DC;
                 inline constexpr std::ptrdiff_t m_iShotsFired = 0x1EB4;
-                inline constexpr std::ptrdiff_t m_angEyeAngles = 0x35F0;
+                inline constexpr std::ptrdiff_t m_angEyeAngles = 0x3600;
                 inline constexpr std::ptrdiff_t m_bOldIsScoped = 0x1EDC;
                 inline constexpr std::ptrdiff_t m_bPrevDefuser = 0x15CE;
                 inline constexpr std::ptrdiff_t m_lastLandTime = 0x1D84;
@@ -1274,9 +1275,9 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_pGlowServices = 0x1588;
                 inline constexpr std::ptrdiff_t m_bIsBuyMenuOpen = 0x15EA;
                 inline constexpr std::ptrdiff_t m_flViewmodelFOV = 0x1DCC;
-                inline constexpr std::ptrdiff_t m_iOldIDEntIndex = 0x36EC;
+                inline constexpr std::ptrdiff_t m_iOldIDEntIndex = 0x36FC;
                 inline constexpr std::ptrdiff_t m_nWhichBombZone = 0x1EB0;
-                inline constexpr std::ptrdiff_t m_arrOldEyeAngles = 0x3690;
+                inline constexpr std::ptrdiff_t m_arrOldEyeAngles = 0x36A0;
                 inline constexpr std::ptrdiff_t m_bHasFemaleVoice = 0x15B0;
                 inline constexpr std::ptrdiff_t m_bInNoDefuseArea = 0x1EAC;
                 inline constexpr std::ptrdiff_t m_flDeathInfoTime = 0x1EE0;
@@ -1292,13 +1293,13 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_bKilledByHeadshot = 0x1EC9;
                 inline constexpr std::ptrdiff_t m_bOnGroundLastTick = 0x1D88;
                 inline constexpr std::ptrdiff_t m_flOldFallVelocity = 0x15B8;
-                inline constexpr std::ptrdiff_t m_holdTargetIDTimer = 0x36F0;
-                inline constexpr std::ptrdiff_t m_iTargetItemEntIdx = 0x36E8;
+                inline constexpr std::ptrdiff_t m_holdTargetIDTimer = 0x3700;
+                inline constexpr std::ptrdiff_t m_iTargetItemEntIdx = 0x36F8;
                 inline constexpr std::ptrdiff_t m_pAimPunchServices = 0x1598;
                 inline constexpr std::ptrdiff_t m_bIsGrabbingHostage = 0x1EA3;
-                inline constexpr std::ptrdiff_t m_delayTargetIDTimer = 0x36D0;
+                inline constexpr std::ptrdiff_t m_delayTargetIDTimer = 0x36E0;
                 inline constexpr std::ptrdiff_t m_entitySpottedState = 0x1E88;
-                inline constexpr std::ptrdiff_t m_fMolotovDamageTime = 0x3510;
+                inline constexpr std::ptrdiff_t m_fMolotovDamageTime = 0x3514;
                 inline constexpr std::ptrdiff_t m_flLandingStartTime = 0x15E4;
                 inline constexpr std::ptrdiff_t m_flTimeOfLastInjury = 0x15EC;
                 inline constexpr std::ptrdiff_t m_flVelocityModifier = 0x1EBC;
@@ -1312,8 +1313,8 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_vecStashedVelocity = 0x1F4C;
                 inline constexpr std::ptrdiff_t m_vRagdollDamageForce = 0x1D28;
                 inline constexpr std::ptrdiff_t m_GunGameImmunityColor = 0x1E18;
-                inline constexpr std::ptrdiff_t m_angEyeAnglesVelocity = 0x36C0;
-                inline constexpr std::ptrdiff_t m_arrOldEyeAnglesTimes = 0x3680;
+                inline constexpr std::ptrdiff_t m_angEyeAnglesVelocity = 0x36D0;
+                inline constexpr std::ptrdiff_t m_arrOldEyeAnglesTimes = 0x3690;
                 inline constexpr std::ptrdiff_t m_bInHostageRescueZone = 0x15E8;
                 inline constexpr std::ptrdiff_t m_bNeedToReApplyGloves = 0x176D;
                 inline constexpr std::ptrdiff_t m_bPreviouslyInBuyZone = 0x15E1;
@@ -1325,7 +1326,7 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_iRetakesMVPBoostItem = 0x1764;
                 inline constexpr std::ptrdiff_t m_iRetakesOfferingCard = 0x175C;
                 inline constexpr std::ptrdiff_t m_ignoreLadderJumpTime = 0x1EC4;
-                inline constexpr std::ptrdiff_t m_nPlayerInfernoBodyFx = 0x357C;
+                inline constexpr std::ptrdiff_t m_nPlayerInfernoBodyFx = 0x3580;
                 inline constexpr std::ptrdiff_t m_pDamageReactServices = 0x15A0;
                 inline constexpr std::ptrdiff_t m_unPreviousWeaponHash = 0x15D8;
                 inline constexpr std::ptrdiff_t m_vRagdollServerOrigin = 0x1D78;
@@ -2960,8 +2961,8 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_PanelClassName = 0x10B0;
             }
             namespace C_CSGO_PreviewPlayer {
-                inline constexpr std::ptrdiff_t m_flInitialModelScale = 0x3718;
-                inline constexpr std::ptrdiff_t m_animgraphCharacterModeString = 0x3710;
+                inline constexpr std::ptrdiff_t m_flInitialModelScale = 0x3728;
+                inline constexpr std::ptrdiff_t m_animgraphCharacterModeString = 0x3720;
             }
             namespace C_InfoLadderDismount {
 

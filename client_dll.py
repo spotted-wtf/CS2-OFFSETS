@@ -1134,9 +1134,10 @@ class cs2_dumper:
                 m_bLeftHanded = 0x1DB8
                 m_bPrevHelmet = 0x15CF
                 m_bResumeZoom = 0x1EA1
-                m_iIDEntIndex = 0x36CC
+                m_flModifier0 = 0x3510
+                m_iIDEntIndex = 0x36DC
                 m_iShotsFired = 0x1EB4
-                m_angEyeAngles = 0x35F0
+                m_angEyeAngles = 0x3600
                 m_bOldIsScoped = 0x1EDC
                 m_bPrevDefuser = 0x15CE
                 m_lastLandTime = 0x1D84
@@ -1149,9 +1150,9 @@ class cs2_dumper:
                 m_pGlowServices = 0x1588
                 m_bIsBuyMenuOpen = 0x15EA
                 m_flViewmodelFOV = 0x1DCC
-                m_iOldIDEntIndex = 0x36EC
+                m_iOldIDEntIndex = 0x36FC
                 m_nWhichBombZone = 0x1EB0
-                m_arrOldEyeAngles = 0x3690
+                m_arrOldEyeAngles = 0x36A0
                 m_bHasFemaleVoice = 0x15B0
                 m_bInNoDefuseArea = 0x1EAC
                 m_flDeathInfoTime = 0x1EE0
@@ -1167,13 +1168,13 @@ class cs2_dumper:
                 m_bKilledByHeadshot = 0x1EC9
                 m_bOnGroundLastTick = 0x1D88
                 m_flOldFallVelocity = 0x15B8
-                m_holdTargetIDTimer = 0x36F0
-                m_iTargetItemEntIdx = 0x36E8
+                m_holdTargetIDTimer = 0x3700
+                m_iTargetItemEntIdx = 0x36F8
                 m_pAimPunchServices = 0x1598
                 m_bIsGrabbingHostage = 0x1EA3
-                m_delayTargetIDTimer = 0x36D0
+                m_delayTargetIDTimer = 0x36E0
                 m_entitySpottedState = 0x1E88
-                m_fMolotovDamageTime = 0x3510
+                m_fMolotovDamageTime = 0x3514
                 m_flLandingStartTime = 0x15E4
                 m_flTimeOfLastInjury = 0x15EC
                 m_flVelocityModifier = 0x1EBC
@@ -1187,8 +1188,8 @@ class cs2_dumper:
                 m_vecStashedVelocity = 0x1F4C
                 m_vRagdollDamageForce = 0x1D28
                 m_GunGameImmunityColor = 0x1E18
-                m_angEyeAnglesVelocity = 0x36C0
-                m_arrOldEyeAnglesTimes = 0x3680
+                m_angEyeAnglesVelocity = 0x36D0
+                m_arrOldEyeAnglesTimes = 0x3690
                 m_bInHostageRescueZone = 0x15E8
                 m_bNeedToReApplyGloves = 0x176D
                 m_bPreviouslyInBuyZone = 0x15E1
@@ -1200,7 +1201,7 @@ class cs2_dumper:
                 m_iRetakesMVPBoostItem = 0x1764
                 m_iRetakesOfferingCard = 0x175C
                 m_ignoreLadderJumpTime = 0x1EC4
-                m_nPlayerInfernoBodyFx = 0x357C
+                m_nPlayerInfernoBodyFx = 0x3580
                 m_pDamageReactServices = 0x15A0
                 m_unPreviousWeaponHash = 0x15D8
                 m_vRagdollServerOrigin = 0x1D78
@@ -2666,8 +2667,8 @@ class cs2_dumper:
                 m_DialogXMLName = 0x10A8
                 m_PanelClassName = 0x10B0
             class C_CSGO_PreviewPlayer:
-                m_flInitialModelScale = 0x3718
-                m_animgraphCharacterModeString = 0x3710
+                m_flInitialModelScale = 0x3728
+                m_animgraphCharacterModeString = 0x3720
             class C_InfoLadderDismount:
                 pass
             class C_PhysPropClientside:

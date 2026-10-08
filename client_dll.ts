@@ -1257,9 +1257,10 @@ export namespace cs2_dumper {
                 export const m_bLeftHanded = 0x1DB8;
                 export const m_bPrevHelmet = 0x15CF;
                 export const m_bResumeZoom = 0x1EA1;
-                export const m_iIDEntIndex = 0x36CC;
+                export const m_flModifier0 = 0x3510;
+                export const m_iIDEntIndex = 0x36DC;
                 export const m_iShotsFired = 0x1EB4;
-                export const m_angEyeAngles = 0x35F0;
+                export const m_angEyeAngles = 0x3600;
                 export const m_bOldIsScoped = 0x1EDC;
                 export const m_bPrevDefuser = 0x15CE;
                 export const m_lastLandTime = 0x1D84;
@@ -1272,9 +1273,9 @@ export namespace cs2_dumper {
                 export const m_pGlowServices = 0x1588;
                 export const m_bIsBuyMenuOpen = 0x15EA;
                 export const m_flViewmodelFOV = 0x1DCC;
-                export const m_iOldIDEntIndex = 0x36EC;
+                export const m_iOldIDEntIndex = 0x36FC;
                 export const m_nWhichBombZone = 0x1EB0;
-                export const m_arrOldEyeAngles = 0x3690;
+                export const m_arrOldEyeAngles = 0x36A0;
                 export const m_bHasFemaleVoice = 0x15B0;
                 export const m_bInNoDefuseArea = 0x1EAC;
                 export const m_flDeathInfoTime = 0x1EE0;
@@ -1290,13 +1291,13 @@ export namespace cs2_dumper {
                 export const m_bKilledByHeadshot = 0x1EC9;
                 export const m_bOnGroundLastTick = 0x1D88;
                 export const m_flOldFallVelocity = 0x15B8;
-                export const m_holdTargetIDTimer = 0x36F0;
-                export const m_iTargetItemEntIdx = 0x36E8;
+                export const m_holdTargetIDTimer = 0x3700;
+                export const m_iTargetItemEntIdx = 0x36F8;
                 export const m_pAimPunchServices = 0x1598;
                 export const m_bIsGrabbingHostage = 0x1EA3;
-                export const m_delayTargetIDTimer = 0x36D0;
+                export const m_delayTargetIDTimer = 0x36E0;
                 export const m_entitySpottedState = 0x1E88;
-                export const m_fMolotovDamageTime = 0x3510;
+                export const m_fMolotovDamageTime = 0x3514;
                 export const m_flLandingStartTime = 0x15E4;
                 export const m_flTimeOfLastInjury = 0x15EC;
                 export const m_flVelocityModifier = 0x1EBC;
@@ -1310,8 +1311,8 @@ export namespace cs2_dumper {
                 export const m_vecStashedVelocity = 0x1F4C;
                 export const m_vRagdollDamageForce = 0x1D28;
                 export const m_GunGameImmunityColor = 0x1E18;
-                export const m_angEyeAnglesVelocity = 0x36C0;
-                export const m_arrOldEyeAnglesTimes = 0x3680;
+                export const m_angEyeAnglesVelocity = 0x36D0;
+                export const m_arrOldEyeAnglesTimes = 0x3690;
                 export const m_bInHostageRescueZone = 0x15E8;
                 export const m_bNeedToReApplyGloves = 0x176D;
                 export const m_bPreviouslyInBuyZone = 0x15E1;
@@ -1323,7 +1324,7 @@ export namespace cs2_dumper {
                 export const m_iRetakesMVPBoostItem = 0x1764;
                 export const m_iRetakesOfferingCard = 0x175C;
                 export const m_ignoreLadderJumpTime = 0x1EC4;
-                export const m_nPlayerInfernoBodyFx = 0x357C;
+                export const m_nPlayerInfernoBodyFx = 0x3580;
                 export const m_pDamageReactServices = 0x15A0;
                 export const m_unPreviousWeaponHash = 0x15D8;
                 export const m_vRagdollServerOrigin = 0x1D78;
@@ -2958,8 +2959,8 @@ export namespace cs2_dumper {
                 export const m_PanelClassName = 0x10B0;
             }
             export namespace C_CSGO_PreviewPlayer {
-                export const m_flInitialModelScale = 0x3718;
-                export const m_animgraphCharacterModeString = 0x3710;
+                export const m_flInitialModelScale = 0x3728;
+                export const m_animgraphCharacterModeString = 0x3720;
             }
             export namespace C_InfoLadderDismount {
 

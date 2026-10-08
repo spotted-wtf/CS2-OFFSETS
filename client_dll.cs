@@ -1257,9 +1257,10 @@ public static partial class cs2_dumper {
                 public const long m_bLeftHanded = 0x1DB8;
                 public const long m_bPrevHelmet = 0x15CF;
                 public const long m_bResumeZoom = 0x1EA1;
-                public const long m_iIDEntIndex = 0x36CC;
+                public const long m_flModifier0 = 0x3510;
+                public const long m_iIDEntIndex = 0x36DC;
                 public const long m_iShotsFired = 0x1EB4;
-                public const long m_angEyeAngles = 0x35F0;
+                public const long m_angEyeAngles = 0x3600;
                 public const long m_bOldIsScoped = 0x1EDC;
                 public const long m_bPrevDefuser = 0x15CE;
                 public const long m_lastLandTime = 0x1D84;
@@ -1272,9 +1273,9 @@ public static partial class cs2_dumper {
                 public const long m_pGlowServices = 0x1588;
                 public const long m_bIsBuyMenuOpen = 0x15EA;
                 public const long m_flViewmodelFOV = 0x1DCC;
-                public const long m_iOldIDEntIndex = 0x36EC;
+                public const long m_iOldIDEntIndex = 0x36FC;
                 public const long m_nWhichBombZone = 0x1EB0;
-                public const long m_arrOldEyeAngles = 0x3690;
+                public const long m_arrOldEyeAngles = 0x36A0;
                 public const long m_bHasFemaleVoice = 0x15B0;
                 public const long m_bInNoDefuseArea = 0x1EAC;
                 public const long m_flDeathInfoTime = 0x1EE0;
@@ -1290,13 +1291,13 @@ public static partial class cs2_dumper {
                 public const long m_bKilledByHeadshot = 0x1EC9;
                 public const long m_bOnGroundLastTick = 0x1D88;
                 public const long m_flOldFallVelocity = 0x15B8;
-                public const long m_holdTargetIDTimer = 0x36F0;
-                public const long m_iTargetItemEntIdx = 0x36E8;
+                public const long m_holdTargetIDTimer = 0x3700;
+                public const long m_iTargetItemEntIdx = 0x36F8;
                 public const long m_pAimPunchServices = 0x1598;
                 public const long m_bIsGrabbingHostage = 0x1EA3;
-                public const long m_delayTargetIDTimer = 0x36D0;
+                public const long m_delayTargetIDTimer = 0x36E0;
                 public const long m_entitySpottedState = 0x1E88;
-                public const long m_fMolotovDamageTime = 0x3510;
+                public const long m_fMolotovDamageTime = 0x3514;
                 public const long m_flLandingStartTime = 0x15E4;
                 public const long m_flTimeOfLastInjury = 0x15EC;
                 public const long m_flVelocityModifier = 0x1EBC;
@@ -1310,8 +1311,8 @@ public static partial class cs2_dumper {
                 public const long m_vecStashedVelocity = 0x1F4C;
                 public const long m_vRagdollDamageForce = 0x1D28;
                 public const long m_GunGameImmunityColor = 0x1E18;
-                public const long m_angEyeAnglesVelocity = 0x36C0;
-                public const long m_arrOldEyeAnglesTimes = 0x3680;
+                public const long m_angEyeAnglesVelocity = 0x36D0;
+                public const long m_arrOldEyeAnglesTimes = 0x3690;
                 public const long m_bInHostageRescueZone = 0x15E8;
                 public const long m_bNeedToReApplyGloves = 0x176D;
                 public const long m_bPreviouslyInBuyZone = 0x15E1;
@@ -1323,7 +1324,7 @@ public static partial class cs2_dumper {
                 public const long m_iRetakesMVPBoostItem = 0x1764;
                 public const long m_iRetakesOfferingCard = 0x175C;
                 public const long m_ignoreLadderJumpTime = 0x1EC4;
-                public const long m_nPlayerInfernoBodyFx = 0x357C;
+                public const long m_nPlayerInfernoBodyFx = 0x3580;
                 public const long m_pDamageReactServices = 0x15A0;
                 public const long m_unPreviousWeaponHash = 0x15D8;
                 public const long m_vRagdollServerOrigin = 0x1D78;
@@ -2958,8 +2959,8 @@ public static partial class cs2_dumper {
                 public const long m_PanelClassName = 0x10B0;
             }
             public static partial class C_CSGO_PreviewPlayer {
-                public const long m_flInitialModelScale = 0x3718;
-                public const long m_animgraphCharacterModeString = 0x3710;
+                public const long m_flInitialModelScale = 0x3728;
+                public const long m_animgraphCharacterModeString = 0x3720;
             }
             public static partial class C_InfoLadderDismount {
 

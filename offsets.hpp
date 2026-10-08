@@ -3,20 +3,20 @@
 namespace cs2_dumper {
     namespace offsets {
         namespace client_dll {
-            inline constexpr std::ptrdiff_t dwWeaponC4 = 0x24C6AF0;
-            inline constexpr std::ptrdiff_t dwCSGOInput = 0x2578160;
-            inline constexpr std::ptrdiff_t dwGameRules = 0x255EE50;
-            inline constexpr std::ptrdiff_t dwPlantedC4 = 0x24CA930;
-            inline constexpr std::ptrdiff_t dwEntityList = 0x2717828;
-            inline constexpr std::ptrdiff_t dwGlobalVars = 0x222DE98;
-            inline constexpr std::ptrdiff_t dwPrediction = 0x2562710;
-            inline constexpr std::ptrdiff_t dwViewAngles = 0x25787E8;
-            inline constexpr std::ptrdiff_t dwViewMatrix = 0x2567FA0;
-            inline constexpr std::ptrdiff_t dwViewRender = 0x2568968;
-            inline constexpr std::ptrdiff_t dwGlowManager = 0x255EE60;
-            inline constexpr std::ptrdiff_t dwLocalPlayerPawn = 0x2562808;
-            inline constexpr std::ptrdiff_t dwGameEntitySystem = 0x2717828;
-            inline constexpr std::ptrdiff_t dwLocalPlayerController = 0x253A068;
+            inline constexpr std::ptrdiff_t dwWeaponC4 = 0x24C0800;
+            inline constexpr std::ptrdiff_t dwCSGOInput = 0x2572460;
+            inline constexpr std::ptrdiff_t dwGameRules = 0x255BE80;
+            inline constexpr std::ptrdiff_t dwPlantedC4 = 0x24C2248;
+            inline constexpr std::ptrdiff_t dwEntityList = 0x2711598;
+            inline constexpr std::ptrdiff_t dwGlobalVars = 0x2228090;
+            inline constexpr std::ptrdiff_t dwPrediction = 0x255C2D0;
+            inline constexpr std::ptrdiff_t dwViewAngles = 0x2572AE8;
+            inline constexpr std::ptrdiff_t dwViewMatrix = 0x2561CD0;
+            inline constexpr std::ptrdiff_t dwViewRender = 0x2562698;
+            inline constexpr std::ptrdiff_t dwGlowManager = 0x2558BA0;
+            inline constexpr std::ptrdiff_t dwLocalPlayerPawn = 0x255C3C8;
+            inline constexpr std::ptrdiff_t dwGameEntitySystem = 0x2711598;
+            inline constexpr std::ptrdiff_t dwLocalPlayerController = 0x25338A8;
             inline constexpr std::ptrdiff_t dwGameEntitySystem_highestEntityIndex = 0x2120;
         }
         namespace engine2_dll {

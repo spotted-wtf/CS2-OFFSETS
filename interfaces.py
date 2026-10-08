@@ -15,26 +15,26 @@ class cs2_dumper:
             VProcessUtils002 = 0x3A1820
             VStringTokenSystem001 = 0x3D3300
         class client_dll:
-            LegacyGameUI001 = 0x223E0E0
-            Source2Client002 = 0x255C3A0
-            Source2ClientUI001 = 0x223C960
-            ClientToolsInfo_001 = 0x22317B0
-            GameClientExports001 = 0x222E458
-            Source2ClientConfig001 = 0x24B92B0
-            Source2ClientPrediction001 = 0x2562710
-            EmptyWorldService001_Client = 0x2215220
-            ClientBugBugServic001_Client = 0x22317E0
+            LegacyGameUI001 = 0x2238010
+            Source2Client002 = 0x25560E0
+            Source2ClientUI001 = 0x2236890
+            ClientToolsInfo_001 = 0x222B6B0
+            GameClientExports001 = 0x2228358
+            Source2ClientConfig001 = 0x24B2C90
+            Source2ClientPrediction001 = 0x255C2D0
+            EmptyWorldService001_Client = 0x220F100
+            ClientBugBugServic001_Client = 0x222B6E0
         class server_dll:
-            NavGameTest001 = 0x1E50DC8
-            Source2Server001 = 0x1E2F2A0
-            customnavsystem001 = 0x1DA64F0
-            ServerToolsInfo_001 = 0x1E2FCB8
-            Source2GameClients001 = 0x1E2F1E0
-            Source2GameDirector001 = 0x1F99730
-            Source2GameEntities001 = 0x1E2F460
-            Source2ServerConfig001 = 0x2114C98
-            EntitySubclassUtilsV001 = 0x1DB8BC0
-            EmptyWorldService001_Server = 0x1E09100
+            NavGameTest001 = 0x1E4ACA8
+            Source2Server001 = 0x1E291B0
+            customnavsystem001 = 0x1DA0528
+            ServerToolsInfo_001 = 0x1E29BC8
+            Source2GameClients001 = 0x1E290F0
+            Source2GameDirector001 = 0x1F930F0
+            Source2GameEntities001 = 0x1E29370
+            Source2ServerConfig001 = 0x210E998
+            EntitySubclassUtilsV001 = 0x1DB2C20
+            EmptyWorldService001_Server = 0x1E03070
         class engine2_dll:
             BugService001 = 0x8DB7F0
             EngineGameUI001 = 0x6206E0
