@@ -1,26 +1,26 @@
 export namespace cs2_dumper {
     export namespace offsets {
         export namespace client_dll {
-            export const dwWeaponC4 = 0x24C0800;
-            export const dwCSGOInput = 0x2572460;
-            export const dwGameRules = 0x255BE80;
-            export const dwPlantedC4 = 0x24C2248;
-            export const dwEntityList = 0x2711598;
-            export const dwGlobalVars = 0x2228090;
-            export const dwPrediction = 0x255C2D0;
-            export const dwViewAngles = 0x2572AE8;
-            export const dwViewMatrix = 0x2561CD0;
-            export const dwViewRender = 0x2562698;
-            export const dwGlowManager = 0x2558BA0;
-            export const dwLocalPlayerPawn = 0x255C3C8;
-            export const dwGameEntitySystem = 0x2711598;
-            export const dwLocalPlayerController = 0x25338A8;
+            export const dwWeaponC4 = 0x24C9B30;
+            export const dwCSGOInput = 0x257B640;
+            export const dwGameRules = 0x25651D0;
+            export const dwPlantedC4 = 0x24CB3C0;
+            export const dwEntityList = 0x271A908;
+            export const dwGlobalVars = 0x2230090;
+            export const dwPrediction = 0x2565620;
+            export const dwViewAngles = 0x257BCC8;
+            export const dwViewMatrix = 0x256B020;
+            export const dwViewRender = 0x256B9E8;
+            export const dwGlowManager = 0x2561EF0;
+            export const dwLocalPlayerPawn = 0x2565718;
+            export const dwGameEntitySystem = 0x271A908;
+            export const dwLocalPlayerController = 0x253CB78;
             export const dwGameEntitySystem_highestEntityIndex = 0x2120;
         }
         export namespace engine2_dll {
-            export const dwBuildNumber = 0x61CFE8;
-            export const dwWindowWidth = 0x91F330;
-            export const dwWindowHeight = 0x91F334;
+            export const dwBuildNumber = 0x61CFEC;
+            export const dwWindowWidth = 0x91F338;
+            export const dwWindowHeight = 0x91F33C;
             export const dwNetworkGameClient = 0x91AFC0;
             export const dwNetworkGameClient_deltaTick = 0x24C;
             export const dwNetworkGameClient_maxClients = 0x240;

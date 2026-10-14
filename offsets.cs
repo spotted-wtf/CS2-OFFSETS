@@ -1,26 +1,26 @@
 public static partial class cs2_dumper {
     public static partial class offsets {
         public static partial class client_dll {
-            public const long dwWeaponC4 = 0x24C0800;
-            public const long dwCSGOInput = 0x2572460;
-            public const long dwGameRules = 0x255BE80;
-            public const long dwPlantedC4 = 0x24C2248;
-            public const long dwEntityList = 0x2711598;
-            public const long dwGlobalVars = 0x2228090;
-            public const long dwPrediction = 0x255C2D0;
-            public const long dwViewAngles = 0x2572AE8;
-            public const long dwViewMatrix = 0x2561CD0;
-            public const long dwViewRender = 0x2562698;
-            public const long dwGlowManager = 0x2558BA0;
-            public const long dwLocalPlayerPawn = 0x255C3C8;
-            public const long dwGameEntitySystem = 0x2711598;
-            public const long dwLocalPlayerController = 0x25338A8;
+            public const long dwWeaponC4 = 0x24C9B30;
+            public const long dwCSGOInput = 0x257B640;
+            public const long dwGameRules = 0x25651D0;
+            public const long dwPlantedC4 = 0x24CB3C0;
+            public const long dwEntityList = 0x271A908;
+            public const long dwGlobalVars = 0x2230090;
+            public const long dwPrediction = 0x2565620;
+            public const long dwViewAngles = 0x257BCC8;
+            public const long dwViewMatrix = 0x256B020;
+            public const long dwViewRender = 0x256B9E8;
+            public const long dwGlowManager = 0x2561EF0;
+            public const long dwLocalPlayerPawn = 0x2565718;
+            public const long dwGameEntitySystem = 0x271A908;
+            public const long dwLocalPlayerController = 0x253CB78;
             public const long dwGameEntitySystem_highestEntityIndex = 0x2120;
         }
         public static partial class engine2_dll {
-            public const long dwBuildNumber = 0x61CFE8;
-            public const long dwWindowWidth = 0x91F330;
-            public const long dwWindowHeight = 0x91F334;
+            public const long dwBuildNumber = 0x61CFEC;
+            public const long dwWindowWidth = 0x91F338;
+            public const long dwWindowHeight = 0x91F33C;
             public const long dwNetworkGameClient = 0x91AFC0;
             public const long dwNetworkGameClient_deltaTick = 0x24C;
             public const long dwNetworkGameClient_maxClients = 0x240;

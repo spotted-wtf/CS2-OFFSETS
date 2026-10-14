@@ -16,27 +16,27 @@
     "VStringTokenSystem001": 4010752
   },
   "client.dll": {
-    "LegacyGameUI001": 35880976,
-    "Source2Client002": 39149792,
-    "Source2ClientUI001": 35874960,
-    "ClientToolsInfo_001": 35829424,
-    "GameClientExports001": 35816280,
-    "Source2ClientConfig001": 38481040,
-    "Source2ClientPrediction001": 39174864,
-    "EmptyWorldService001_Client": 35713280,
-    "ClientBugBugServic001_Client": 35829472
+    "LegacyGameUI001": 35913968,
+    "Source2Client002": 39187424,
+    "Source2ClientUI001": 35907696,
+    "ClientToolsInfo_001": 35862192,
+    "GameClientExports001": 35849048,
+    "Source2ClientConfig001": 38518640,
+    "Source2ClientPrediction001": 39212576,
+    "EmptyWorldService001_Client": 35746032,
+    "ClientBugBugServic001_Client": 35862240
   },
   "server.dll": {
-    "NavGameTest001": 31763624,
-    "Source2Server001": 31625648,
-    "customnavsystem001": 31065384,
-    "ServerToolsInfo_001": 31628232,
-    "Source2GameClients001": 31625456,
-    "Source2GameDirector001": 33108208,
-    "Source2GameEntities001": 31626096,
-    "Source2ServerConfig001": 34662808,
-    "EntitySubclassUtilsV001": 31140896,
-    "EmptyWorldService001_Server": 31469680
+    "NavGameTest001": 31767736,
+    "Source2Server001": 31629744,
+    "customnavsystem001": 31069416,
+    "ServerToolsInfo_001": 31632328,
+    "Source2GameClients001": 31629552,
+    "Source2GameDirector001": 33112944,
+    "Source2GameEntities001": 31630192,
+    "Source2ServerConfig001": 34667512,
+    "EntitySubclassUtilsV001": 31144912,
+    "EmptyWorldService001_Server": 31473696
   },
   "engine2.dll": {
     "BugService001": 9287664,

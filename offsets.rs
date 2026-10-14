@@ -2,26 +2,26 @@
 pub mod cs2_dumper {
     pub mod offsets {
         pub mod client_dll {
-            pub const dwWeaponC4: i64 = 0x24C0800;
-            pub const dwCSGOInput: i64 = 0x2572460;
-            pub const dwGameRules: i64 = 0x255BE80;
-            pub const dwPlantedC4: i64 = 0x24C2248;
-            pub const dwEntityList: i64 = 0x2711598;
-            pub const dwGlobalVars: i64 = 0x2228090;
-            pub const dwPrediction: i64 = 0x255C2D0;
-            pub const dwViewAngles: i64 = 0x2572AE8;
-            pub const dwViewMatrix: i64 = 0x2561CD0;
-            pub const dwViewRender: i64 = 0x2562698;
-            pub const dwGlowManager: i64 = 0x2558BA0;
-            pub const dwLocalPlayerPawn: i64 = 0x255C3C8;
-            pub const dwGameEntitySystem: i64 = 0x2711598;
-            pub const dwLocalPlayerController: i64 = 0x25338A8;
+            pub const dwWeaponC4: i64 = 0x24C9B30;
+            pub const dwCSGOInput: i64 = 0x257B640;
+            pub const dwGameRules: i64 = 0x25651D0;
+            pub const dwPlantedC4: i64 = 0x24CB3C0;
+            pub const dwEntityList: i64 = 0x271A908;
+            pub const dwGlobalVars: i64 = 0x2230090;
+            pub const dwPrediction: i64 = 0x2565620;
+            pub const dwViewAngles: i64 = 0x257BCC8;
+            pub const dwViewMatrix: i64 = 0x256B020;
+            pub const dwViewRender: i64 = 0x256B9E8;
+            pub const dwGlowManager: i64 = 0x2561EF0;
+            pub const dwLocalPlayerPawn: i64 = 0x2565718;
+            pub const dwGameEntitySystem: i64 = 0x271A908;
+            pub const dwLocalPlayerController: i64 = 0x253CB78;
             pub const dwGameEntitySystem_highestEntityIndex: i64 = 0x2120;
         }
         pub mod engine2_dll {
-            pub const dwBuildNumber: i64 = 0x61CFE8;
-            pub const dwWindowWidth: i64 = 0x91F330;
-            pub const dwWindowHeight: i64 = 0x91F334;
+            pub const dwBuildNumber: i64 = 0x61CFEC;
+            pub const dwWindowWidth: i64 = 0x91F338;
+            pub const dwWindowHeight: i64 = 0x91F33C;
             pub const dwNetworkGameClient: i64 = 0x91AFC0;
             pub const dwNetworkGameClient_deltaTick: i64 = 0x24C;
             pub const dwNetworkGameClient_maxClients: i64 = 0x240;

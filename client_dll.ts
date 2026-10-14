@@ -1246,71 +1246,71 @@ export namespace cs2_dumper {
                 export const m_vWhereToSetLightingOrigin = 0x14E4;
             }
             export namespace C_CSPlayerPawn {
-                export const m_bIsScoped = 0x1EA0;
-                export const m_ArmorValue = 0x1ECC;
+                export const m_bIsScoped = 0x1E98;
+                export const m_ArmorValue = 0x1EC8;
                 export const m_EconGloves = 0x1770;
                 export const m_bInBuyZone = 0x15E0;
                 export const m_bInLanding = 0x15E2;
-                export const m_bIsWalking = 0x1E80;
+                export const m_bIsWalking = 0x1E78;
                 export const m_bInBombZone = 0x15E9;
-                export const m_bIsDefusing = 0x1EA2;
-                export const m_bLeftHanded = 0x1DB8;
+                export const m_bIsDefusing = 0x1E9A;
+                export const m_bLeftHanded = 0x1DB4;
                 export const m_bPrevHelmet = 0x15CF;
-                export const m_bResumeZoom = 0x1EA1;
+                export const m_bResumeZoom = 0x1E99;
                 export const m_flModifier0 = 0x3510;
                 export const m_iIDEntIndex = 0x36DC;
-                export const m_iShotsFired = 0x1EB4;
+                export const m_iShotsFired = 0x1EB0;
                 export const m_angEyeAngles = 0x3600;
-                export const m_bOldIsScoped = 0x1EDC;
+                export const m_bOldIsScoped = 0x1ED8;
                 export const m_bPrevDefuser = 0x15CE;
                 export const m_lastLandTime = 0x1D84;
                 export const m_pBuyServices = 0x1580;
                 export const m_unWeaponHash = 0x15DC;
-                export const m_bHasDeathInfo = 0x1EDD;
-                export const m_flFlinchStack = 0x1EB8;
-                export const m_hHudModelArms = 0x1DA8;
+                export const m_bHasDeathInfo = 0x1ED9;
+                export const m_flFlinchStack = 0x1EB4;
+                export const m_hHudModelArms = 0x1DA4;
                 export const m_nPrevArmorVal = 0x15D0;
                 export const m_pGlowServices = 0x1588;
                 export const m_bIsBuyMenuOpen = 0x15EA;
-                export const m_flViewmodelFOV = 0x1DCC;
+                export const m_flViewmodelFOV = 0x1DC8;
                 export const m_iOldIDEntIndex = 0x36FC;
-                export const m_nWhichBombZone = 0x1EB0;
+                export const m_nWhichBombZone = 0x1EAC;
                 export const m_arrOldEyeAngles = 0x36A0;
                 export const m_bHasFemaleVoice = 0x15B0;
-                export const m_bInNoDefuseArea = 0x1EAC;
-                export const m_flDeathInfoTime = 0x1EE0;
-                export const m_flEmitSoundTime = 0x1EA8;
+                export const m_bInNoDefuseArea = 0x1EA8;
+                export const m_flDeathInfoTime = 0x1EDC;
+                export const m_flEmitSoundTime = 0x1EA0;
                 export const m_pBulletServices = 0x1570;
-                export const m_qDeathEyeAngles = 0x1DAC;
+                export const m_qDeathEyeAngles = 0x1DA8;
                 export const m_szLastPlaceName = 0x15BC;
                 export const m_bGunGameImmunity = 0x3508;
-                export const m_bWaitForNoAttack = 0x1EC0;
+                export const m_bWaitForNoAttack = 0x1EBC;
                 export const m_iRetakesOffering = 0x1758;
-                export const m_nLastKillerIndex = 0x1ED8;
+                export const m_nLastKillerIndex = 0x1ED4;
                 export const m_pHostageServices = 0x1578;
-                export const m_bKilledByHeadshot = 0x1EC9;
+                export const m_bKilledByHeadshot = 0x1EC5;
                 export const m_bOnGroundLastTick = 0x1D88;
                 export const m_flOldFallVelocity = 0x15B8;
                 export const m_holdTargetIDTimer = 0x3700;
                 export const m_iTargetItemEntIdx = 0x36F8;
                 export const m_pAimPunchServices = 0x1598;
-                export const m_bIsGrabbingHostage = 0x1EA3;
+                export const m_bIsGrabbingHostage = 0x1E9B;
                 export const m_delayTargetIDTimer = 0x36E0;
-                export const m_entitySpottedState = 0x1E88;
+                export const m_entitySpottedState = 0x1E80;
                 export const m_fMolotovDamageTime = 0x3514;
                 export const m_flLandingStartTime = 0x15E4;
                 export const m_flTimeOfLastInjury = 0x15EC;
-                export const m_flVelocityModifier = 0x1EBC;
-                export const m_flViewmodelOffsetX = 0x1DC0;
-                export const m_flViewmodelOffsetY = 0x1DC4;
-                export const m_flViewmodelOffsetZ = 0x1DC8;
+                export const m_flVelocityModifier = 0x1EB8;
+                export const m_flViewmodelOffsetX = 0x1DBC;
+                export const m_flViewmodelOffsetY = 0x1DC0;
+                export const m_flViewmodelOffsetZ = 0x1DC4;
                 export const m_nEconGlovesChanged = 0x1D20;
                 export const m_nRagdollDamageBone = 0x1D24;
-                export const m_vecBulletHitModels = 0x1E68;
-                export const m_vecDeathInfoOrigin = 0x1EE4;
-                export const m_vecStashedVelocity = 0x1F4C;
+                export const m_vecBulletHitModels = 0x1E60;
+                export const m_vecDeathInfoOrigin = 0x1EE0;
+                export const m_vecStashedVelocity = 0x1F44;
                 export const m_vRagdollDamageForce = 0x1D28;
-                export const m_GunGameImmunityColor = 0x1E18;
+                export const m_GunGameImmunityColor = 0x1E10;
                 export const m_angEyeAnglesVelocity = 0x36D0;
                 export const m_arrOldEyeAnglesTimes = 0x3690;
                 export const m_bInHostageRescueZone = 0x15E8;
@@ -1320,37 +1320,37 @@ export namespace cs2_dumper {
                 export const m_bRetakesMVPLastRound = 0x1761;
                 export const m_flLandingTimeSeconds = 0x15B4;
                 export const m_flNextSprayDecalTime = 0x15F0;
-                export const m_hActiveMinimapVolume = 0x1DA4;
                 export const m_iRetakesMVPBoostItem = 0x1764;
                 export const m_iRetakesOfferingCard = 0x175C;
-                export const m_ignoreLadderJumpTime = 0x1EC4;
+                export const m_ignoreLadderJumpTime = 0x1EC0;
                 export const m_nPlayerInfernoBodyFx = 0x3580;
                 export const m_pDamageReactServices = 0x15A0;
                 export const m_unPreviousWeaponHash = 0x15D8;
                 export const m_vRagdollServerOrigin = 0x1D78;
-                export const m_angStashedShootAngles = 0x1F28;
+                export const m_angStashedShootAngles = 0x1F20;
                 export const m_bMustSyncRagdollState = 0x1D21;
                 export const m_flLastFiredWeaponTime = 0x15AC;
                 export const m_nPrevGrenadeAmmoCount = 0x15D4;
                 export const m_bRagdollDamageHeadshot = 0x1D74;
+                export const m_flEmitSoundTime_Client = 0x1EA4;
                 export const m_bShouldAutobuyDMWeapons = 0x3500;
-                export const m_fSwitchedHandednessTime = 0x1DBC;
+                export const m_fSwitchedHandednessTime = 0x1DB8;
                 export const m_pActionTrackingServices = 0x1590;
-                export const m_unCurrentEquipmentValue = 0x1ED0;
-                export const m_flInterpolatedInaccuracy = 0x1F58;
-                export const m_bGrenadeParametersStashed = 0x1F24;
-                export const m_grenadeParameterStashTime = 0x1F20;
+                export const m_unCurrentEquipmentValue = 0x1ECC;
+                export const m_flInterpolatedInaccuracy = 0x1F50;
+                export const m_bGrenadeParametersStashed = 0x1F1C;
+                export const m_grenadeParameterStashTime = 0x1F18;
                 export const m_szRagdollDamageWeaponName = 0x1D34;
-                export const m_vecPlayerPatchEconIndices = 0x1DD0;
+                export const m_vecPlayerPatchEconIndices = 0x1DCC;
                 export const m_fImmuneToGunGameDamageTime = 0x3504;
-                export const m_unRoundStartEquipmentValue = 0x1ED2;
+                export const m_unRoundStartEquipmentValue = 0x1ECE;
                 export const m_RetakesMVPBoostExtraUtility = 0x1768;
-                export const m_iBlockingUseActionInProgress = 0x1EA4;
-                export const m_unFreezetimeEndEquipmentValue = 0x1ED4;
+                export const m_iBlockingUseActionInProgress = 0x1E9C;
+                export const m_unFreezetimeEndEquipmentValue = 0x1ED0;
                 export const m_fImmuneToGunGameDamageTimeLast = 0x350C;
-                export const m_vecStashedGrenadeThrowPosition = 0x1F34;
+                export const m_vecStashedGrenadeThrowPosition = 0x1F2C;
                 export const m_flHealthShotBoostExpirationTime = 0x15A8;
-                export const m_vecStashedGrenadeThrowPawnCenter = 0x1F40;
+                export const m_vecStashedGrenadeThrowPawnCenter = 0x1F38;
             }
             export namespace C_CSWeaponBase {
                 export const m_donated = 0x1B64;
@@ -1859,7 +1859,7 @@ export namespace cs2_dumper {
                 export const __m_pChainEntity = 0x8;
             }
             export namespace CCSMinimapVolume {
-                export const m_strMinimapName = 0x1180;
+                export const m_strMinimapName = 0x1198;
             }
             export namespace CChoreoComponent {
                 export const m_hOwner = 0x30;
@@ -3983,7 +3983,7 @@ export namespace cs2_dumper {
 
             }
             export namespace CCSObserver_ObserverServices {
-                export const m_obsInterpState = 0x68;
+                export const m_obsInterpState = 0x70;
             }
             export namespace CCSPlayerBase_CameraServices {
                 export const m_iFOV = 0x298;
