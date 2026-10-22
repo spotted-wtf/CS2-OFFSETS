@@ -118,8 +118,6 @@ class cs2_dumper:
                 pass
             class InfoForResourceTypeCTestResourceData:
                 pass
-            class InfoForResourceTypeCVMixListResource:
-                pass
             class InfoForResourceTypeIParticleSnapshot:
                 pass
             class InfoForResourceTypeCNmGraphDefinition:

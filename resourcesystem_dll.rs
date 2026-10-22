@@ -158,9 +158,6 @@ pub mod cs2_dumper {
             pub mod InfoForResourceTypeCTestResourceData {
 
             }
-            pub mod InfoForResourceTypeCVMixListResource {
-
-            }
             pub mod InfoForResourceTypeIParticleSnapshot {
 
             }

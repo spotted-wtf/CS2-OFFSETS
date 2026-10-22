@@ -157,9 +157,6 @@ public static partial class cs2_dumper {
             public static partial class InfoForResourceTypeCTestResourceData {
 
             }
-            public static partial class InfoForResourceTypeCVMixListResource {
-
-            }
             public static partial class InfoForResourceTypeIParticleSnapshot {
 
             }

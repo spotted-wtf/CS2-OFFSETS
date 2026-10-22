@@ -17,63 +17,63 @@ public static partial class cs2_dumper {
             public const long VStringTokenSystem001 = 0x3D3300;
         }
         public static partial class client_dll {
-            public const long LegacyGameUI001 = 0x22400F0;
-            public const long Source2Client002 = 0x255F3E0;
-            public const long Source2ClientUI001 = 0x223E870;
-            public const long ClientToolsInfo_001 = 0x22336B0;
-            public const long GameClientExports001 = 0x2230358;
-            public const long Source2ClientConfig001 = 0x24BBF70;
-            public const long Source2ClientPrediction001 = 0x2565620;
-            public const long EmptyWorldService001_Client = 0x22170F0;
-            public const long ClientBugBugServic001_Client = 0x22336E0;
+            public const long LegacyGameUI001 = 0x2242100;
+            public const long Source2Client002 = 0x25613A0;
+            public const long Source2ClientUI001 = 0x2240880;
+            public const long ClientToolsInfo_001 = 0x22356B0;
+            public const long GameClientExports001 = 0x2232358;
+            public const long Source2ClientConfig001 = 0x24BDFD0;
+            public const long Source2ClientPrediction001 = 0x25675E0;
+            public const long EmptyWorldService001_Client = 0x2219130;
+            public const long ClientBugBugServic001_Client = 0x22356E0;
         }
         public static partial class server_dll {
-            public const long NavGameTest001 = 0x1E4BCB8;
-            public const long Source2Server001 = 0x1E2A1B0;
-            public const long customnavsystem001 = 0x1DA14E8;
-            public const long ServerToolsInfo_001 = 0x1E2ABC8;
-            public const long Source2GameClients001 = 0x1E2A0F0;
-            public const long Source2GameDirector001 = 0x1F94370;
-            public const long Source2GameEntities001 = 0x1E2A370;
-            public const long Source2ServerConfig001 = 0x210FBF8;
-            public const long EntitySubclassUtilsV001 = 0x1DB3BD0;
-            public const long EmptyWorldService001_Server = 0x1E04020;
+            public const long NavGameTest001 = 0x1E58D48;
+            public const long Source2Server001 = 0x1E37230;
+            public const long customnavsystem001 = 0x1DAE558;
+            public const long ServerToolsInfo_001 = 0x1E37C48;
+            public const long Source2GameClients001 = 0x1E37170;
+            public const long Source2GameDirector001 = 0x1FA1490;
+            public const long Source2GameEntities001 = 0x1E373F0;
+            public const long Source2ServerConfig001 = 0x211CD98;
+            public const long EntitySubclassUtilsV001 = 0x1DC0C60;
+            public const long EmptyWorldService001_Server = 0x1E110C0;
         }
         public static partial class engine2_dll {
-            public const long BugService001 = 0x8DB7F0;
-            public const long EngineGameUI001 = 0x6206E0;
-            public const long HostStateMgr001 = 0x623540;
-            public const long INETSUPPORT_001 = 0x61BC30;
-            public const long ToolService_001 = 0x6233B0;
-            public const long BugBugService001 = 0x622D80;
-            public const long InputService_001 = 0x8DBF20;
-            public const long KeyValueCache001 = 0x6235F0;
-            public const long SoundService_001 = 0x622FD0;
-            public const long StatsService_001 = 0x91BC80;
-            public const long VProfService_001 = 0x6233F0;
-            public const long GameUIService_001 = 0x8DBC40;
-            public const long RenderService_001 = 0x91B680;
-            public const long MapListService_001 = 0x91AD90;
-            public const long NetworkService_001 = 0x622F90;
-            public const long BenchmarkService001 = 0x622C80;
-            public const long EngineServiceMgr001 = 0x91C700;
-            public const long ScreenshotService001 = 0x91B940;
-            public const long NetworkP2PService_001 = 0x91B260;
-            public const long SplitScreenService_001 = 0x6232B0;
-            public const long NetworkClientService_001 = 0x91AF20;
-            public const long NetworkServerService_001 = 0x91B410;
-            public const long Source2EngineToClient001 = 0x61FFF0;
-            public const long Source2EngineToServer001 = 0x6200C8;
-            public const long GameEventSystemClientV001 = 0x91C9E0;
-            public const long GameEventSystemServerV001 = 0x91CB10;
-            public const long SimpleEngineLoopService_001 = 0x623650;
-            public const long GameResourceServiceClientV001 = 0x622DC0;
-            public const long GameResourceServiceServerV001 = 0x622E20;
-            public const long VENGINE_GAMEUIFUNCS_VERSION005 = 0x620770;
-            public const long ClientServerEngineLoopService_001 = 0x91CE30;
-            public const long ClientServerSharedHandleSystem001 = 0x91C440;
-            public const long Source2EngineToClientStringTable001 = 0x620050;
-            public const long Source2EngineToServerStringTable001 = 0x6200F0;
+            public const long BugService001 = 0x9790F0;
+            public const long EngineGameUI001 = 0x6BD720;
+            public const long HostStateMgr001 = 0x6C02A0;
+            public const long INETSUPPORT_001 = 0x6B8C70;
+            public const long ToolService_001 = 0x6C0110;
+            public const long BugBugService001 = 0x6BFDC0;
+            public const long InputService_001 = 0x979820;
+            public const long KeyValueCache001 = 0x6C0350;
+            public const long SoundService_001 = 0x9B93F0;
+            public const long StatsService_001 = 0x9B9930;
+            public const long VProfService_001 = 0x6C0150;
+            public const long GameUIService_001 = 0x979540;
+            public const long RenderService_001 = 0x9B8F80;
+            public const long MapListService_001 = 0x9B8690;
+            public const long NetworkService_001 = 0x6BFFD0;
+            public const long BenchmarkService001 = 0x6BFCC0;
+            public const long EngineServiceMgr001 = 0x9BA3B0;
+            public const long ScreenshotService001 = 0x9B9240;
+            public const long NetworkP2PService_001 = 0x9B8B60;
+            public const long SplitScreenService_001 = 0x6C0010;
+            public const long NetworkClientService_001 = 0x9B8820;
+            public const long NetworkServerService_001 = 0x9B8D10;
+            public const long Source2EngineToClient001 = 0x6BD030;
+            public const long Source2EngineToServer001 = 0x6BD108;
+            public const long GameEventSystemClientV001 = 0x9BA690;
+            public const long GameEventSystemServerV001 = 0x9BA7C0;
+            public const long SimpleEngineLoopService_001 = 0x6C03B0;
+            public const long GameResourceServiceClientV001 = 0x6BFE00;
+            public const long GameResourceServiceServerV001 = 0x6BFE60;
+            public const long VENGINE_GAMEUIFUNCS_VERSION005 = 0x6BD7B0;
+            public const long ClientServerEngineLoopService_001 = 0x9BAAE0;
+            public const long ClientServerSharedHandleSystem001 = 0x9BA0F0;
+            public const long Source2EngineToClientStringTable001 = 0x6BD090;
+            public const long Source2EngineToServerStringTable001 = 0x6BD130;
         }
         public static partial class vscript_dll {
             public const long VScriptManager010 = 0x13E430;
@@ -91,7 +91,7 @@ public static partial class cs2_dumper {
             public const long NavSystem001 = 0x12C000;
         }
         public static partial class particles_dll {
-            public const long ParticleSystemMgr003 = 0x65AEB0;
+            public const long ParticleSystemMgr003 = 0x65ADD0;
         }
         public static partial class vphysics2_dll {
             public const long VPhysics2_Interface_001 = 0x460E60;
@@ -114,16 +114,16 @@ public static partial class cs2_dumper {
             public const long MATCHFRAMEWORK_001 = 0x1B90A0;
         }
         public static partial class scenesystem_dll {
-            public const long SceneUtils_001 = 0x676760;
+            public const long SceneUtils_001 = 0x676750;
             public const long SceneSystem_002 = 0x91FB20;
-            public const long RenderingPipelines_001 = 0x675A00;
+            public const long RenderingPipelines_001 = 0x6759F0;
         }
         public static partial class soundsystem_dll {
-            public const long SoundSystem001 = 0x535350;
-            public const long VMixEditTool001 = 0x5943D7F;
-            public const long SoundOpSystem001 = 0x535A90;
-            public const long SoundOpSystemEdit001 = 0x5359A0;
-            public const long SoundBugBugService001_Client = 0x535BB0;
+            public const long SoundSystem001 = 0x532460;
+            public const long VMixEditTool001 = 0x5941BFF;
+            public const long SoundOpSystem001 = 0x532B60;
+            public const long SoundOpSystemEdit001 = 0x532A70;
+            public const long SoundBugBugService001_Client = 0x532C80;
         }
         public static partial class pulse_system_dll {
             public const long IPulseSystem_001 = 0x238120;
@@ -138,10 +138,10 @@ public static partial class cs2_dumper {
             public const long FlattenedSerializersVersion001 = 0x277A50;
         }
         public static partial class worldrenderer_dll {
-            public const long WorldRendererMgr001 = 0x236D00;
+            public const long WorldRendererMgr001 = 0x236D40;
         }
         public static partial class resourcesystem_dll {
-            public const long ResourceSystem013 = 0x892B0;
+            public const long ResourceSystem013 = 0x89230;
         }
         public static partial class scenefilecache_dll {
             public const long SceneFileCache002 = 0x11D478;

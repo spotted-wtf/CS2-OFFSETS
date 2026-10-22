@@ -486,16 +486,6 @@
           }
         ]
       },
-      "InfoForResourceTypeCVMixListResource": {
-        "fields": {},
-        "parent": null,
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ]
-      },
       "InfoForResourceTypeIParticleSnapshot": {
         "fields": {},
         "parent": null,

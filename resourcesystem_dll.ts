@@ -157,9 +157,6 @@ export namespace cs2_dumper {
             export namespace InfoForResourceTypeCTestResourceData {
 
             }
-            export namespace InfoForResourceTypeCVMixListResource {
-
-            }
             export namespace InfoForResourceTypeIParticleSnapshot {
 
             }

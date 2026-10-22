@@ -158,9 +158,6 @@ return {
                 ["InfoForResourceTypeCTestResourceData"] = {
 
                 },
-                ["InfoForResourceTypeCVMixListResource"] = {
-
-                },
                 ["InfoForResourceTypeIParticleSnapshot"] = {
 
                 },

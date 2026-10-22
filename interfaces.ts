@@ -17,63 +17,63 @@ export namespace cs2_dumper {
             export const VStringTokenSystem001 = 0x3D3300;
         }
         export namespace client_dll {
-            export const LegacyGameUI001 = 0x22400F0;
-            export const Source2Client002 = 0x255F3E0;
-            export const Source2ClientUI001 = 0x223E870;
-            export const ClientToolsInfo_001 = 0x22336B0;
-            export const GameClientExports001 = 0x2230358;
-            export const Source2ClientConfig001 = 0x24BBF70;
-            export const Source2ClientPrediction001 = 0x2565620;
-            export const EmptyWorldService001_Client = 0x22170F0;
-            export const ClientBugBugServic001_Client = 0x22336E0;
+            export const LegacyGameUI001 = 0x2242100;
+            export const Source2Client002 = 0x25613A0;
+            export const Source2ClientUI001 = 0x2240880;
+            export const ClientToolsInfo_001 = 0x22356B0;
+            export const GameClientExports001 = 0x2232358;
+            export const Source2ClientConfig001 = 0x24BDFD0;
+            export const Source2ClientPrediction001 = 0x25675E0;
+            export const EmptyWorldService001_Client = 0x2219130;
+            export const ClientBugBugServic001_Client = 0x22356E0;
         }
         export namespace server_dll {
-            export const NavGameTest001 = 0x1E4BCB8;
-            export const Source2Server001 = 0x1E2A1B0;
-            export const customnavsystem001 = 0x1DA14E8;
-            export const ServerToolsInfo_001 = 0x1E2ABC8;
-            export const Source2GameClients001 = 0x1E2A0F0;
-            export const Source2GameDirector001 = 0x1F94370;
-            export const Source2GameEntities001 = 0x1E2A370;
-            export const Source2ServerConfig001 = 0x210FBF8;
-            export const EntitySubclassUtilsV001 = 0x1DB3BD0;
-            export const EmptyWorldService001_Server = 0x1E04020;
+            export const NavGameTest001 = 0x1E58D48;
+            export const Source2Server001 = 0x1E37230;
+            export const customnavsystem001 = 0x1DAE558;
+            export const ServerToolsInfo_001 = 0x1E37C48;
+            export const Source2GameClients001 = 0x1E37170;
+            export const Source2GameDirector001 = 0x1FA1490;
+            export const Source2GameEntities001 = 0x1E373F0;
+            export const Source2ServerConfig001 = 0x211CD98;
+            export const EntitySubclassUtilsV001 = 0x1DC0C60;
+            export const EmptyWorldService001_Server = 0x1E110C0;
         }
         export namespace engine2_dll {
-            export const BugService001 = 0x8DB7F0;
-            export const EngineGameUI001 = 0x6206E0;
-            export const HostStateMgr001 = 0x623540;
-            export const INETSUPPORT_001 = 0x61BC30;
-            export const ToolService_001 = 0x6233B0;
-            export const BugBugService001 = 0x622D80;
-            export const InputService_001 = 0x8DBF20;
-            export const KeyValueCache001 = 0x6235F0;
-            export const SoundService_001 = 0x622FD0;
-            export const StatsService_001 = 0x91BC80;
-            export const VProfService_001 = 0x6233F0;
-            export const GameUIService_001 = 0x8DBC40;
-            export const RenderService_001 = 0x91B680;
-            export const MapListService_001 = 0x91AD90;
-            export const NetworkService_001 = 0x622F90;
-            export const BenchmarkService001 = 0x622C80;
-            export const EngineServiceMgr001 = 0x91C700;
-            export const ScreenshotService001 = 0x91B940;
-            export const NetworkP2PService_001 = 0x91B260;
-            export const SplitScreenService_001 = 0x6232B0;
-            export const NetworkClientService_001 = 0x91AF20;
-            export const NetworkServerService_001 = 0x91B410;
-            export const Source2EngineToClient001 = 0x61FFF0;
-            export const Source2EngineToServer001 = 0x6200C8;
-            export const GameEventSystemClientV001 = 0x91C9E0;
-            export const GameEventSystemServerV001 = 0x91CB10;
-            export const SimpleEngineLoopService_001 = 0x623650;
-            export const GameResourceServiceClientV001 = 0x622DC0;
-            export const GameResourceServiceServerV001 = 0x622E20;
-            export const VENGINE_GAMEUIFUNCS_VERSION005 = 0x620770;
-            export const ClientServerEngineLoopService_001 = 0x91CE30;
-            export const ClientServerSharedHandleSystem001 = 0x91C440;
-            export const Source2EngineToClientStringTable001 = 0x620050;
-            export const Source2EngineToServerStringTable001 = 0x6200F0;
+            export const BugService001 = 0x9790F0;
+            export const EngineGameUI001 = 0x6BD720;
+            export const HostStateMgr001 = 0x6C02A0;
+            export const INETSUPPORT_001 = 0x6B8C70;
+            export const ToolService_001 = 0x6C0110;
+            export const BugBugService001 = 0x6BFDC0;
+            export const InputService_001 = 0x979820;
+            export const KeyValueCache001 = 0x6C0350;
+            export const SoundService_001 = 0x9B93F0;
+            export const StatsService_001 = 0x9B9930;
+            export const VProfService_001 = 0x6C0150;
+            export const GameUIService_001 = 0x979540;
+            export const RenderService_001 = 0x9B8F80;
+            export const MapListService_001 = 0x9B8690;
+            export const NetworkService_001 = 0x6BFFD0;
+            export const BenchmarkService001 = 0x6BFCC0;
+            export const EngineServiceMgr001 = 0x9BA3B0;
+            export const ScreenshotService001 = 0x9B9240;
+            export const NetworkP2PService_001 = 0x9B8B60;
+            export const SplitScreenService_001 = 0x6C0010;
+            export const NetworkClientService_001 = 0x9B8820;
+            export const NetworkServerService_001 = 0x9B8D10;
+            export const Source2EngineToClient001 = 0x6BD030;
+            export const Source2EngineToServer001 = 0x6BD108;
+            export const GameEventSystemClientV001 = 0x9BA690;
+            export const GameEventSystemServerV001 = 0x9BA7C0;
+            export const SimpleEngineLoopService_001 = 0x6C03B0;
+            export const GameResourceServiceClientV001 = 0x6BFE00;
+            export const GameResourceServiceServerV001 = 0x6BFE60;
+            export const VENGINE_GAMEUIFUNCS_VERSION005 = 0x6BD7B0;
+            export const ClientServerEngineLoopService_001 = 0x9BAAE0;
+            export const ClientServerSharedHandleSystem001 = 0x9BA0F0;
+            export const Source2EngineToClientStringTable001 = 0x6BD090;
+            export const Source2EngineToServerStringTable001 = 0x6BD130;
         }
         export namespace vscript_dll {
             export const VScriptManager010 = 0x13E430;
@@ -91,7 +91,7 @@ export namespace cs2_dumper {
             export const NavSystem001 = 0x12C000;
         }
         export namespace particles_dll {
-            export const ParticleSystemMgr003 = 0x65AEB0;
+            export const ParticleSystemMgr003 = 0x65ADD0;
         }
         export namespace vphysics2_dll {
             export const VPhysics2_Interface_001 = 0x460E60;
@@ -114,16 +114,16 @@ export namespace cs2_dumper {
             export const MATCHFRAMEWORK_001 = 0x1B90A0;
         }
         export namespace scenesystem_dll {
-            export const SceneUtils_001 = 0x676760;
+            export const SceneUtils_001 = 0x676750;
             export const SceneSystem_002 = 0x91FB20;
-            export const RenderingPipelines_001 = 0x675A00;
+            export const RenderingPipelines_001 = 0x6759F0;
         }
         export namespace soundsystem_dll {
-            export const SoundSystem001 = 0x535350;
-            export const VMixEditTool001 = 0x5943D7F;
-            export const SoundOpSystem001 = 0x535A90;
-            export const SoundOpSystemEdit001 = 0x5359A0;
-            export const SoundBugBugService001_Client = 0x535BB0;
+            export const SoundSystem001 = 0x532460;
+            export const VMixEditTool001 = 0x5941BFF;
+            export const SoundOpSystem001 = 0x532B60;
+            export const SoundOpSystemEdit001 = 0x532A70;
+            export const SoundBugBugService001_Client = 0x532C80;
         }
         export namespace pulse_system_dll {
             export const IPulseSystem_001 = 0x238120;
@@ -138,10 +138,10 @@ export namespace cs2_dumper {
             export const FlattenedSerializersVersion001 = 0x277A50;
         }
         export namespace worldrenderer_dll {
-            export const WorldRendererMgr001 = 0x236D00;
+            export const WorldRendererMgr001 = 0x236D40;
         }
         export namespace resourcesystem_dll {
-            export const ResourceSystem013 = 0x892B0;
+            export const ResourceSystem013 = 0x89230;
         }
         export namespace scenefilecache_dll {
             export const SceneFileCache002 = 0x11D478;

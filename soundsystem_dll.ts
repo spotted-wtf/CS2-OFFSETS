@@ -29,6 +29,7 @@ export namespace cs2_dumper {
                 export const m_name = 0x0;
                 export const m_SendNames = 0x8;
                 export const m_nChannels = 0x30;
+                export const m_nUpMixRule = 0x37;
                 export const m_nMixDownRule = 0x36;
                 export const m_nSendOperator = 0x34;
                 export const m_nSoloNameHash = 0x2C;
@@ -250,7 +251,7 @@ export namespace cs2_dumper {
                 export const m_offset = 0x0;
             }
             export namespace CVoiceContainerSet {
-                export const m_soundsToPlay = 0x70;
+                export const m_soundsToPlay = 0x78;
             }
             export namespace ISndSeqInstruments {
 
@@ -322,13 +323,15 @@ export namespace cs2_dumper {
                 export const m_offset = 0x0;
             }
             export namespace CVoiceContainerBase {
-                export const m_vSound = 0x28;
-                export const m_pEnvelopeAnalyzer = 0x68;
+                export const m_vSound = 0x30;
+                export const m_nResourceName = 0x14;
+                export const m_bRegisteredVMix = 0x10;
+                export const m_pEnvelopeAnalyzer = 0x70;
             }
             export namespace CVoiceContainerEnum {
-                export const m_iSelection = 0xA8;
-                export const m_soundsToPlay = 0x70;
-                export const m_flCrossfadeTime = 0xAC;
+                export const m_iSelection = 0xB0;
+                export const m_soundsToPlay = 0x78;
+                export const m_flCrossfadeTime = 0xB4;
             }
             export namespace CVoiceContainerNull {
 
@@ -415,7 +418,7 @@ export namespace cs2_dumper {
                 export const m_paramFrequency = 0x34;
             }
             export namespace CVoiceContainerSwitch {
-                export const m_soundsToPlay = 0x70;
+                export const m_soundsToPlay = 0x78;
             }
             export namespace VMixConvolutionDesc_t {
                 export const m_fldbLow = 0xC;
@@ -461,15 +464,15 @@ export namespace cs2_dumper {
                 export const m_bDebugBypass = 0x1C;
             }
             export namespace CVoiceContainerBlender {
-                export const m_firstSound = 0x70;
-                export const m_secondSound = 0x90;
-                export const m_flBlendFactor = 0xB0;
+                export const m_firstSound = 0x78;
+                export const m_secondSound = 0x98;
+                export const m_flBlendFactor = 0xB8;
             }
             export namespace CVoiceContainerDefault {
 
             }
             export namespace CVoiceContainerVMixSnd {
-
+                export const m_resourceName = 0x188;
             }
             export namespace SelectedEditItemInfo_t {
                 export const m_EditItems = 0x0;
@@ -487,9 +490,9 @@ export namespace cs2_dumper {
                 export const m_paramCutoffFrequency = 0x50;
             }
             export namespace CVoiceContainerSelector {
-                export const m_mode = 0x70;
-                export const m_soundsToPlay = 0x78;
-                export const m_fProbabilityWeights = 0xB0;
+                export const m_mode = 0x78;
+                export const m_soundsToPlay = 0x80;
+                export const m_fProbabilityWeights = 0xB8;
             }
             export namespace VMixDynamics3BandDesc_t {
                 export const m_flDepth = 0xC;
@@ -533,14 +536,14 @@ export namespace cs2_dumper {
 
             }
             export namespace CVoiceContainerLoopXFade {
-                export const m_sound = 0x70;
-                export const m_flFadeIn = 0x9C;
-                export const m_bEqualPow = 0xA2;
-                export const m_bPlayHead = 0xA0;
-                export const m_bPlayTail = 0xA1;
-                export const m_flFadeOut = 0x98;
-                export const m_flLoopEnd = 0x90;
-                export const m_flLoopStart = 0x94;
+                export const m_sound = 0x78;
+                export const m_flFadeIn = 0xA4;
+                export const m_bEqualPow = 0xAA;
+                export const m_bPlayHead = 0xA8;
+                export const m_bPlayTail = 0xA9;
+                export const m_flFadeOut = 0xA0;
+                export const m_flLoopEnd = 0x98;
+                export const m_flLoopStart = 0x9C;
             }
             export namespace VMixDualCompressorDesc_t {
                 export const m_bandDesc = 0x10;
@@ -612,24 +615,24 @@ export namespace cs2_dumper {
                 export const m_paramBandwidth = 0x50;
             }
             export namespace CVoiceContainerGranulator {
-                export const m_sourceAudio = 0x98;
-                export const m_flGrainLength = 0x80;
-                export const m_flStartJitter = 0x88;
-                export const m_flPlaybackJitter = 0x8C;
-                export const m_bShouldWraparound = 0x90;
-                export const m_flMaxSourceLength = 0xA4;
-                export const m_flGrainCrossfadeAmount = 0x84;
-                export const m_bDoubleBufferSourceAudio = 0xA0;
+                export const m_sourceAudio = 0xA0;
+                export const m_flGrainLength = 0x88;
+                export const m_flStartJitter = 0x90;
+                export const m_flPlaybackJitter = 0x94;
+                export const m_bShouldWraparound = 0x98;
+                export const m_flMaxSourceLength = 0xAC;
+                export const m_flGrainCrossfadeAmount = 0x8C;
+                export const m_bDoubleBufferSourceAudio = 0xA8;
             }
             export namespace CVoiceContainerSetElement {
                 export const m_sound = 0x0;
                 export const m_flVolumeDB = 0x20;
             }
             export namespace CVoiceContainerTapePlayer {
-                export const m_sourceAudio = 0x88;
-                export const m_bShouldWraparound = 0x80;
-                export const m_flTapeSpeedAttackTime = 0x90;
-                export const m_flTapeSpeedReleaseTime = 0x94;
+                export const m_sourceAudio = 0x90;
+                export const m_bShouldWraparound = 0x88;
+                export const m_flTapeSpeedAttackTime = 0x98;
+                export const m_flTapeSpeedReleaseTime = 0x9C;
             }
             export namespace SndBeatEventKeyedFloats_t {
                 export const m_flFloat = 0x10;
@@ -673,41 +676,41 @@ export namespace cs2_dumper {
                 export const m_paramCutoffFrequency = 0x58;
             }
             export namespace CVoiceContainerLoopTrigger {
-                export const m_sound = 0x80;
-                export const m_bCrossFade = 0x7C;
-                export const m_flFadeTime = 0x78;
-                export const m_flRetriggerTimeMax = 0x74;
-                export const m_flRetriggerTimeMin = 0x70;
+                export const m_sound = 0x88;
+                export const m_bCrossFade = 0x84;
+                export const m_flFadeTime = 0x80;
+                export const m_flRetriggerTimeMax = 0x7C;
+                export const m_flRetriggerTimeMin = 0x78;
             }
             export namespace CVoiceContainerShapedNoise {
-                export const m_gainSweep = 0x108;
-                export const m_flFrequency = 0x74;
-                export const m_flResonance = 0xBC;
-                export const m_frequencySweep = 0x78;
-                export const m_resonanceSweep = 0xC0;
-                export const m_flGainInDecibels = 0x104;
-                export const m_bUseCurveForAmplitude = 0x100;
-                export const m_bUseCurveForFrequency = 0x70;
-                export const m_bUseCurveForResonance = 0xB8;
+                export const m_gainSweep = 0x110;
+                export const m_flFrequency = 0x7C;
+                export const m_flResonance = 0xC4;
+                export const m_frequencySweep = 0x80;
+                export const m_resonanceSweep = 0xC8;
+                export const m_flGainInDecibels = 0x10C;
+                export const m_bUseCurveForAmplitude = 0x108;
+                export const m_bUseCurveForFrequency = 0x78;
+                export const m_bUseCurveForResonance = 0xC0;
             }
             export namespace CVoiceContainerVsndTrigger {
-                export const m_slot1 = 0x78;
-                export const m_slot2 = 0x100;
-                export const m_slot3 = 0x188;
-                export const m_slot4 = 0x210;
-                export const m_slot5 = 0x298;
-                export const m_slot6 = 0x320;
-                export const m_slot7 = 0x3A8;
-                export const m_slot8 = 0x430;
-                export const m_slot9 = 0x4B8;
-                export const m_slot10 = 0x540;
-                export const m_slot11 = 0x5C8;
-                export const m_slot12 = 0x650;
-                export const m_slot13 = 0x6D8;
-                export const m_slot14 = 0x760;
-                export const m_slot15 = 0x7E8;
-                export const m_slot16 = 0x870;
-                export const m_namespace = 0x70;
+                export const m_slot1 = 0x80;
+                export const m_slot2 = 0x108;
+                export const m_slot3 = 0x190;
+                export const m_slot4 = 0x218;
+                export const m_slot5 = 0x2A0;
+                export const m_slot6 = 0x328;
+                export const m_slot7 = 0x3B0;
+                export const m_slot8 = 0x438;
+                export const m_slot9 = 0x4C0;
+                export const m_slot10 = 0x548;
+                export const m_slot11 = 0x5D0;
+                export const m_slot12 = 0x658;
+                export const m_slot13 = 0x6E0;
+                export const m_slot14 = 0x768;
+                export const m_slot15 = 0x7F0;
+                export const m_slot16 = 0x878;
+                export const m_namespace = 0x78;
             }
             export namespace SndBeatEventKeyedSndEvts_t {
                 export const m_strSoundEventName = 0x10;
@@ -720,9 +723,9 @@ export namespace cs2_dumper {
                 export const m_curve = 0x8;
             }
             export namespace CVoiceContainerMultiBlender {
-                export const m_flCrossover = 0xAC;
-                export const m_soundsToPlay = 0x70;
-                export const m_flBlendFactor = 0xA8;
+                export const m_flCrossover = 0xB4;
+                export const m_soundsToPlay = 0x78;
+                export const m_flBlendFactor = 0xB0;
             }
             export namespace CVMixAutoFilterProcessorDesc {
                 export const m_desc = 0x28;
@@ -732,12 +735,12 @@ export namespace cs2_dumper {
                 export const m_paramPitchScale = 0x38;
             }
             export namespace CVoiceContainerRandomSampler {
-                export const m_flAmplitude = 0x80;
-                export const m_flMaxLength = 0x8C;
-                export const m_flTimeJitter = 0x88;
-                export const m_grainResources = 0x98;
-                export const m_flAmplitudeJitter = 0x84;
-                export const m_nNumDelayVariations = 0x90;
+                export const m_flAmplitude = 0x88;
+                export const m_flMaxLength = 0x94;
+                export const m_flTimeJitter = 0x90;
+                export const m_grainResources = 0xA0;
+                export const m_flAmplitudeJitter = 0x8C;
+                export const m_nNumDelayVariations = 0x98;
             }
             export namespace SndBeatEventKeyedMidiNotes_t {
                 export const m_nNote = 0x11;
@@ -792,23 +795,23 @@ export namespace cs2_dumper {
                 export const m_flMaxDuration = 0x8;
             }
             export namespace CVoiceContainerVsndRadioButton {
-                export const m_slot1 = 0x78;
-                export const m_slot2 = 0x100;
-                export const m_slot3 = 0x188;
-                export const m_slot4 = 0x210;
-                export const m_slot5 = 0x298;
-                export const m_slot6 = 0x320;
-                export const m_slot7 = 0x3A8;
-                export const m_slot8 = 0x430;
-                export const m_slot9 = 0x4B8;
-                export const m_slot10 = 0x540;
-                export const m_slot11 = 0x5C8;
-                export const m_slot12 = 0x650;
-                export const m_slot13 = 0x6D8;
-                export const m_slot14 = 0x760;
-                export const m_slot15 = 0x7E8;
-                export const m_slot16 = 0x870;
-                export const m_namespace = 0x70;
+                export const m_slot1 = 0x80;
+                export const m_slot2 = 0x108;
+                export const m_slot3 = 0x190;
+                export const m_slot4 = 0x218;
+                export const m_slot5 = 0x2A0;
+                export const m_slot6 = 0x328;
+                export const m_slot7 = 0x3B0;
+                export const m_slot8 = 0x438;
+                export const m_slot9 = 0x4C0;
+                export const m_slot10 = 0x548;
+                export const m_slot11 = 0x5D0;
+                export const m_slot12 = 0x658;
+                export const m_slot13 = 0x6E0;
+                export const m_slot14 = 0x768;
+                export const m_slot15 = 0x7F0;
+                export const m_slot16 = 0x878;
+                export const m_namespace = 0x78;
             }
             export namespace CDSPPresetMixgroupModifierTable {
                 export const m_table = 0x0;
@@ -817,8 +820,8 @@ export namespace cs2_dumper {
                 export const m_desc = 0x28;
             }
             export namespace CVoiceContainerDecayingSineWave {
-                export const m_flDecayTime = 0x74;
-                export const m_flFrequency = 0x70;
+                export const m_flDecayTime = 0x7C;
+                export const m_flFrequency = 0x78;
             }
             export namespace CVoiceContainerEnvelopeAnalyzer {
                 export const m_mode = 0x48;
@@ -826,14 +829,14 @@ export namespace cs2_dumper {
                 export const m_fAnalysisWindowMs = 0x4C;
             }
             export namespace CVoiceContainerParameterBlender {
-                export const m_curve1 = 0xB8;
-                export const m_curve2 = 0xF8;
-                export const m_curve3 = 0x140;
-                export const m_curve4 = 0x180;
-                export const m_firstSound = 0x70;
-                export const m_secondSound = 0x90;
-                export const m_bEnableDistanceBlend = 0x138;
-                export const m_bEnableOcclusionBlend = 0xB0;
+                export const m_curve1 = 0xC0;
+                export const m_curve2 = 0x100;
+                export const m_curve3 = 0x148;
+                export const m_curve4 = 0x188;
+                export const m_firstSound = 0x78;
+                export const m_secondSound = 0x98;
+                export const m_bEnableDistanceBlend = 0x140;
+                export const m_bEnableOcclusionBlend = 0xB8;
             }
             export namespace CVMixDualCompressorProcessorDesc {
                 export const m_desc = 0x28;
@@ -858,9 +861,9 @@ export namespace cs2_dumper {
                 export const m_paramSelectionIndex = 0x64;
             }
             export namespace CVoiceContainerRealtimeFMSineWave {
-                export const m_flModulatorAmount = 0x78;
-                export const m_flCarrierFrequency = 0x70;
-                export const m_flModulatorFrequency = 0x74;
+                export const m_flModulatorAmount = 0x80;
+                export const m_flCarrierFrequency = 0x78;
+                export const m_flModulatorFrequency = 0x7C;
             }
             export namespace CVMixSteamAudioDirectProcessorDesc {
                 export const m_paramUpX = 0x40;
@@ -890,7 +893,7 @@ export namespace cs2_dumper {
                 export const m_paramApplyDistanceAttenuation = 0x58;
             }
             export namespace CVoiceContainerStaticAdditiveSynth {
-                export const m_tones = 0x80;
+                export const m_tones = 0x88;
             }
             export namespace CSosGroupActionTimeBlockLimitSchema {
                 export const m_nMaxCount = 0x8;
@@ -916,7 +919,7 @@ export namespace cs2_dumper {
                 export const m_outParamReduction = 0x58;
             }
             export namespace CVoiceContainerAmpedDecayingSineWave {
-                export const m_flGainAmount = 0x78;
+                export const m_flGainAmount = 0x80;
             }
             export namespace CSosGroupActionSoundeventClusterSchema {
                 export const m_nMinNearby = 0x8;
@@ -956,7 +959,7 @@ export namespace cs2_dumper {
                 export const m_bSyncInstances = 0x58;
             }
             export namespace CVoiceContainerLoopTriggerWithRandomPanner {
-                export const m_randomPannerControls = 0xA0;
+                export const m_randomPannerControls = 0xA8;
             }
             export namespace CSosGroupActionSetSoundeventParameterSchema {
                 export const m_nMaxCount = 0x8;
@@ -1073,6 +1076,10 @@ export namespace cs2_dumper {
                 export const PCM8 = 0x1;
                 export const ADPCM = 0x3;
                 export const PCM16 = 0x0;
+            }
+            export namespace VMixUpMixRule_t {
+                export const DIVIDE = 0x0;
+                export const BROADCAST = 0x1;
             }
             export namespace EVsndTriggerMode {
                 export const Gate = 0x1;

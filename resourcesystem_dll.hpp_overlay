@@ -159,9 +159,6 @@ namespace cs2_dumper {
             namespace InfoForResourceTypeCTestResourceData {
 
             }
-            namespace InfoForResourceTypeCVMixListResource {
-
-            }
             namespace InfoForResourceTypeIParticleSnapshot {
 
             }

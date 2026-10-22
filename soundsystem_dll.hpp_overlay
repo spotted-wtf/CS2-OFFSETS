@@ -31,6 +31,7 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_name = 0x0;
                 inline constexpr std::ptrdiff_t m_SendNames = 0x8;
                 inline constexpr std::ptrdiff_t m_nChannels = 0x30;
+                inline constexpr std::ptrdiff_t m_nUpMixRule = 0x37;
                 inline constexpr std::ptrdiff_t m_nMixDownRule = 0x36;
                 inline constexpr std::ptrdiff_t m_nSendOperator = 0x34;
                 inline constexpr std::ptrdiff_t m_nSoloNameHash = 0x2C;
@@ -252,7 +253,7 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_offset = 0x0;
             }
             namespace CVoiceContainerSet {
-                inline constexpr std::ptrdiff_t m_soundsToPlay = 0x70;
+                inline constexpr std::ptrdiff_t m_soundsToPlay = 0x78;
             }
             namespace ISndSeqInstruments {
 
@@ -324,13 +325,15 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_offset = 0x0;
             }
             namespace CVoiceContainerBase {
-                inline constexpr std::ptrdiff_t m_vSound = 0x28;
-                inline constexpr std::ptrdiff_t m_pEnvelopeAnalyzer = 0x68;
+                inline constexpr std::ptrdiff_t m_vSound = 0x30;
+                inline constexpr std::ptrdiff_t m_nResourceName = 0x14;
+                inline constexpr std::ptrdiff_t m_bRegisteredVMix = 0x10;
+                inline constexpr std::ptrdiff_t m_pEnvelopeAnalyzer = 0x70;
             }
             namespace CVoiceContainerEnum {
-                inline constexpr std::ptrdiff_t m_iSelection = 0xA8;
-                inline constexpr std::ptrdiff_t m_soundsToPlay = 0x70;
-                inline constexpr std::ptrdiff_t m_flCrossfadeTime = 0xAC;
+                inline constexpr std::ptrdiff_t m_iSelection = 0xB0;
+                inline constexpr std::ptrdiff_t m_soundsToPlay = 0x78;
+                inline constexpr std::ptrdiff_t m_flCrossfadeTime = 0xB4;
             }
             namespace CVoiceContainerNull {
 
@@ -417,7 +420,7 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_paramFrequency = 0x34;
             }
             namespace CVoiceContainerSwitch {
-                inline constexpr std::ptrdiff_t m_soundsToPlay = 0x70;
+                inline constexpr std::ptrdiff_t m_soundsToPlay = 0x78;
             }
             namespace VMixConvolutionDesc_t {
                 inline constexpr std::ptrdiff_t m_fldbLow = 0xC;
@@ -463,15 +466,15 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_bDebugBypass = 0x1C;
             }
             namespace CVoiceContainerBlender {
-                inline constexpr std::ptrdiff_t m_firstSound = 0x70;
-                inline constexpr std::ptrdiff_t m_secondSound = 0x90;
-                inline constexpr std::ptrdiff_t m_flBlendFactor = 0xB0;
+                inline constexpr std::ptrdiff_t m_firstSound = 0x78;
+                inline constexpr std::ptrdiff_t m_secondSound = 0x98;
+                inline constexpr std::ptrdiff_t m_flBlendFactor = 0xB8;
             }
             namespace CVoiceContainerDefault {
 
             }
             namespace CVoiceContainerVMixSnd {
-
+                inline constexpr std::ptrdiff_t m_resourceName = 0x188;
             }
             namespace SelectedEditItemInfo_t {
                 inline constexpr std::ptrdiff_t m_EditItems = 0x0;
@@ -489,9 +492,9 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_paramCutoffFrequency = 0x50;
             }
             namespace CVoiceContainerSelector {
-                inline constexpr std::ptrdiff_t m_mode = 0x70;
-                inline constexpr std::ptrdiff_t m_soundsToPlay = 0x78;
-                inline constexpr std::ptrdiff_t m_fProbabilityWeights = 0xB0;
+                inline constexpr std::ptrdiff_t m_mode = 0x78;
+                inline constexpr std::ptrdiff_t m_soundsToPlay = 0x80;
+                inline constexpr std::ptrdiff_t m_fProbabilityWeights = 0xB8;
             }
             namespace VMixDynamics3BandDesc_t {
                 inline constexpr std::ptrdiff_t m_flDepth = 0xC;
@@ -535,14 +538,14 @@ namespace cs2_dumper {
 
             }
             namespace CVoiceContainerLoopXFade {
-                inline constexpr std::ptrdiff_t m_sound = 0x70;
-                inline constexpr std::ptrdiff_t m_flFadeIn = 0x9C;
-                inline constexpr std::ptrdiff_t m_bEqualPow = 0xA2;
-                inline constexpr std::ptrdiff_t m_bPlayHead = 0xA0;
-                inline constexpr std::ptrdiff_t m_bPlayTail = 0xA1;
-                inline constexpr std::ptrdiff_t m_flFadeOut = 0x98;
-                inline constexpr std::ptrdiff_t m_flLoopEnd = 0x90;
-                inline constexpr std::ptrdiff_t m_flLoopStart = 0x94;
+                inline constexpr std::ptrdiff_t m_sound = 0x78;
+                inline constexpr std::ptrdiff_t m_flFadeIn = 0xA4;
+                inline constexpr std::ptrdiff_t m_bEqualPow = 0xAA;
+                inline constexpr std::ptrdiff_t m_bPlayHead = 0xA8;
+                inline constexpr std::ptrdiff_t m_bPlayTail = 0xA9;
+                inline constexpr std::ptrdiff_t m_flFadeOut = 0xA0;
+                inline constexpr std::ptrdiff_t m_flLoopEnd = 0x98;
+                inline constexpr std::ptrdiff_t m_flLoopStart = 0x9C;
             }
             namespace VMixDualCompressorDesc_t {
                 inline constexpr std::ptrdiff_t m_bandDesc = 0x10;
@@ -614,24 +617,24 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_paramBandwidth = 0x50;
             }
             namespace CVoiceContainerGranulator {
-                inline constexpr std::ptrdiff_t m_sourceAudio = 0x98;
-                inline constexpr std::ptrdiff_t m_flGrainLength = 0x80;
-                inline constexpr std::ptrdiff_t m_flStartJitter = 0x88;
-                inline constexpr std::ptrdiff_t m_flPlaybackJitter = 0x8C;
-                inline constexpr std::ptrdiff_t m_bShouldWraparound = 0x90;
-                inline constexpr std::ptrdiff_t m_flMaxSourceLength = 0xA4;
-                inline constexpr std::ptrdiff_t m_flGrainCrossfadeAmount = 0x84;
-                inline constexpr std::ptrdiff_t m_bDoubleBufferSourceAudio = 0xA0;
+                inline constexpr std::ptrdiff_t m_sourceAudio = 0xA0;
+                inline constexpr std::ptrdiff_t m_flGrainLength = 0x88;
+                inline constexpr std::ptrdiff_t m_flStartJitter = 0x90;
+                inline constexpr std::ptrdiff_t m_flPlaybackJitter = 0x94;
+                inline constexpr std::ptrdiff_t m_bShouldWraparound = 0x98;
+                inline constexpr std::ptrdiff_t m_flMaxSourceLength = 0xAC;
+                inline constexpr std::ptrdiff_t m_flGrainCrossfadeAmount = 0x8C;
+                inline constexpr std::ptrdiff_t m_bDoubleBufferSourceAudio = 0xA8;
             }
             namespace CVoiceContainerSetElement {
                 inline constexpr std::ptrdiff_t m_sound = 0x0;
                 inline constexpr std::ptrdiff_t m_flVolumeDB = 0x20;
             }
             namespace CVoiceContainerTapePlayer {
-                inline constexpr std::ptrdiff_t m_sourceAudio = 0x88;
-                inline constexpr std::ptrdiff_t m_bShouldWraparound = 0x80;
-                inline constexpr std::ptrdiff_t m_flTapeSpeedAttackTime = 0x90;
-                inline constexpr std::ptrdiff_t m_flTapeSpeedReleaseTime = 0x94;
+                inline constexpr std::ptrdiff_t m_sourceAudio = 0x90;
+                inline constexpr std::ptrdiff_t m_bShouldWraparound = 0x88;
+                inline constexpr std::ptrdiff_t m_flTapeSpeedAttackTime = 0x98;
+                inline constexpr std::ptrdiff_t m_flTapeSpeedReleaseTime = 0x9C;
             }
             namespace SndBeatEventKeyedFloats_t {
                 inline constexpr std::ptrdiff_t m_flFloat = 0x10;
@@ -675,41 +678,41 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_paramCutoffFrequency = 0x58;
             }
             namespace CVoiceContainerLoopTrigger {
-                inline constexpr std::ptrdiff_t m_sound = 0x80;
-                inline constexpr std::ptrdiff_t m_bCrossFade = 0x7C;
-                inline constexpr std::ptrdiff_t m_flFadeTime = 0x78;
-                inline constexpr std::ptrdiff_t m_flRetriggerTimeMax = 0x74;
-                inline constexpr std::ptrdiff_t m_flRetriggerTimeMin = 0x70;
+                inline constexpr std::ptrdiff_t m_sound = 0x88;
+                inline constexpr std::ptrdiff_t m_bCrossFade = 0x84;
+                inline constexpr std::ptrdiff_t m_flFadeTime = 0x80;
+                inline constexpr std::ptrdiff_t m_flRetriggerTimeMax = 0x7C;
+                inline constexpr std::ptrdiff_t m_flRetriggerTimeMin = 0x78;
             }
             namespace CVoiceContainerShapedNoise {
-                inline constexpr std::ptrdiff_t m_gainSweep = 0x108;
-                inline constexpr std::ptrdiff_t m_flFrequency = 0x74;
-                inline constexpr std::ptrdiff_t m_flResonance = 0xBC;
-                inline constexpr std::ptrdiff_t m_frequencySweep = 0x78;
-                inline constexpr std::ptrdiff_t m_resonanceSweep = 0xC0;
-                inline constexpr std::ptrdiff_t m_flGainInDecibels = 0x104;
-                inline constexpr std::ptrdiff_t m_bUseCurveForAmplitude = 0x100;
-                inline constexpr std::ptrdiff_t m_bUseCurveForFrequency = 0x70;
-                inline constexpr std::ptrdiff_t m_bUseCurveForResonance = 0xB8;
+                inline constexpr std::ptrdiff_t m_gainSweep = 0x110;
+                inline constexpr std::ptrdiff_t m_flFrequency = 0x7C;
+                inline constexpr std::ptrdiff_t m_flResonance = 0xC4;
+                inline constexpr std::ptrdiff_t m_frequencySweep = 0x80;
+                inline constexpr std::ptrdiff_t m_resonanceSweep = 0xC8;
+                inline constexpr std::ptrdiff_t m_flGainInDecibels = 0x10C;
+                inline constexpr std::ptrdiff_t m_bUseCurveForAmplitude = 0x108;
+                inline constexpr std::ptrdiff_t m_bUseCurveForFrequency = 0x78;
+                inline constexpr std::ptrdiff_t m_bUseCurveForResonance = 0xC0;
             }
             namespace CVoiceContainerVsndTrigger {
-                inline constexpr std::ptrdiff_t m_slot1 = 0x78;
-                inline constexpr std::ptrdiff_t m_slot2 = 0x100;
-                inline constexpr std::ptrdiff_t m_slot3 = 0x188;
-                inline constexpr std::ptrdiff_t m_slot4 = 0x210;
-                inline constexpr std::ptrdiff_t m_slot5 = 0x298;
-                inline constexpr std::ptrdiff_t m_slot6 = 0x320;
-                inline constexpr std::ptrdiff_t m_slot7 = 0x3A8;
-                inline constexpr std::ptrdiff_t m_slot8 = 0x430;
-                inline constexpr std::ptrdiff_t m_slot9 = 0x4B8;
-                inline constexpr std::ptrdiff_t m_slot10 = 0x540;
-                inline constexpr std::ptrdiff_t m_slot11 = 0x5C8;
-                inline constexpr std::ptrdiff_t m_slot12 = 0x650;
-                inline constexpr std::ptrdiff_t m_slot13 = 0x6D8;
-                inline constexpr std::ptrdiff_t m_slot14 = 0x760;
-                inline constexpr std::ptrdiff_t m_slot15 = 0x7E8;
-                inline constexpr std::ptrdiff_t m_slot16 = 0x870;
-                inline constexpr std::ptrdiff_t m_namespace = 0x70;
+                inline constexpr std::ptrdiff_t m_slot1 = 0x80;
+                inline constexpr std::ptrdiff_t m_slot2 = 0x108;
+                inline constexpr std::ptrdiff_t m_slot3 = 0x190;
+                inline constexpr std::ptrdiff_t m_slot4 = 0x218;
+                inline constexpr std::ptrdiff_t m_slot5 = 0x2A0;
+                inline constexpr std::ptrdiff_t m_slot6 = 0x328;
+                inline constexpr std::ptrdiff_t m_slot7 = 0x3B0;
+                inline constexpr std::ptrdiff_t m_slot8 = 0x438;
+                inline constexpr std::ptrdiff_t m_slot9 = 0x4C0;
+                inline constexpr std::ptrdiff_t m_slot10 = 0x548;
+                inline constexpr std::ptrdiff_t m_slot11 = 0x5D0;
+                inline constexpr std::ptrdiff_t m_slot12 = 0x658;
+                inline constexpr std::ptrdiff_t m_slot13 = 0x6E0;
+                inline constexpr std::ptrdiff_t m_slot14 = 0x768;
+                inline constexpr std::ptrdiff_t m_slot15 = 0x7F0;
+                inline constexpr std::ptrdiff_t m_slot16 = 0x878;
+                inline constexpr std::ptrdiff_t m_namespace = 0x78;
             }
             namespace SndBeatEventKeyedSndEvts_t {
                 inline constexpr std::ptrdiff_t m_strSoundEventName = 0x10;
@@ -722,9 +725,9 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_curve = 0x8;
             }
             namespace CVoiceContainerMultiBlender {
-                inline constexpr std::ptrdiff_t m_flCrossover = 0xAC;
-                inline constexpr std::ptrdiff_t m_soundsToPlay = 0x70;
-                inline constexpr std::ptrdiff_t m_flBlendFactor = 0xA8;
+                inline constexpr std::ptrdiff_t m_flCrossover = 0xB4;
+                inline constexpr std::ptrdiff_t m_soundsToPlay = 0x78;
+                inline constexpr std::ptrdiff_t m_flBlendFactor = 0xB0;
             }
             namespace CVMixAutoFilterProcessorDesc {
                 inline constexpr std::ptrdiff_t m_desc = 0x28;
@@ -734,12 +737,12 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_paramPitchScale = 0x38;
             }
             namespace CVoiceContainerRandomSampler {
-                inline constexpr std::ptrdiff_t m_flAmplitude = 0x80;
-                inline constexpr std::ptrdiff_t m_flMaxLength = 0x8C;
-                inline constexpr std::ptrdiff_t m_flTimeJitter = 0x88;
-                inline constexpr std::ptrdiff_t m_grainResources = 0x98;
-                inline constexpr std::ptrdiff_t m_flAmplitudeJitter = 0x84;
-                inline constexpr std::ptrdiff_t m_nNumDelayVariations = 0x90;
+                inline constexpr std::ptrdiff_t m_flAmplitude = 0x88;
+                inline constexpr std::ptrdiff_t m_flMaxLength = 0x94;
+                inline constexpr std::ptrdiff_t m_flTimeJitter = 0x90;
+                inline constexpr std::ptrdiff_t m_grainResources = 0xA0;
+                inline constexpr std::ptrdiff_t m_flAmplitudeJitter = 0x8C;
+                inline constexpr std::ptrdiff_t m_nNumDelayVariations = 0x98;
             }
             namespace SndBeatEventKeyedMidiNotes_t {
                 inline constexpr std::ptrdiff_t m_nNote = 0x11;
@@ -794,23 +797,23 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_flMaxDuration = 0x8;
             }
             namespace CVoiceContainerVsndRadioButton {
-                inline constexpr std::ptrdiff_t m_slot1 = 0x78;
-                inline constexpr std::ptrdiff_t m_slot2 = 0x100;
-                inline constexpr std::ptrdiff_t m_slot3 = 0x188;
-                inline constexpr std::ptrdiff_t m_slot4 = 0x210;
-                inline constexpr std::ptrdiff_t m_slot5 = 0x298;
-                inline constexpr std::ptrdiff_t m_slot6 = 0x320;
-                inline constexpr std::ptrdiff_t m_slot7 = 0x3A8;
-                inline constexpr std::ptrdiff_t m_slot8 = 0x430;
-                inline constexpr std::ptrdiff_t m_slot9 = 0x4B8;
-                inline constexpr std::ptrdiff_t m_slot10 = 0x540;
-                inline constexpr std::ptrdiff_t m_slot11 = 0x5C8;
-                inline constexpr std::ptrdiff_t m_slot12 = 0x650;
-                inline constexpr std::ptrdiff_t m_slot13 = 0x6D8;
-                inline constexpr std::ptrdiff_t m_slot14 = 0x760;
-                inline constexpr std::ptrdiff_t m_slot15 = 0x7E8;
-                inline constexpr std::ptrdiff_t m_slot16 = 0x870;
-                inline constexpr std::ptrdiff_t m_namespace = 0x70;
+                inline constexpr std::ptrdiff_t m_slot1 = 0x80;
+                inline constexpr std::ptrdiff_t m_slot2 = 0x108;
+                inline constexpr std::ptrdiff_t m_slot3 = 0x190;
+                inline constexpr std::ptrdiff_t m_slot4 = 0x218;
+                inline constexpr std::ptrdiff_t m_slot5 = 0x2A0;
+                inline constexpr std::ptrdiff_t m_slot6 = 0x328;
+                inline constexpr std::ptrdiff_t m_slot7 = 0x3B0;
+                inline constexpr std::ptrdiff_t m_slot8 = 0x438;
+                inline constexpr std::ptrdiff_t m_slot9 = 0x4C0;
+                inline constexpr std::ptrdiff_t m_slot10 = 0x548;
+                inline constexpr std::ptrdiff_t m_slot11 = 0x5D0;
+                inline constexpr std::ptrdiff_t m_slot12 = 0x658;
+                inline constexpr std::ptrdiff_t m_slot13 = 0x6E0;
+                inline constexpr std::ptrdiff_t m_slot14 = 0x768;
+                inline constexpr std::ptrdiff_t m_slot15 = 0x7F0;
+                inline constexpr std::ptrdiff_t m_slot16 = 0x878;
+                inline constexpr std::ptrdiff_t m_namespace = 0x78;
             }
             namespace CDSPPresetMixgroupModifierTable {
                 inline constexpr std::ptrdiff_t m_table = 0x0;
@@ -819,8 +822,8 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_desc = 0x28;
             }
             namespace CVoiceContainerDecayingSineWave {
-                inline constexpr std::ptrdiff_t m_flDecayTime = 0x74;
-                inline constexpr std::ptrdiff_t m_flFrequency = 0x70;
+                inline constexpr std::ptrdiff_t m_flDecayTime = 0x7C;
+                inline constexpr std::ptrdiff_t m_flFrequency = 0x78;
             }
             namespace CVoiceContainerEnvelopeAnalyzer {
                 inline constexpr std::ptrdiff_t m_mode = 0x48;
@@ -828,14 +831,14 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_fAnalysisWindowMs = 0x4C;
             }
             namespace CVoiceContainerParameterBlender {
-                inline constexpr std::ptrdiff_t m_curve1 = 0xB8;
-                inline constexpr std::ptrdiff_t m_curve2 = 0xF8;
-                inline constexpr std::ptrdiff_t m_curve3 = 0x140;
-                inline constexpr std::ptrdiff_t m_curve4 = 0x180;
-                inline constexpr std::ptrdiff_t m_firstSound = 0x70;
-                inline constexpr std::ptrdiff_t m_secondSound = 0x90;
-                inline constexpr std::ptrdiff_t m_bEnableDistanceBlend = 0x138;
-                inline constexpr std::ptrdiff_t m_bEnableOcclusionBlend = 0xB0;
+                inline constexpr std::ptrdiff_t m_curve1 = 0xC0;
+                inline constexpr std::ptrdiff_t m_curve2 = 0x100;
+                inline constexpr std::ptrdiff_t m_curve3 = 0x148;
+                inline constexpr std::ptrdiff_t m_curve4 = 0x188;
+                inline constexpr std::ptrdiff_t m_firstSound = 0x78;
+                inline constexpr std::ptrdiff_t m_secondSound = 0x98;
+                inline constexpr std::ptrdiff_t m_bEnableDistanceBlend = 0x140;
+                inline constexpr std::ptrdiff_t m_bEnableOcclusionBlend = 0xB8;
             }
             namespace CVMixDualCompressorProcessorDesc {
                 inline constexpr std::ptrdiff_t m_desc = 0x28;
@@ -860,9 +863,9 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_paramSelectionIndex = 0x64;
             }
             namespace CVoiceContainerRealtimeFMSineWave {
-                inline constexpr std::ptrdiff_t m_flModulatorAmount = 0x78;
-                inline constexpr std::ptrdiff_t m_flCarrierFrequency = 0x70;
-                inline constexpr std::ptrdiff_t m_flModulatorFrequency = 0x74;
+                inline constexpr std::ptrdiff_t m_flModulatorAmount = 0x80;
+                inline constexpr std::ptrdiff_t m_flCarrierFrequency = 0x78;
+                inline constexpr std::ptrdiff_t m_flModulatorFrequency = 0x7C;
             }
             namespace CVMixSteamAudioDirectProcessorDesc {
                 inline constexpr std::ptrdiff_t m_paramUpX = 0x40;
@@ -892,7 +895,7 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_paramApplyDistanceAttenuation = 0x58;
             }
             namespace CVoiceContainerStaticAdditiveSynth {
-                inline constexpr std::ptrdiff_t m_tones = 0x80;
+                inline constexpr std::ptrdiff_t m_tones = 0x88;
             }
             namespace CSosGroupActionTimeBlockLimitSchema {
                 inline constexpr std::ptrdiff_t m_nMaxCount = 0x8;
@@ -918,7 +921,7 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_outParamReduction = 0x58;
             }
             namespace CVoiceContainerAmpedDecayingSineWave {
-                inline constexpr std::ptrdiff_t m_flGainAmount = 0x78;
+                inline constexpr std::ptrdiff_t m_flGainAmount = 0x80;
             }
             namespace CSosGroupActionSoundeventClusterSchema {
                 inline constexpr std::ptrdiff_t m_nMinNearby = 0x8;
@@ -958,7 +961,7 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_bSyncInstances = 0x58;
             }
             namespace CVoiceContainerLoopTriggerWithRandomPanner {
-                inline constexpr std::ptrdiff_t m_randomPannerControls = 0xA0;
+                inline constexpr std::ptrdiff_t m_randomPannerControls = 0xA8;
             }
             namespace CSosGroupActionSetSoundeventParameterSchema {
                 inline constexpr std::ptrdiff_t m_nMaxCount = 0x8;
@@ -1075,6 +1078,10 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t PCM8 = 0x1;
                 inline constexpr std::ptrdiff_t ADPCM = 0x3;
                 inline constexpr std::ptrdiff_t PCM16 = 0x0;
+            }
+            namespace VMixUpMixRule_t {
+                inline constexpr std::ptrdiff_t DIVIDE = 0x0;
+                inline constexpr std::ptrdiff_t BROADCAST = 0x1;
             }
             namespace EVsndTriggerMode {
                 inline constexpr std::ptrdiff_t Gate = 0x1;

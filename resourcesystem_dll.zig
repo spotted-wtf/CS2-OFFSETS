@@ -157,9 +157,6 @@ pub const cs2_dumper = struct {
             pub const InfoForResourceTypeCTestResourceData = struct {
 
             };
-            pub const InfoForResourceTypeCVMixListResource = struct {
-
-            };
             pub const InfoForResourceTypeIParticleSnapshot = struct {
 
             };

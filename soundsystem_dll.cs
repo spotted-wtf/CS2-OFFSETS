@@ -29,6 +29,7 @@ public static partial class cs2_dumper {
                 public const long m_name = 0x0;
                 public const long m_SendNames = 0x8;
                 public const long m_nChannels = 0x30;
+                public const long m_nUpMixRule = 0x37;
                 public const long m_nMixDownRule = 0x36;
                 public const long m_nSendOperator = 0x34;
                 public const long m_nSoloNameHash = 0x2C;
@@ -250,7 +251,7 @@ public static partial class cs2_dumper {
                 public const long m_offset = 0x0;
             }
             public static partial class CVoiceContainerSet {
-                public const long m_soundsToPlay = 0x70;
+                public const long m_soundsToPlay = 0x78;
             }
             public static partial class ISndSeqInstruments {
 
@@ -322,13 +323,15 @@ public static partial class cs2_dumper {
                 public const long m_offset = 0x0;
             }
             public static partial class CVoiceContainerBase {
-                public const long m_vSound = 0x28;
-                public const long m_pEnvelopeAnalyzer = 0x68;
+                public const long m_vSound = 0x30;
+                public const long m_nResourceName = 0x14;
+                public const long m_bRegisteredVMix = 0x10;
+                public const long m_pEnvelopeAnalyzer = 0x70;
             }
             public static partial class CVoiceContainerEnum {
-                public const long m_iSelection = 0xA8;
-                public const long m_soundsToPlay = 0x70;
-                public const long m_flCrossfadeTime = 0xAC;
+                public const long m_iSelection = 0xB0;
+                public const long m_soundsToPlay = 0x78;
+                public const long m_flCrossfadeTime = 0xB4;
             }
             public static partial class CVoiceContainerNull {
 
@@ -415,7 +418,7 @@ public static partial class cs2_dumper {
                 public const long m_paramFrequency = 0x34;
             }
             public static partial class CVoiceContainerSwitch {
-                public const long m_soundsToPlay = 0x70;
+                public const long m_soundsToPlay = 0x78;
             }
             public static partial class VMixConvolutionDesc_t {
                 public const long m_fldbLow = 0xC;
@@ -461,15 +464,15 @@ public static partial class cs2_dumper {
                 public const long m_bDebugBypass = 0x1C;
             }
             public static partial class CVoiceContainerBlender {
-                public const long m_firstSound = 0x70;
-                public const long m_secondSound = 0x90;
-                public const long m_flBlendFactor = 0xB0;
+                public const long m_firstSound = 0x78;
+                public const long m_secondSound = 0x98;
+                public const long m_flBlendFactor = 0xB8;
             }
             public static partial class CVoiceContainerDefault {
 
             }
             public static partial class CVoiceContainerVMixSnd {
-
+                public const long m_resourceName = 0x188;
             }
             public static partial class SelectedEditItemInfo_t {
                 public const long m_EditItems = 0x0;
@@ -487,9 +490,9 @@ public static partial class cs2_dumper {
                 public const long m_paramCutoffFrequency = 0x50;
             }
             public static partial class CVoiceContainerSelector {
-                public const long m_mode = 0x70;
-                public const long m_soundsToPlay = 0x78;
-                public const long m_fProbabilityWeights = 0xB0;
+                public const long m_mode = 0x78;
+                public const long m_soundsToPlay = 0x80;
+                public const long m_fProbabilityWeights = 0xB8;
             }
             public static partial class VMixDynamics3BandDesc_t {
                 public const long m_flDepth = 0xC;
@@ -533,14 +536,14 @@ public static partial class cs2_dumper {
 
             }
             public static partial class CVoiceContainerLoopXFade {
-                public const long m_sound = 0x70;
-                public const long m_flFadeIn = 0x9C;
-                public const long m_bEqualPow = 0xA2;
-                public const long m_bPlayHead = 0xA0;
-                public const long m_bPlayTail = 0xA1;
-                public const long m_flFadeOut = 0x98;
-                public const long m_flLoopEnd = 0x90;
-                public const long m_flLoopStart = 0x94;
+                public const long m_sound = 0x78;
+                public const long m_flFadeIn = 0xA4;
+                public const long m_bEqualPow = 0xAA;
+                public const long m_bPlayHead = 0xA8;
+                public const long m_bPlayTail = 0xA9;
+                public const long m_flFadeOut = 0xA0;
+                public const long m_flLoopEnd = 0x98;
+                public const long m_flLoopStart = 0x9C;
             }
             public static partial class VMixDualCompressorDesc_t {
                 public const long m_bandDesc = 0x10;
@@ -612,24 +615,24 @@ public static partial class cs2_dumper {
                 public const long m_paramBandwidth = 0x50;
             }
             public static partial class CVoiceContainerGranulator {
-                public const long m_sourceAudio = 0x98;
-                public const long m_flGrainLength = 0x80;
-                public const long m_flStartJitter = 0x88;
-                public const long m_flPlaybackJitter = 0x8C;
-                public const long m_bShouldWraparound = 0x90;
-                public const long m_flMaxSourceLength = 0xA4;
-                public const long m_flGrainCrossfadeAmount = 0x84;
-                public const long m_bDoubleBufferSourceAudio = 0xA0;
+                public const long m_sourceAudio = 0xA0;
+                public const long m_flGrainLength = 0x88;
+                public const long m_flStartJitter = 0x90;
+                public const long m_flPlaybackJitter = 0x94;
+                public const long m_bShouldWraparound = 0x98;
+                public const long m_flMaxSourceLength = 0xAC;
+                public const long m_flGrainCrossfadeAmount = 0x8C;
+                public const long m_bDoubleBufferSourceAudio = 0xA8;
             }
             public static partial class CVoiceContainerSetElement {
                 public const long m_sound = 0x0;
                 public const long m_flVolumeDB = 0x20;
             }
             public static partial class CVoiceContainerTapePlayer {
-                public const long m_sourceAudio = 0x88;
-                public const long m_bShouldWraparound = 0x80;
-                public const long m_flTapeSpeedAttackTime = 0x90;
-                public const long m_flTapeSpeedReleaseTime = 0x94;
+                public const long m_sourceAudio = 0x90;
+                public const long m_bShouldWraparound = 0x88;
+                public const long m_flTapeSpeedAttackTime = 0x98;
+                public const long m_flTapeSpeedReleaseTime = 0x9C;
             }
             public static partial class SndBeatEventKeyedFloats_t {
                 public const long m_flFloat = 0x10;
@@ -673,41 +676,41 @@ public static partial class cs2_dumper {
                 public const long m_paramCutoffFrequency = 0x58;
             }
             public static partial class CVoiceContainerLoopTrigger {
-                public const long m_sound = 0x80;
-                public const long m_bCrossFade = 0x7C;
-                public const long m_flFadeTime = 0x78;
-                public const long m_flRetriggerTimeMax = 0x74;
-                public const long m_flRetriggerTimeMin = 0x70;
+                public const long m_sound = 0x88;
+                public const long m_bCrossFade = 0x84;
+                public const long m_flFadeTime = 0x80;
+                public const long m_flRetriggerTimeMax = 0x7C;
+                public const long m_flRetriggerTimeMin = 0x78;
             }
             public static partial class CVoiceContainerShapedNoise {
-                public const long m_gainSweep = 0x108;
-                public const long m_flFrequency = 0x74;
-                public const long m_flResonance = 0xBC;
-                public const long m_frequencySweep = 0x78;
-                public const long m_resonanceSweep = 0xC0;
-                public const long m_flGainInDecibels = 0x104;
-                public const long m_bUseCurveForAmplitude = 0x100;
-                public const long m_bUseCurveForFrequency = 0x70;
-                public const long m_bUseCurveForResonance = 0xB8;
+                public const long m_gainSweep = 0x110;
+                public const long m_flFrequency = 0x7C;
+                public const long m_flResonance = 0xC4;
+                public const long m_frequencySweep = 0x80;
+                public const long m_resonanceSweep = 0xC8;
+                public const long m_flGainInDecibels = 0x10C;
+                public const long m_bUseCurveForAmplitude = 0x108;
+                public const long m_bUseCurveForFrequency = 0x78;
+                public const long m_bUseCurveForResonance = 0xC0;
             }
             public static partial class CVoiceContainerVsndTrigger {
-                public const long m_slot1 = 0x78;
-                public const long m_slot2 = 0x100;
-                public const long m_slot3 = 0x188;
-                public const long m_slot4 = 0x210;
-                public const long m_slot5 = 0x298;
-                public const long m_slot6 = 0x320;
-                public const long m_slot7 = 0x3A8;
-                public const long m_slot8 = 0x430;
-                public const long m_slot9 = 0x4B8;
-                public const long m_slot10 = 0x540;
-                public const long m_slot11 = 0x5C8;
-                public const long m_slot12 = 0x650;
-                public const long m_slot13 = 0x6D8;
-                public const long m_slot14 = 0x760;
-                public const long m_slot15 = 0x7E8;
-                public const long m_slot16 = 0x870;
-                public const long m_namespace = 0x70;
+                public const long m_slot1 = 0x80;
+                public const long m_slot2 = 0x108;
+                public const long m_slot3 = 0x190;
+                public const long m_slot4 = 0x218;
+                public const long m_slot5 = 0x2A0;
+                public const long m_slot6 = 0x328;
+                public const long m_slot7 = 0x3B0;
+                public const long m_slot8 = 0x438;
+                public const long m_slot9 = 0x4C0;
+                public const long m_slot10 = 0x548;
+                public const long m_slot11 = 0x5D0;
+                public const long m_slot12 = 0x658;
+                public const long m_slot13 = 0x6E0;
+                public const long m_slot14 = 0x768;
+                public const long m_slot15 = 0x7F0;
+                public const long m_slot16 = 0x878;
+                public const long m_namespace = 0x78;
             }
             public static partial class SndBeatEventKeyedSndEvts_t {
                 public const long m_strSoundEventName = 0x10;
@@ -720,9 +723,9 @@ public static partial class cs2_dumper {
                 public const long m_curve = 0x8;
             }
             public static partial class CVoiceContainerMultiBlender {
-                public const long m_flCrossover = 0xAC;
-                public const long m_soundsToPlay = 0x70;
-                public const long m_flBlendFactor = 0xA8;
+                public const long m_flCrossover = 0xB4;
+                public const long m_soundsToPlay = 0x78;
+                public const long m_flBlendFactor = 0xB0;
             }
             public static partial class CVMixAutoFilterProcessorDesc {
                 public const long m_desc = 0x28;
@@ -732,12 +735,12 @@ public static partial class cs2_dumper {
                 public const long m_paramPitchScale = 0x38;
             }
             public static partial class CVoiceContainerRandomSampler {
-                public const long m_flAmplitude = 0x80;
-                public const long m_flMaxLength = 0x8C;
-                public const long m_flTimeJitter = 0x88;
-                public const long m_grainResources = 0x98;
-                public const long m_flAmplitudeJitter = 0x84;
-                public const long m_nNumDelayVariations = 0x90;
+                public const long m_flAmplitude = 0x88;
+                public const long m_flMaxLength = 0x94;
+                public const long m_flTimeJitter = 0x90;
+                public const long m_grainResources = 0xA0;
+                public const long m_flAmplitudeJitter = 0x8C;
+                public const long m_nNumDelayVariations = 0x98;
             }
             public static partial class SndBeatEventKeyedMidiNotes_t {
                 public const long m_nNote = 0x11;
@@ -792,23 +795,23 @@ public static partial class cs2_dumper {
                 public const long m_flMaxDuration = 0x8;
             }
             public static partial class CVoiceContainerVsndRadioButton {
-                public const long m_slot1 = 0x78;
-                public const long m_slot2 = 0x100;
-                public const long m_slot3 = 0x188;
-                public const long m_slot4 = 0x210;
-                public const long m_slot5 = 0x298;
-                public const long m_slot6 = 0x320;
-                public const long m_slot7 = 0x3A8;
-                public const long m_slot8 = 0x430;
-                public const long m_slot9 = 0x4B8;
-                public const long m_slot10 = 0x540;
-                public const long m_slot11 = 0x5C8;
-                public const long m_slot12 = 0x650;
-                public const long m_slot13 = 0x6D8;
-                public const long m_slot14 = 0x760;
-                public const long m_slot15 = 0x7E8;
-                public const long m_slot16 = 0x870;
-                public const long m_namespace = 0x70;
+                public const long m_slot1 = 0x80;
+                public const long m_slot2 = 0x108;
+                public const long m_slot3 = 0x190;
+                public const long m_slot4 = 0x218;
+                public const long m_slot5 = 0x2A0;
+                public const long m_slot6 = 0x328;
+                public const long m_slot7 = 0x3B0;
+                public const long m_slot8 = 0x438;
+                public const long m_slot9 = 0x4C0;
+                public const long m_slot10 = 0x548;
+                public const long m_slot11 = 0x5D0;
+                public const long m_slot12 = 0x658;
+                public const long m_slot13 = 0x6E0;
+                public const long m_slot14 = 0x768;
+                public const long m_slot15 = 0x7F0;
+                public const long m_slot16 = 0x878;
+                public const long m_namespace = 0x78;
             }
             public static partial class CDSPPresetMixgroupModifierTable {
                 public const long m_table = 0x0;
@@ -817,8 +820,8 @@ public static partial class cs2_dumper {
                 public const long m_desc = 0x28;
             }
             public static partial class CVoiceContainerDecayingSineWave {
-                public const long m_flDecayTime = 0x74;
-                public const long m_flFrequency = 0x70;
+                public const long m_flDecayTime = 0x7C;
+                public const long m_flFrequency = 0x78;
             }
             public static partial class CVoiceContainerEnvelopeAnalyzer {
                 public const long m_mode = 0x48;
@@ -826,14 +829,14 @@ public static partial class cs2_dumper {
                 public const long m_fAnalysisWindowMs = 0x4C;
             }
             public static partial class CVoiceContainerParameterBlender {
-                public const long m_curve1 = 0xB8;
-                public const long m_curve2 = 0xF8;
-                public const long m_curve3 = 0x140;
-                public const long m_curve4 = 0x180;
-                public const long m_firstSound = 0x70;
-                public const long m_secondSound = 0x90;
-                public const long m_bEnableDistanceBlend = 0x138;
-                public const long m_bEnableOcclusionBlend = 0xB0;
+                public const long m_curve1 = 0xC0;
+                public const long m_curve2 = 0x100;
+                public const long m_curve3 = 0x148;
+                public const long m_curve4 = 0x188;
+                public const long m_firstSound = 0x78;
+                public const long m_secondSound = 0x98;
+                public const long m_bEnableDistanceBlend = 0x140;
+                public const long m_bEnableOcclusionBlend = 0xB8;
             }
             public static partial class CVMixDualCompressorProcessorDesc {
                 public const long m_desc = 0x28;
@@ -858,9 +861,9 @@ public static partial class cs2_dumper {
                 public const long m_paramSelectionIndex = 0x64;
             }
             public static partial class CVoiceContainerRealtimeFMSineWave {
-                public const long m_flModulatorAmount = 0x78;
-                public const long m_flCarrierFrequency = 0x70;
-                public const long m_flModulatorFrequency = 0x74;
+                public const long m_flModulatorAmount = 0x80;
+                public const long m_flCarrierFrequency = 0x78;
+                public const long m_flModulatorFrequency = 0x7C;
             }
             public static partial class CVMixSteamAudioDirectProcessorDesc {
                 public const long m_paramUpX = 0x40;
@@ -890,7 +893,7 @@ public static partial class cs2_dumper {
                 public const long m_paramApplyDistanceAttenuation = 0x58;
             }
             public static partial class CVoiceContainerStaticAdditiveSynth {
-                public const long m_tones = 0x80;
+                public const long m_tones = 0x88;
             }
             public static partial class CSosGroupActionTimeBlockLimitSchema {
                 public const long m_nMaxCount = 0x8;
@@ -916,7 +919,7 @@ public static partial class cs2_dumper {
                 public const long m_outParamReduction = 0x58;
             }
             public static partial class CVoiceContainerAmpedDecayingSineWave {
-                public const long m_flGainAmount = 0x78;
+                public const long m_flGainAmount = 0x80;
             }
             public static partial class CSosGroupActionSoundeventClusterSchema {
                 public const long m_nMinNearby = 0x8;
@@ -956,7 +959,7 @@ public static partial class cs2_dumper {
                 public const long m_bSyncInstances = 0x58;
             }
             public static partial class CVoiceContainerLoopTriggerWithRandomPanner {
-                public const long m_randomPannerControls = 0xA0;
+                public const long m_randomPannerControls = 0xA8;
             }
             public static partial class CSosGroupActionSetSoundeventParameterSchema {
                 public const long m_nMaxCount = 0x8;
@@ -1073,6 +1076,10 @@ public static partial class cs2_dumper {
                 public const long PCM8 = 0x1;
                 public const long ADPCM = 0x3;
                 public const long PCM16 = 0x0;
+            }
+            public static partial class VMixUpMixRule_t {
+                public const long DIVIDE = 0x0;
+                public const long BROADCAST = 0x1;
             }
             public static partial class EVsndTriggerMode {
                 public const long Gate = 0x1;

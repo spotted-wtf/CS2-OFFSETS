@@ -29,6 +29,7 @@ pub const cs2_dumper = struct {
                 pub const m_name: i64 = 0x0;
                 pub const m_SendNames: i64 = 0x8;
                 pub const m_nChannels: i64 = 0x30;
+                pub const m_nUpMixRule: i64 = 0x37;
                 pub const m_nMixDownRule: i64 = 0x36;
                 pub const m_nSendOperator: i64 = 0x34;
                 pub const m_nSoloNameHash: i64 = 0x2C;
@@ -250,7 +251,7 @@ pub const cs2_dumper = struct {
                 pub const m_offset: i64 = 0x0;
             };
             pub const CVoiceContainerSet = struct {
-                pub const m_soundsToPlay: i64 = 0x70;
+                pub const m_soundsToPlay: i64 = 0x78;
             };
             pub const ISndSeqInstruments = struct {
 
@@ -322,13 +323,15 @@ pub const cs2_dumper = struct {
                 pub const m_offset: i64 = 0x0;
             };
             pub const CVoiceContainerBase = struct {
-                pub const m_vSound: i64 = 0x28;
-                pub const m_pEnvelopeAnalyzer: i64 = 0x68;
+                pub const m_vSound: i64 = 0x30;
+                pub const m_nResourceName: i64 = 0x14;
+                pub const m_bRegisteredVMix: i64 = 0x10;
+                pub const m_pEnvelopeAnalyzer: i64 = 0x70;
             };
             pub const CVoiceContainerEnum = struct {
-                pub const m_iSelection: i64 = 0xA8;
-                pub const m_soundsToPlay: i64 = 0x70;
-                pub const m_flCrossfadeTime: i64 = 0xAC;
+                pub const m_iSelection: i64 = 0xB0;
+                pub const m_soundsToPlay: i64 = 0x78;
+                pub const m_flCrossfadeTime: i64 = 0xB4;
             };
             pub const CVoiceContainerNull = struct {
 
@@ -415,7 +418,7 @@ pub const cs2_dumper = struct {
                 pub const m_paramFrequency: i64 = 0x34;
             };
             pub const CVoiceContainerSwitch = struct {
-                pub const m_soundsToPlay: i64 = 0x70;
+                pub const m_soundsToPlay: i64 = 0x78;
             };
             pub const VMixConvolutionDesc_t = struct {
                 pub const m_fldbLow: i64 = 0xC;
@@ -461,15 +464,15 @@ pub const cs2_dumper = struct {
                 pub const m_bDebugBypass: i64 = 0x1C;
             };
             pub const CVoiceContainerBlender = struct {
-                pub const m_firstSound: i64 = 0x70;
-                pub const m_secondSound: i64 = 0x90;
-                pub const m_flBlendFactor: i64 = 0xB0;
+                pub const m_firstSound: i64 = 0x78;
+                pub const m_secondSound: i64 = 0x98;
+                pub const m_flBlendFactor: i64 = 0xB8;
             };
             pub const CVoiceContainerDefault = struct {
 
             };
             pub const CVoiceContainerVMixSnd = struct {
-
+                pub const m_resourceName: i64 = 0x188;
             };
             pub const SelectedEditItemInfo_t = struct {
                 pub const m_EditItems: i64 = 0x0;
@@ -487,9 +490,9 @@ pub const cs2_dumper = struct {
                 pub const m_paramCutoffFrequency: i64 = 0x50;
             };
             pub const CVoiceContainerSelector = struct {
-                pub const m_mode: i64 = 0x70;
-                pub const m_soundsToPlay: i64 = 0x78;
-                pub const m_fProbabilityWeights: i64 = 0xB0;
+                pub const m_mode: i64 = 0x78;
+                pub const m_soundsToPlay: i64 = 0x80;
+                pub const m_fProbabilityWeights: i64 = 0xB8;
             };
             pub const VMixDynamics3BandDesc_t = struct {
                 pub const m_flDepth: i64 = 0xC;
@@ -533,14 +536,14 @@ pub const cs2_dumper = struct {
 
             };
             pub const CVoiceContainerLoopXFade = struct {
-                pub const m_sound: i64 = 0x70;
-                pub const m_flFadeIn: i64 = 0x9C;
-                pub const m_bEqualPow: i64 = 0xA2;
-                pub const m_bPlayHead: i64 = 0xA0;
-                pub const m_bPlayTail: i64 = 0xA1;
-                pub const m_flFadeOut: i64 = 0x98;
-                pub const m_flLoopEnd: i64 = 0x90;
-                pub const m_flLoopStart: i64 = 0x94;
+                pub const m_sound: i64 = 0x78;
+                pub const m_flFadeIn: i64 = 0xA4;
+                pub const m_bEqualPow: i64 = 0xAA;
+                pub const m_bPlayHead: i64 = 0xA8;
+                pub const m_bPlayTail: i64 = 0xA9;
+                pub const m_flFadeOut: i64 = 0xA0;
+                pub const m_flLoopEnd: i64 = 0x98;
+                pub const m_flLoopStart: i64 = 0x9C;
             };
             pub const VMixDualCompressorDesc_t = struct {
                 pub const m_bandDesc: i64 = 0x10;
@@ -612,24 +615,24 @@ pub const cs2_dumper = struct {
                 pub const m_paramBandwidth: i64 = 0x50;
             };
             pub const CVoiceContainerGranulator = struct {
-                pub const m_sourceAudio: i64 = 0x98;
-                pub const m_flGrainLength: i64 = 0x80;
-                pub const m_flStartJitter: i64 = 0x88;
-                pub const m_flPlaybackJitter: i64 = 0x8C;
-                pub const m_bShouldWraparound: i64 = 0x90;
-                pub const m_flMaxSourceLength: i64 = 0xA4;
-                pub const m_flGrainCrossfadeAmount: i64 = 0x84;
-                pub const m_bDoubleBufferSourceAudio: i64 = 0xA0;
+                pub const m_sourceAudio: i64 = 0xA0;
+                pub const m_flGrainLength: i64 = 0x88;
+                pub const m_flStartJitter: i64 = 0x90;
+                pub const m_flPlaybackJitter: i64 = 0x94;
+                pub const m_bShouldWraparound: i64 = 0x98;
+                pub const m_flMaxSourceLength: i64 = 0xAC;
+                pub const m_flGrainCrossfadeAmount: i64 = 0x8C;
+                pub const m_bDoubleBufferSourceAudio: i64 = 0xA8;
             };
             pub const CVoiceContainerSetElement = struct {
                 pub const m_sound: i64 = 0x0;
                 pub const m_flVolumeDB: i64 = 0x20;
             };
             pub const CVoiceContainerTapePlayer = struct {
-                pub const m_sourceAudio: i64 = 0x88;
-                pub const m_bShouldWraparound: i64 = 0x80;
-                pub const m_flTapeSpeedAttackTime: i64 = 0x90;
-                pub const m_flTapeSpeedReleaseTime: i64 = 0x94;
+                pub const m_sourceAudio: i64 = 0x90;
+                pub const m_bShouldWraparound: i64 = 0x88;
+                pub const m_flTapeSpeedAttackTime: i64 = 0x98;
+                pub const m_flTapeSpeedReleaseTime: i64 = 0x9C;
             };
             pub const SndBeatEventKeyedFloats_t = struct {
                 pub const m_flFloat: i64 = 0x10;
@@ -673,41 +676,41 @@ pub const cs2_dumper = struct {
                 pub const m_paramCutoffFrequency: i64 = 0x58;
             };
             pub const CVoiceContainerLoopTrigger = struct {
-                pub const m_sound: i64 = 0x80;
-                pub const m_bCrossFade: i64 = 0x7C;
-                pub const m_flFadeTime: i64 = 0x78;
-                pub const m_flRetriggerTimeMax: i64 = 0x74;
-                pub const m_flRetriggerTimeMin: i64 = 0x70;
+                pub const m_sound: i64 = 0x88;
+                pub const m_bCrossFade: i64 = 0x84;
+                pub const m_flFadeTime: i64 = 0x80;
+                pub const m_flRetriggerTimeMax: i64 = 0x7C;
+                pub const m_flRetriggerTimeMin: i64 = 0x78;
             };
             pub const CVoiceContainerShapedNoise = struct {
-                pub const m_gainSweep: i64 = 0x108;
-                pub const m_flFrequency: i64 = 0x74;
-                pub const m_flResonance: i64 = 0xBC;
-                pub const m_frequencySweep: i64 = 0x78;
-                pub const m_resonanceSweep: i64 = 0xC0;
-                pub const m_flGainInDecibels: i64 = 0x104;
-                pub const m_bUseCurveForAmplitude: i64 = 0x100;
-                pub const m_bUseCurveForFrequency: i64 = 0x70;
-                pub const m_bUseCurveForResonance: i64 = 0xB8;
+                pub const m_gainSweep: i64 = 0x110;
+                pub const m_flFrequency: i64 = 0x7C;
+                pub const m_flResonance: i64 = 0xC4;
+                pub const m_frequencySweep: i64 = 0x80;
+                pub const m_resonanceSweep: i64 = 0xC8;
+                pub const m_flGainInDecibels: i64 = 0x10C;
+                pub const m_bUseCurveForAmplitude: i64 = 0x108;
+                pub const m_bUseCurveForFrequency: i64 = 0x78;
+                pub const m_bUseCurveForResonance: i64 = 0xC0;
             };
             pub const CVoiceContainerVsndTrigger = struct {
-                pub const m_slot1: i64 = 0x78;
-                pub const m_slot2: i64 = 0x100;
-                pub const m_slot3: i64 = 0x188;
-                pub const m_slot4: i64 = 0x210;
-                pub const m_slot5: i64 = 0x298;
-                pub const m_slot6: i64 = 0x320;
-                pub const m_slot7: i64 = 0x3A8;
-                pub const m_slot8: i64 = 0x430;
-                pub const m_slot9: i64 = 0x4B8;
-                pub const m_slot10: i64 = 0x540;
-                pub const m_slot11: i64 = 0x5C8;
-                pub const m_slot12: i64 = 0x650;
-                pub const m_slot13: i64 = 0x6D8;
-                pub const m_slot14: i64 = 0x760;
-                pub const m_slot15: i64 = 0x7E8;
-                pub const m_slot16: i64 = 0x870;
-                pub const m_namespace: i64 = 0x70;
+                pub const m_slot1: i64 = 0x80;
+                pub const m_slot2: i64 = 0x108;
+                pub const m_slot3: i64 = 0x190;
+                pub const m_slot4: i64 = 0x218;
+                pub const m_slot5: i64 = 0x2A0;
+                pub const m_slot6: i64 = 0x328;
+                pub const m_slot7: i64 = 0x3B0;
+                pub const m_slot8: i64 = 0x438;
+                pub const m_slot9: i64 = 0x4C0;
+                pub const m_slot10: i64 = 0x548;
+                pub const m_slot11: i64 = 0x5D0;
+                pub const m_slot12: i64 = 0x658;
+                pub const m_slot13: i64 = 0x6E0;
+                pub const m_slot14: i64 = 0x768;
+                pub const m_slot15: i64 = 0x7F0;
+                pub const m_slot16: i64 = 0x878;
+                pub const m_namespace: i64 = 0x78;
             };
             pub const SndBeatEventKeyedSndEvts_t = struct {
                 pub const m_strSoundEventName: i64 = 0x10;
@@ -720,9 +723,9 @@ pub const cs2_dumper = struct {
                 pub const m_curve: i64 = 0x8;
             };
             pub const CVoiceContainerMultiBlender = struct {
-                pub const m_flCrossover: i64 = 0xAC;
-                pub const m_soundsToPlay: i64 = 0x70;
-                pub const m_flBlendFactor: i64 = 0xA8;
+                pub const m_flCrossover: i64 = 0xB4;
+                pub const m_soundsToPlay: i64 = 0x78;
+                pub const m_flBlendFactor: i64 = 0xB0;
             };
             pub const CVMixAutoFilterProcessorDesc = struct {
                 pub const m_desc: i64 = 0x28;
@@ -732,12 +735,12 @@ pub const cs2_dumper = struct {
                 pub const m_paramPitchScale: i64 = 0x38;
             };
             pub const CVoiceContainerRandomSampler = struct {
-                pub const m_flAmplitude: i64 = 0x80;
-                pub const m_flMaxLength: i64 = 0x8C;
-                pub const m_flTimeJitter: i64 = 0x88;
-                pub const m_grainResources: i64 = 0x98;
-                pub const m_flAmplitudeJitter: i64 = 0x84;
-                pub const m_nNumDelayVariations: i64 = 0x90;
+                pub const m_flAmplitude: i64 = 0x88;
+                pub const m_flMaxLength: i64 = 0x94;
+                pub const m_flTimeJitter: i64 = 0x90;
+                pub const m_grainResources: i64 = 0xA0;
+                pub const m_flAmplitudeJitter: i64 = 0x8C;
+                pub const m_nNumDelayVariations: i64 = 0x98;
             };
             pub const SndBeatEventKeyedMidiNotes_t = struct {
                 pub const m_nNote: i64 = 0x11;
@@ -792,23 +795,23 @@ pub const cs2_dumper = struct {
                 pub const m_flMaxDuration: i64 = 0x8;
             };
             pub const CVoiceContainerVsndRadioButton = struct {
-                pub const m_slot1: i64 = 0x78;
-                pub const m_slot2: i64 = 0x100;
-                pub const m_slot3: i64 = 0x188;
-                pub const m_slot4: i64 = 0x210;
-                pub const m_slot5: i64 = 0x298;
-                pub const m_slot6: i64 = 0x320;
-                pub const m_slot7: i64 = 0x3A8;
-                pub const m_slot8: i64 = 0x430;
-                pub const m_slot9: i64 = 0x4B8;
-                pub const m_slot10: i64 = 0x540;
-                pub const m_slot11: i64 = 0x5C8;
-                pub const m_slot12: i64 = 0x650;
-                pub const m_slot13: i64 = 0x6D8;
-                pub const m_slot14: i64 = 0x760;
-                pub const m_slot15: i64 = 0x7E8;
-                pub const m_slot16: i64 = 0x870;
-                pub const m_namespace: i64 = 0x70;
+                pub const m_slot1: i64 = 0x80;
+                pub const m_slot2: i64 = 0x108;
+                pub const m_slot3: i64 = 0x190;
+                pub const m_slot4: i64 = 0x218;
+                pub const m_slot5: i64 = 0x2A0;
+                pub const m_slot6: i64 = 0x328;
+                pub const m_slot7: i64 = 0x3B0;
+                pub const m_slot8: i64 = 0x438;
+                pub const m_slot9: i64 = 0x4C0;
+                pub const m_slot10: i64 = 0x548;
+                pub const m_slot11: i64 = 0x5D0;
+                pub const m_slot12: i64 = 0x658;
+                pub const m_slot13: i64 = 0x6E0;
+                pub const m_slot14: i64 = 0x768;
+                pub const m_slot15: i64 = 0x7F0;
+                pub const m_slot16: i64 = 0x878;
+                pub const m_namespace: i64 = 0x78;
             };
             pub const CDSPPresetMixgroupModifierTable = struct {
                 pub const m_table: i64 = 0x0;
@@ -817,8 +820,8 @@ pub const cs2_dumper = struct {
                 pub const m_desc: i64 = 0x28;
             };
             pub const CVoiceContainerDecayingSineWave = struct {
-                pub const m_flDecayTime: i64 = 0x74;
-                pub const m_flFrequency: i64 = 0x70;
+                pub const m_flDecayTime: i64 = 0x7C;
+                pub const m_flFrequency: i64 = 0x78;
             };
             pub const CVoiceContainerEnvelopeAnalyzer = struct {
                 pub const m_mode: i64 = 0x48;
@@ -826,14 +829,14 @@ pub const cs2_dumper = struct {
                 pub const m_fAnalysisWindowMs: i64 = 0x4C;
             };
             pub const CVoiceContainerParameterBlender = struct {
-                pub const m_curve1: i64 = 0xB8;
-                pub const m_curve2: i64 = 0xF8;
-                pub const m_curve3: i64 = 0x140;
-                pub const m_curve4: i64 = 0x180;
-                pub const m_firstSound: i64 = 0x70;
-                pub const m_secondSound: i64 = 0x90;
-                pub const m_bEnableDistanceBlend: i64 = 0x138;
-                pub const m_bEnableOcclusionBlend: i64 = 0xB0;
+                pub const m_curve1: i64 = 0xC0;
+                pub const m_curve2: i64 = 0x100;
+                pub const m_curve3: i64 = 0x148;
+                pub const m_curve4: i64 = 0x188;
+                pub const m_firstSound: i64 = 0x78;
+                pub const m_secondSound: i64 = 0x98;
+                pub const m_bEnableDistanceBlend: i64 = 0x140;
+                pub const m_bEnableOcclusionBlend: i64 = 0xB8;
             };
             pub const CVMixDualCompressorProcessorDesc = struct {
                 pub const m_desc: i64 = 0x28;
@@ -858,9 +861,9 @@ pub const cs2_dumper = struct {
                 pub const m_paramSelectionIndex: i64 = 0x64;
             };
             pub const CVoiceContainerRealtimeFMSineWave = struct {
-                pub const m_flModulatorAmount: i64 = 0x78;
-                pub const m_flCarrierFrequency: i64 = 0x70;
-                pub const m_flModulatorFrequency: i64 = 0x74;
+                pub const m_flModulatorAmount: i64 = 0x80;
+                pub const m_flCarrierFrequency: i64 = 0x78;
+                pub const m_flModulatorFrequency: i64 = 0x7C;
             };
             pub const CVMixSteamAudioDirectProcessorDesc = struct {
                 pub const m_paramUpX: i64 = 0x40;
@@ -890,7 +893,7 @@ pub const cs2_dumper = struct {
                 pub const m_paramApplyDistanceAttenuation: i64 = 0x58;
             };
             pub const CVoiceContainerStaticAdditiveSynth = struct {
-                pub const m_tones: i64 = 0x80;
+                pub const m_tones: i64 = 0x88;
             };
             pub const CSosGroupActionTimeBlockLimitSchema = struct {
                 pub const m_nMaxCount: i64 = 0x8;
@@ -916,7 +919,7 @@ pub const cs2_dumper = struct {
                 pub const m_outParamReduction: i64 = 0x58;
             };
             pub const CVoiceContainerAmpedDecayingSineWave = struct {
-                pub const m_flGainAmount: i64 = 0x78;
+                pub const m_flGainAmount: i64 = 0x80;
             };
             pub const CSosGroupActionSoundeventClusterSchema = struct {
                 pub const m_nMinNearby: i64 = 0x8;
@@ -956,7 +959,7 @@ pub const cs2_dumper = struct {
                 pub const m_bSyncInstances: i64 = 0x58;
             };
             pub const CVoiceContainerLoopTriggerWithRandomPanner = struct {
-                pub const m_randomPannerControls: i64 = 0xA0;
+                pub const m_randomPannerControls: i64 = 0xA8;
             };
             pub const CSosGroupActionSetSoundeventParameterSchema = struct {
                 pub const m_nMaxCount: i64 = 0x8;
@@ -1073,6 +1076,10 @@ pub const cs2_dumper = struct {
                 pub const PCM8: i64 = 0x1;
                 pub const ADPCM: i64 = 0x3;
                 pub const PCM16: i64 = 0x0;
+            };
+            pub const VMixUpMixRule_t = struct {
+                pub const DIVIDE: i64 = 0x0;
+                pub const BROADCAST: i64 = 0x1;
             };
             pub const EVsndTriggerMode = struct {
                 pub const Gate: i64 = 0x1;

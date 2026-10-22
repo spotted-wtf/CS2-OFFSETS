@@ -25,6 +25,7 @@ class cs2_dumper:
                 m_name = 0x0
                 m_SendNames = 0x8
                 m_nChannels = 0x30
+                m_nUpMixRule = 0x37
                 m_nMixDownRule = 0x36
                 m_nSendOperator = 0x34
                 m_nSoloNameHash = 0x2C
@@ -212,7 +213,7 @@ class cs2_dumper:
             class CVMixParameterBool:
                 m_offset = 0x0
             class CVoiceContainerSet:
-                m_soundsToPlay = 0x70
+                m_soundsToPlay = 0x78
             class ISndSeqInstruments:
                 pass
             class SndBeatEventKeys_t:
@@ -272,12 +273,14 @@ class cs2_dumper:
             class CVMixParameterFloat:
                 m_offset = 0x0
             class CVoiceContainerBase:
-                m_vSound = 0x28
-                m_pEnvelopeAnalyzer = 0x68
+                m_vSound = 0x30
+                m_nResourceName = 0x14
+                m_bRegisteredVMix = 0x10
+                m_pEnvelopeAnalyzer = 0x70
             class CVoiceContainerEnum:
-                m_iSelection = 0xA8
-                m_soundsToPlay = 0x70
-                m_flCrossfadeTime = 0xAC
+                m_iSelection = 0xB0
+                m_soundsToPlay = 0x78
+                m_flCrossfadeTime = 0xB4
             class CVoiceContainerNull:
                 pass
             class VMixPlateverbDesc_t:
@@ -349,7 +352,7 @@ class cs2_dumper:
                 m_paramPhase = 0x38
                 m_paramFrequency = 0x34
             class CVoiceContainerSwitch:
-                m_soundsToPlay = 0x70
+                m_soundsToPlay = 0x78
             class VMixConvolutionDesc_t:
                 m_fldbLow = 0xC
                 m_fldbMid = 0x10
@@ -388,13 +391,13 @@ class cs2_dumper:
                 m_paramEnable = 0x20
                 m_bDebugBypass = 0x1C
             class CVoiceContainerBlender:
-                m_firstSound = 0x70
-                m_secondSound = 0x90
-                m_flBlendFactor = 0xB0
+                m_firstSound = 0x78
+                m_secondSound = 0x98
+                m_flBlendFactor = 0xB8
             class CVoiceContainerDefault:
                 pass
             class CVoiceContainerVMixSnd:
-                pass
+                m_resourceName = 0x188
             class SelectedEditItemInfo_t:
                 m_EditItems = 0x0
             class SndBeatTimeSignature_t:
@@ -407,9 +410,9 @@ class cs2_dumper:
                 m_paramDelay = 0x54
                 m_paramCutoffFrequency = 0x50
             class CVoiceContainerSelector:
-                m_mode = 0x70
-                m_soundsToPlay = 0x78
-                m_fProbabilityWeights = 0xB0
+                m_mode = 0x78
+                m_soundsToPlay = 0x80
+                m_fProbabilityWeights = 0xB8
             class VMixDynamics3BandDesc_t:
                 m_flDepth = 0xC
                 m_bandDesc = 0x24
@@ -444,14 +447,14 @@ class cs2_dumper:
             class CVoiceContainerGenerator:
                 pass
             class CVoiceContainerLoopXFade:
-                m_sound = 0x70
-                m_flFadeIn = 0x9C
-                m_bEqualPow = 0xA2
-                m_bPlayHead = 0xA0
-                m_bPlayTail = 0xA1
-                m_flFadeOut = 0x98
-                m_flLoopEnd = 0x90
-                m_flLoopStart = 0x94
+                m_sound = 0x78
+                m_flFadeIn = 0xA4
+                m_bEqualPow = 0xAA
+                m_bPlayHead = 0xA8
+                m_bPlayTail = 0xA9
+                m_flFadeOut = 0xA0
+                m_flLoopEnd = 0x98
+                m_flLoopStart = 0x9C
             class VMixDualCompressorDesc_t:
                 m_bandDesc = 0x10
                 m_flWetMix = 0x8
@@ -513,22 +516,22 @@ class cs2_dumper:
                 m_desc = 0x28
                 m_paramBandwidth = 0x50
             class CVoiceContainerGranulator:
-                m_sourceAudio = 0x98
-                m_flGrainLength = 0x80
-                m_flStartJitter = 0x88
-                m_flPlaybackJitter = 0x8C
-                m_bShouldWraparound = 0x90
-                m_flMaxSourceLength = 0xA4
-                m_flGrainCrossfadeAmount = 0x84
-                m_bDoubleBufferSourceAudio = 0xA0
+                m_sourceAudio = 0xA0
+                m_flGrainLength = 0x88
+                m_flStartJitter = 0x90
+                m_flPlaybackJitter = 0x94
+                m_bShouldWraparound = 0x98
+                m_flMaxSourceLength = 0xAC
+                m_flGrainCrossfadeAmount = 0x8C
+                m_bDoubleBufferSourceAudio = 0xA8
             class CVoiceContainerSetElement:
                 m_sound = 0x0
                 m_flVolumeDB = 0x20
             class CVoiceContainerTapePlayer:
-                m_sourceAudio = 0x88
-                m_bShouldWraparound = 0x80
-                m_flTapeSpeedAttackTime = 0x90
-                m_flTapeSpeedReleaseTime = 0x94
+                m_sourceAudio = 0x90
+                m_bShouldWraparound = 0x88
+                m_flTapeSpeedAttackTime = 0x98
+                m_flTapeSpeedReleaseTime = 0x9C
             class SndBeatEventKeyedFloats_t:
                 m_flFloat = 0x10
             class CSosGroupActionLimitSchema:
@@ -562,39 +565,39 @@ class cs2_dumper:
                 m_paramModDepth = 0x64
                 m_paramCutoffFrequency = 0x58
             class CVoiceContainerLoopTrigger:
-                m_sound = 0x80
-                m_bCrossFade = 0x7C
-                m_flFadeTime = 0x78
-                m_flRetriggerTimeMax = 0x74
-                m_flRetriggerTimeMin = 0x70
+                m_sound = 0x88
+                m_bCrossFade = 0x84
+                m_flFadeTime = 0x80
+                m_flRetriggerTimeMax = 0x7C
+                m_flRetriggerTimeMin = 0x78
             class CVoiceContainerShapedNoise:
-                m_gainSweep = 0x108
-                m_flFrequency = 0x74
-                m_flResonance = 0xBC
-                m_frequencySweep = 0x78
-                m_resonanceSweep = 0xC0
-                m_flGainInDecibels = 0x104
-                m_bUseCurveForAmplitude = 0x100
-                m_bUseCurveForFrequency = 0x70
-                m_bUseCurveForResonance = 0xB8
+                m_gainSweep = 0x110
+                m_flFrequency = 0x7C
+                m_flResonance = 0xC4
+                m_frequencySweep = 0x80
+                m_resonanceSweep = 0xC8
+                m_flGainInDecibels = 0x10C
+                m_bUseCurveForAmplitude = 0x108
+                m_bUseCurveForFrequency = 0x78
+                m_bUseCurveForResonance = 0xC0
             class CVoiceContainerVsndTrigger:
-                m_slot1 = 0x78
-                m_slot2 = 0x100
-                m_slot3 = 0x188
-                m_slot4 = 0x210
-                m_slot5 = 0x298
-                m_slot6 = 0x320
-                m_slot7 = 0x3A8
-                m_slot8 = 0x430
-                m_slot9 = 0x4B8
-                m_slot10 = 0x540
-                m_slot11 = 0x5C8
-                m_slot12 = 0x650
-                m_slot13 = 0x6D8
-                m_slot14 = 0x760
-                m_slot15 = 0x7E8
-                m_slot16 = 0x870
-                m_namespace = 0x70
+                m_slot1 = 0x80
+                m_slot2 = 0x108
+                m_slot3 = 0x190
+                m_slot4 = 0x218
+                m_slot5 = 0x2A0
+                m_slot6 = 0x328
+                m_slot7 = 0x3B0
+                m_slot8 = 0x438
+                m_slot9 = 0x4C0
+                m_slot10 = 0x548
+                m_slot11 = 0x5D0
+                m_slot12 = 0x658
+                m_slot13 = 0x6E0
+                m_slot14 = 0x768
+                m_slot15 = 0x7F0
+                m_slot16 = 0x878
+                m_namespace = 0x78
             class SndBeatEventKeyedSndEvts_t:
                 m_strSoundEventName = 0x10
             class CVMixPresetDSPProcessorDesc:
@@ -603,21 +606,21 @@ class cs2_dumper:
             class CVoiceContainerAnalysisBase:
                 m_curve = 0x8
             class CVoiceContainerMultiBlender:
-                m_flCrossover = 0xAC
-                m_soundsToPlay = 0x70
-                m_flBlendFactor = 0xA8
+                m_flCrossover = 0xB4
+                m_soundsToPlay = 0x78
+                m_flBlendFactor = 0xB0
             class CVMixAutoFilterProcessorDesc:
                 m_desc = 0x28
             class CVMixPitchShiftProcessorDesc:
                 m_desc = 0x28
                 m_paramPitchScale = 0x38
             class CVoiceContainerRandomSampler:
-                m_flAmplitude = 0x80
-                m_flMaxLength = 0x8C
-                m_flTimeJitter = 0x88
-                m_grainResources = 0x98
-                m_flAmplitudeJitter = 0x84
-                m_nNumDelayVariations = 0x90
+                m_flAmplitude = 0x88
+                m_flMaxLength = 0x94
+                m_flTimeJitter = 0x90
+                m_grainResources = 0xA0
+                m_flAmplitudeJitter = 0x8C
+                m_nNumDelayVariations = 0x98
             class SndBeatEventKeyedMidiNotes_t:
                 m_nNote = 0x11
                 m_nStatus = 0x10
@@ -661,43 +664,43 @@ class cs2_dumper:
             class CSosGroupActionTimeLimitSchema:
                 m_flMaxDuration = 0x8
             class CVoiceContainerVsndRadioButton:
-                m_slot1 = 0x78
-                m_slot2 = 0x100
-                m_slot3 = 0x188
-                m_slot4 = 0x210
-                m_slot5 = 0x298
-                m_slot6 = 0x320
-                m_slot7 = 0x3A8
-                m_slot8 = 0x430
-                m_slot9 = 0x4B8
-                m_slot10 = 0x540
-                m_slot11 = 0x5C8
-                m_slot12 = 0x650
-                m_slot13 = 0x6D8
-                m_slot14 = 0x760
-                m_slot15 = 0x7E8
-                m_slot16 = 0x870
-                m_namespace = 0x70
+                m_slot1 = 0x80
+                m_slot2 = 0x108
+                m_slot3 = 0x190
+                m_slot4 = 0x218
+                m_slot5 = 0x2A0
+                m_slot6 = 0x328
+                m_slot7 = 0x3B0
+                m_slot8 = 0x438
+                m_slot9 = 0x4C0
+                m_slot10 = 0x548
+                m_slot11 = 0x5D0
+                m_slot12 = 0x658
+                m_slot13 = 0x6E0
+                m_slot14 = 0x768
+                m_slot15 = 0x7F0
+                m_slot16 = 0x878
+                m_namespace = 0x78
             class CDSPPresetMixgroupModifierTable:
                 m_table = 0x0
             class CVMixDynamics3BandProcessorDesc:
                 m_desc = 0x28
             class CVoiceContainerDecayingSineWave:
-                m_flDecayTime = 0x74
-                m_flFrequency = 0x70
+                m_flDecayTime = 0x7C
+                m_flFrequency = 0x78
             class CVoiceContainerEnvelopeAnalyzer:
                 m_mode = 0x48
                 m_flThreshold = 0x50
                 m_fAnalysisWindowMs = 0x4C
             class CVoiceContainerParameterBlender:
-                m_curve1 = 0xB8
-                m_curve2 = 0xF8
-                m_curve3 = 0x140
-                m_curve4 = 0x180
-                m_firstSound = 0x70
-                m_secondSound = 0x90
-                m_bEnableDistanceBlend = 0x138
-                m_bEnableOcclusionBlend = 0xB0
+                m_curve1 = 0xC0
+                m_curve2 = 0x100
+                m_curve3 = 0x148
+                m_curve4 = 0x188
+                m_firstSound = 0x78
+                m_secondSound = 0x98
+                m_bEnableDistanceBlend = 0x140
+                m_bEnableOcclusionBlend = 0xB8
             class CVMixDualCompressorProcessorDesc:
                 m_desc = 0x28
                 m_outParamLevel = 0x5C
@@ -718,9 +721,9 @@ class cs2_dumper:
                 m_paramEffectName = 0x60
                 m_paramSelectionIndex = 0x64
             class CVoiceContainerRealtimeFMSineWave:
-                m_flModulatorAmount = 0x78
-                m_flCarrierFrequency = 0x70
-                m_flModulatorFrequency = 0x74
+                m_flModulatorAmount = 0x80
+                m_flCarrierFrequency = 0x78
+                m_flModulatorFrequency = 0x7C
             class CVMixSteamAudioDirectProcessorDesc:
                 m_paramUpX = 0x40
                 m_paramUpY = 0x44
@@ -748,7 +751,7 @@ class cs2_dumper:
                 m_paramApplyAirAbsorption = 0x5C
                 m_paramApplyDistanceAttenuation = 0x58
             class CVoiceContainerStaticAdditiveSynth:
-                m_tones = 0x80
+                m_tones = 0x88
             class CSosGroupActionTimeBlockLimitSchema:
                 m_nMaxCount = 0x8
                 m_flMaxDuration = 0xC
@@ -769,7 +772,7 @@ class cs2_dumper:
                 m_outParamdBLevel = 0x54
                 m_outParamReduction = 0x58
             class CVoiceContainerAmpedDecayingSineWave:
-                m_flGainAmount = 0x78
+                m_flGainAmount = 0x80
             class CSosGroupActionSoundeventClusterSchema:
                 m_nMinNearby = 0x8
                 m_shouldPlayOpvar = 0x10
@@ -803,7 +806,7 @@ class cs2_dumper:
                 m_harmonics = 0x0
                 m_bSyncInstances = 0x58
             class CVoiceContainerLoopTriggerWithRandomPanner:
-                m_randomPannerControls = 0xA0
+                m_randomPannerControls = 0xA8
             class CSosGroupActionSetSoundeventParameterSchema:
                 m_nMaxCount = 0x8
                 m_nSortType = 0x20
@@ -908,6 +911,9 @@ class cs2_dumper:
                 PCM8 = 0x1
                 ADPCM = 0x3
                 PCM16 = 0x0
+            class VMixUpMixRule_t:
+                DIVIDE = 0x0
+                BROADCAST = 0x1
             class EVsndTriggerMode:
                 Gate = 0x1
                 Trigger = 0x0
