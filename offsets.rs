@@ -6,7 +6,7 @@ pub mod cs2_dumper {
             pub const dwCSGOInput: i64 = 0x257F980;
             pub const dwGameRules: i64 = 0x2569378;
             pub const dwPlantedC4: i64 = 0x24CFB60;
-            pub const dwEntityList: i64 = 0x271EB08;
+            pub const dwEntityList: i64 = 0x271EB28;
             pub const dwGlobalVars: i64 = 0x2234108;
             pub const dwPrediction: i64 = 0x25697D0;
             pub const dwViewAngles: i64 = 0x2580008;
@@ -14,7 +14,7 @@ pub mod cs2_dumper {
             pub const dwViewRender: i64 = 0x256FB98;
             pub const dwGlowManager: i64 = 0x25660A0;
             pub const dwLocalPlayerPawn: i64 = 0x25698C8;
-            pub const dwGameEntitySystem: i64 = 0x271EB08;
+            pub const dwGameEntitySystem: i64 = 0x271EB28;
             pub const dwLocalPlayerController: i64 = 0x25413F8;
             pub const dwGameEntitySystem_highestEntityIndex: i64 = 0x2120;
         }

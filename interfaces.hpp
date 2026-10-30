@@ -122,7 +122,7 @@ namespace cs2_dumper {
         }
         namespace soundsystem_dll {
             inline constexpr std::ptrdiff_t SoundSystem001 = 0x532420;
-            inline constexpr std::ptrdiff_t VMixEditTool001 = 0x5941C0F;
+            inline constexpr std::ptrdiff_t VMixEditTool001 = 0x5941C1F;
             inline constexpr std::ptrdiff_t SoundOpSystem001 = 0x532B20;
             inline constexpr std::ptrdiff_t SoundOpSystemEdit001 = 0x532A30;
             inline constexpr std::ptrdiff_t SoundBugBugService001_Client = 0x532C40;

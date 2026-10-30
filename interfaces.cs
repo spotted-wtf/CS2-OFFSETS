@@ -120,7 +120,7 @@ public static partial class cs2_dumper {
         }
         public static partial class soundsystem_dll {
             public const long SoundSystem001 = 0x532420;
-            public const long VMixEditTool001 = 0x5941C0F;
+            public const long VMixEditTool001 = 0x5941C1F;
             public const long SoundOpSystem001 = 0x532B20;
             public const long SoundOpSystemEdit001 = 0x532A30;
             public const long SoundBugBugService001_Client = 0x532C40;

@@ -102,7 +102,7 @@ class cs2_dumper:
             RenderingPipelines_001 = 0x6759F0
         class soundsystem_dll:
             SoundSystem001 = 0x532420
-            VMixEditTool001 = 0x5941C0F
+            VMixEditTool001 = 0x5941C1F
             SoundOpSystem001 = 0x532B20
             SoundOpSystemEdit001 = 0x532A30
             SoundBugBugService001_Client = 0x532C40

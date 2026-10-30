@@ -121,7 +121,7 @@ pub mod cs2_dumper {
         }
         pub mod soundsystem_dll {
             pub const SoundSystem001: i64 = 0x532420;
-            pub const VMixEditTool001: i64 = 0x5941C0F;
+            pub const VMixEditTool001: i64 = 0x5941C1F;
             pub const SoundOpSystem001: i64 = 0x532B20;
             pub const SoundOpSystemEdit001: i64 = 0x532A30;
             pub const SoundBugBugService001_Client: i64 = 0x532C40;

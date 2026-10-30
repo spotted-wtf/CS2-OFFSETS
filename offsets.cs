@@ -5,7 +5,7 @@ public static partial class cs2_dumper {
             public const long dwCSGOInput = 0x257F980;
             public const long dwGameRules = 0x2569378;
             public const long dwPlantedC4 = 0x24CFB60;
-            public const long dwEntityList = 0x271EB08;
+            public const long dwEntityList = 0x271EB28;
             public const long dwGlobalVars = 0x2234108;
             public const long dwPrediction = 0x25697D0;
             public const long dwViewAngles = 0x2580008;
@@ -13,7 +13,7 @@ public static partial class cs2_dumper {
             public const long dwViewRender = 0x256FB98;
             public const long dwGlowManager = 0x25660A0;
             public const long dwLocalPlayerPawn = 0x25698C8;
-            public const long dwGameEntitySystem = 0x271EB08;
+            public const long dwGameEntitySystem = 0x271EB28;
             public const long dwLocalPlayerController = 0x25413F8;
             public const long dwGameEntitySystem_highestEntityIndex = 0x2120;
         }

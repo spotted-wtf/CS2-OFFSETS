@@ -5,7 +5,7 @@ class cs2_dumper:
             dwCSGOInput = 0x257F980
             dwGameRules = 0x2569378
             dwPlantedC4 = 0x24CFB60
-            dwEntityList = 0x271EB08
+            dwEntityList = 0x271EB28
             dwGlobalVars = 0x2234108
             dwPrediction = 0x25697D0
             dwViewAngles = 0x2580008
@@ -13,7 +13,7 @@ class cs2_dumper:
             dwViewRender = 0x256FB98
             dwGlowManager = 0x25660A0
             dwLocalPlayerPawn = 0x25698C8
-            dwGameEntitySystem = 0x271EB08
+            dwGameEntitySystem = 0x271EB28
             dwLocalPlayerController = 0x25413F8
             dwGameEntitySystem_highestEntityIndex = 0x2120
         class engine2_dll:

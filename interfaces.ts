@@ -120,7 +120,7 @@ export namespace cs2_dumper {
         }
         export namespace soundsystem_dll {
             export const SoundSystem001 = 0x532420;
-            export const VMixEditTool001 = 0x5941C0F;
+            export const VMixEditTool001 = 0x5941C1F;
             export const SoundOpSystem001 = 0x532B20;
             export const SoundOpSystemEdit001 = 0x532A30;
             export const SoundBugBugService001_Client = 0x532C40;

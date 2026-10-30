@@ -7,7 +7,7 @@ namespace cs2_dumper {
             inline constexpr std::ptrdiff_t dwCSGOInput = 0x257F980;
             inline constexpr std::ptrdiff_t dwGameRules = 0x2569378;
             inline constexpr std::ptrdiff_t dwPlantedC4 = 0x24CFB60;
-            inline constexpr std::ptrdiff_t dwEntityList = 0x271EB08;
+            inline constexpr std::ptrdiff_t dwEntityList = 0x271EB28;
             inline constexpr std::ptrdiff_t dwGlobalVars = 0x2234108;
             inline constexpr std::ptrdiff_t dwPrediction = 0x25697D0;
             inline constexpr std::ptrdiff_t dwViewAngles = 0x2580008;
@@ -15,7 +15,7 @@ namespace cs2_dumper {
             inline constexpr std::ptrdiff_t dwViewRender = 0x256FB98;
             inline constexpr std::ptrdiff_t dwGlowManager = 0x25660A0;
             inline constexpr std::ptrdiff_t dwLocalPlayerPawn = 0x25698C8;
-            inline constexpr std::ptrdiff_t dwGameEntitySystem = 0x271EB08;
+            inline constexpr std::ptrdiff_t dwGameEntitySystem = 0x271EB28;
             inline constexpr std::ptrdiff_t dwLocalPlayerController = 0x25413F8;
             inline constexpr std::ptrdiff_t dwGameEntitySystem_highestEntityIndex = 0x2120;
         }
