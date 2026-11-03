@@ -2,19 +2,19 @@ class cs2_dumper:
     class offsets:
         class client_dll:
             dwWeaponC4 = 0x24CE108
-            dwCSGOInput = 0x257F980
-            dwGameRules = 0x2569378
+            dwCSGOInput = 0x257FA10
+            dwGameRules = 0x25693F8
             dwPlantedC4 = 0x24CFB60
-            dwEntityList = 0x271EB28
+            dwEntityList = 0x271EBA8
             dwGlobalVars = 0x2234108
-            dwPrediction = 0x25697D0
-            dwViewAngles = 0x2580008
-            dwViewMatrix = 0x256F1D0
-            dwViewRender = 0x256FB98
-            dwGlowManager = 0x25660A0
-            dwLocalPlayerPawn = 0x25698C8
-            dwGameEntitySystem = 0x271EB28
-            dwLocalPlayerController = 0x25413F8
+            dwPrediction = 0x2569850
+            dwViewAngles = 0x2580098
+            dwViewMatrix = 0x256F250
+            dwViewRender = 0x256FC18
+            dwGlowManager = 0x2566120
+            dwLocalPlayerPawn = 0x2569948
+            dwGameEntitySystem = 0x271EBA8
+            dwLocalPlayerController = 0x2541538
             dwGameEntitySystem_highestEntityIndex = 0x2120
         class engine2_dll:
             dwBuildNumber = 0x6BA028

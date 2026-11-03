@@ -1833,7 +1833,7 @@ pub mod cs2_dumper {
                 pub const m_numSpectatorsCountMax: i64 = 0xE04;
                 pub const m_sRoundEndFunFactToken: i64 = 0x13E8;
                 pub const m_szTournamentEventName: i64 = 0x150;
-                pub const m_bForceTeamChangeSilent: i64 = 0xE20;
+                pub const m_bForceTeamChangeSilent: i64 = 0xE24;
                 pub const m_bHasHostageBeenTouched: i64 = 0xD78;
                 pub const m_bMatchWaitingForResume: i64 = 0xF9;
                 pub const m_flCTSpawnPointUsedTime: i64 = 0xFA0;
@@ -1849,7 +1849,7 @@ pub mod cs2_dumper {
                 pub const m_szTournamentEventStage: i64 = 0x350;
                 pub const m_CTSpawnPointsMasterList: i64 = 0xF68;
                 pub const m_bIsUnreservedGameServer: i64 = 0xFE0;
-                pub const m_bLoadingRoundBackupData: i64 = 0xE21;
+                pub const m_bLoadingRoundBackupData: i64 = 0xE25;
                 pub const m_bScrambleTeamsOnRestart: i64 = 0xDC7;
                 pub const m_bTerroristTimeOutActive: i64 = 0xE4;
                 pub const m_bVoiceWonMatchBragFired: i64 = 0xEA4;
@@ -1861,7 +1861,7 @@ pub mod cs2_dumper {
                 pub const m_bRoundEndShowTimerDefend: i64 = 0x13E0;
                 pub const m_iMatchStats_RoundResults: i64 = 0xA50;
                 pub const m_iNextTerroristSpawnPoint: i64 = 0xFA4;
-                pub const m_nCTsAliveAtFreezetimeEnd: i64 = 0xE18;
+                pub const m_nCTsAliveAtFreezetimeEnd: i64 = 0xE1C;
                 pub const m_nMatchAbortedEarlyReason: i64 = 0x1080;
                 pub const m_numSpectatorsCountMaxLnk: i64 = 0xE0C;
                 pub const m_timeUntilNextPhaseStarts: i64 = 0x118;
@@ -1896,12 +1896,13 @@ pub mod cs2_dumper {
                 pub const m_TerroristSpawnPointsMasterList: i64 = 0xF80;
                 pub const m_arrSelectedHostageSpawnIndices: i64 = 0xDA8;
                 pub const m_nShorthandedBonusLastEvalRound: i64 = 0x1034;
-                pub const m_nTerroristsAliveAtFreezetimeEnd: i64 = 0xE1C;
+                pub const m_nTerroristsAliveAtFreezetimeEnd: i64 = 0xE20;
                 pub const m_bNeedToAskPlayersForContinueVote: i64 = 0xDEC;
                 pub const m_bRespawningAllRespawnablePlayers: i64 = 0xF98;
                 pub const m_arrTournamentActiveCasterAccounts: i64 = 0xA28;
                 pub const m_bTeamLastKillUsedUniqueWeaponMatch: i64 = 0x1398;
                 pub const m_pQueuedMatchmakingReservationString: i64 = 0xDF8;
+                pub const m_bQueuedMatchmakingReportedRoundStatsPendingSend: i64 = 0xE18;
             }
             pub mod CChangeLevel {
                 pub const m_bNoTouch: i64 = 0x9F1;

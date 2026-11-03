@@ -17,27 +17,27 @@ pub const cs2_dumper = struct {
             pub const VStringTokenSystem001: i64 = 0x3D3300;
         };
         pub const client_dll = struct {
-            pub const LegacyGameUI001: i64 = 0x2244180;
-            pub const Source2Client002: i64 = 0x25635A0;
-            pub const Source2ClientUI001: i64 = 0x2242900;
+            pub const LegacyGameUI001: i64 = 0x2244190;
+            pub const Source2Client002: i64 = 0x2563620;
+            pub const Source2ClientUI001: i64 = 0x2242910;
             pub const ClientToolsInfo_001: i64 = 0x2237730;
             pub const GameClientExports001: i64 = 0x22343D8;
-            pub const Source2ClientConfig001: i64 = 0x24C0150;
-            pub const Source2ClientPrediction001: i64 = 0x25697D0;
+            pub const Source2ClientConfig001: i64 = 0x24C0160;
+            pub const Source2ClientPrediction001: i64 = 0x2569850;
             pub const EmptyWorldService001_Client: i64 = 0x221B160;
             pub const ClientBugBugServic001_Client: i64 = 0x2237760;
         };
         pub const server_dll = struct {
-            pub const NavGameTest001: i64 = 0x1E58D38;
-            pub const Source2Server001: i64 = 0x1E37220;
+            pub const NavGameTest001: i64 = 0x1E58DB8;
+            pub const Source2Server001: i64 = 0x1E372A0;
             pub const customnavsystem001: i64 = 0x1DAE558;
-            pub const ServerToolsInfo_001: i64 = 0x1E37C38;
-            pub const Source2GameClients001: i64 = 0x1E37160;
-            pub const Source2GameDirector001: i64 = 0x1FA1510;
-            pub const Source2GameEntities001: i64 = 0x1E373E0;
-            pub const Source2ServerConfig001: i64 = 0x211CDE8;
-            pub const EntitySubclassUtilsV001: i64 = 0x1DC0C40;
-            pub const EmptyWorldService001_Server: i64 = 0x1E110C0;
+            pub const ServerToolsInfo_001: i64 = 0x1E37CB8;
+            pub const Source2GameClients001: i64 = 0x1E371E0;
+            pub const Source2GameDirector001: i64 = 0x1FA1590;
+            pub const Source2GameEntities001: i64 = 0x1E37460;
+            pub const Source2ServerConfig001: i64 = 0x211CE68;
+            pub const EntitySubclassUtilsV001: i64 = 0x1DC0C60;
+            pub const EmptyWorldService001_Server: i64 = 0x1E11100;
         };
         pub const engine2_dll = struct {
             pub const BugService001: i64 = 0x9790F0;
@@ -91,7 +91,7 @@ pub const cs2_dumper = struct {
             pub const NavSystem001: i64 = 0x12C000;
         };
         pub const particles_dll = struct {
-            pub const ParticleSystemMgr003: i64 = 0x65ADD0;
+            pub const ParticleSystemMgr003: i64 = 0x65ADE0;
         };
         pub const vphysics2_dll = struct {
             pub const VPhysics2_Interface_001: i64 = 0x460E60;

@@ -1834,7 +1834,7 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_numSpectatorsCountMax = 0xE04;
                 inline constexpr std::ptrdiff_t m_sRoundEndFunFactToken = 0x13E8;
                 inline constexpr std::ptrdiff_t m_szTournamentEventName = 0x150;
-                inline constexpr std::ptrdiff_t m_bForceTeamChangeSilent = 0xE20;
+                inline constexpr std::ptrdiff_t m_bForceTeamChangeSilent = 0xE24;
                 inline constexpr std::ptrdiff_t m_bHasHostageBeenTouched = 0xD78;
                 inline constexpr std::ptrdiff_t m_bMatchWaitingForResume = 0xF9;
                 inline constexpr std::ptrdiff_t m_flCTSpawnPointUsedTime = 0xFA0;
@@ -1850,7 +1850,7 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_szTournamentEventStage = 0x350;
                 inline constexpr std::ptrdiff_t m_CTSpawnPointsMasterList = 0xF68;
                 inline constexpr std::ptrdiff_t m_bIsUnreservedGameServer = 0xFE0;
-                inline constexpr std::ptrdiff_t m_bLoadingRoundBackupData = 0xE21;
+                inline constexpr std::ptrdiff_t m_bLoadingRoundBackupData = 0xE25;
                 inline constexpr std::ptrdiff_t m_bScrambleTeamsOnRestart = 0xDC7;
                 inline constexpr std::ptrdiff_t m_bTerroristTimeOutActive = 0xE4;
                 inline constexpr std::ptrdiff_t m_bVoiceWonMatchBragFired = 0xEA4;
@@ -1862,7 +1862,7 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_bRoundEndShowTimerDefend = 0x13E0;
                 inline constexpr std::ptrdiff_t m_iMatchStats_RoundResults = 0xA50;
                 inline constexpr std::ptrdiff_t m_iNextTerroristSpawnPoint = 0xFA4;
-                inline constexpr std::ptrdiff_t m_nCTsAliveAtFreezetimeEnd = 0xE18;
+                inline constexpr std::ptrdiff_t m_nCTsAliveAtFreezetimeEnd = 0xE1C;
                 inline constexpr std::ptrdiff_t m_nMatchAbortedEarlyReason = 0x1080;
                 inline constexpr std::ptrdiff_t m_numSpectatorsCountMaxLnk = 0xE0C;
                 inline constexpr std::ptrdiff_t m_timeUntilNextPhaseStarts = 0x118;
@@ -1897,12 +1897,13 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_TerroristSpawnPointsMasterList = 0xF80;
                 inline constexpr std::ptrdiff_t m_arrSelectedHostageSpawnIndices = 0xDA8;
                 inline constexpr std::ptrdiff_t m_nShorthandedBonusLastEvalRound = 0x1034;
-                inline constexpr std::ptrdiff_t m_nTerroristsAliveAtFreezetimeEnd = 0xE1C;
+                inline constexpr std::ptrdiff_t m_nTerroristsAliveAtFreezetimeEnd = 0xE20;
                 inline constexpr std::ptrdiff_t m_bNeedToAskPlayersForContinueVote = 0xDEC;
                 inline constexpr std::ptrdiff_t m_bRespawningAllRespawnablePlayers = 0xF98;
                 inline constexpr std::ptrdiff_t m_arrTournamentActiveCasterAccounts = 0xA28;
                 inline constexpr std::ptrdiff_t m_bTeamLastKillUsedUniqueWeaponMatch = 0x1398;
                 inline constexpr std::ptrdiff_t m_pQueuedMatchmakingReservationString = 0xDF8;
+                inline constexpr std::ptrdiff_t m_bQueuedMatchmakingReportedRoundStatsPendingSend = 0xE18;
             }
             namespace CChangeLevel {
                 inline constexpr std::ptrdiff_t m_bNoTouch = 0x9F1;

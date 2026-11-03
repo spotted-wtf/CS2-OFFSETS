@@ -1832,7 +1832,7 @@ public static partial class cs2_dumper {
                 public const long m_numSpectatorsCountMax = 0xE04;
                 public const long m_sRoundEndFunFactToken = 0x13E8;
                 public const long m_szTournamentEventName = 0x150;
-                public const long m_bForceTeamChangeSilent = 0xE20;
+                public const long m_bForceTeamChangeSilent = 0xE24;
                 public const long m_bHasHostageBeenTouched = 0xD78;
                 public const long m_bMatchWaitingForResume = 0xF9;
                 public const long m_flCTSpawnPointUsedTime = 0xFA0;
@@ -1848,7 +1848,7 @@ public static partial class cs2_dumper {
                 public const long m_szTournamentEventStage = 0x350;
                 public const long m_CTSpawnPointsMasterList = 0xF68;
                 public const long m_bIsUnreservedGameServer = 0xFE0;
-                public const long m_bLoadingRoundBackupData = 0xE21;
+                public const long m_bLoadingRoundBackupData = 0xE25;
                 public const long m_bScrambleTeamsOnRestart = 0xDC7;
                 public const long m_bTerroristTimeOutActive = 0xE4;
                 public const long m_bVoiceWonMatchBragFired = 0xEA4;
@@ -1860,7 +1860,7 @@ public static partial class cs2_dumper {
                 public const long m_bRoundEndShowTimerDefend = 0x13E0;
                 public const long m_iMatchStats_RoundResults = 0xA50;
                 public const long m_iNextTerroristSpawnPoint = 0xFA4;
-                public const long m_nCTsAliveAtFreezetimeEnd = 0xE18;
+                public const long m_nCTsAliveAtFreezetimeEnd = 0xE1C;
                 public const long m_nMatchAbortedEarlyReason = 0x1080;
                 public const long m_numSpectatorsCountMaxLnk = 0xE0C;
                 public const long m_timeUntilNextPhaseStarts = 0x118;
@@ -1895,12 +1895,13 @@ public static partial class cs2_dumper {
                 public const long m_TerroristSpawnPointsMasterList = 0xF80;
                 public const long m_arrSelectedHostageSpawnIndices = 0xDA8;
                 public const long m_nShorthandedBonusLastEvalRound = 0x1034;
-                public const long m_nTerroristsAliveAtFreezetimeEnd = 0xE1C;
+                public const long m_nTerroristsAliveAtFreezetimeEnd = 0xE20;
                 public const long m_bNeedToAskPlayersForContinueVote = 0xDEC;
                 public const long m_bRespawningAllRespawnablePlayers = 0xF98;
                 public const long m_arrTournamentActiveCasterAccounts = 0xA28;
                 public const long m_bTeamLastKillUsedUniqueWeaponMatch = 0x1398;
                 public const long m_pQueuedMatchmakingReservationString = 0xDF8;
+                public const long m_bQueuedMatchmakingReportedRoundStatsPendingSend = 0xE18;
             }
             public static partial class CChangeLevel {
                 public const long m_bNoTouch = 0x9F1;

@@ -16,27 +16,27 @@
     "VStringTokenSystem001": 4010752
   },
   "client.dll": {
-    "LegacyGameUI001": 35930496,
-    "Source2Client002": 39204256,
-    "Source2ClientUI001": 35924224,
+    "LegacyGameUI001": 35930512,
+    "Source2Client002": 39204384,
+    "Source2ClientUI001": 35924240,
     "ClientToolsInfo_001": 35878704,
     "GameClientExports001": 35865560,
-    "Source2ClientConfig001": 38535504,
-    "Source2ClientPrediction001": 39229392,
+    "Source2ClientConfig001": 38535520,
+    "Source2ClientPrediction001": 39229520,
     "EmptyWorldService001_Client": 35762528,
     "ClientBugBugServic001_Client": 35878752
   },
   "server.dll": {
-    "NavGameTest001": 31821112,
-    "Source2Server001": 31683104,
+    "NavGameTest001": 31821240,
+    "Source2Server001": 31683232,
     "customnavsystem001": 31122776,
-    "ServerToolsInfo_001": 31685688,
-    "Source2GameClients001": 31682912,
-    "Source2GameDirector001": 33166608,
-    "Source2GameEntities001": 31683552,
-    "Source2ServerConfig001": 34721256,
-    "EntitySubclassUtilsV001": 31198272,
-    "EmptyWorldService001_Server": 31527104
+    "ServerToolsInfo_001": 31685816,
+    "Source2GameClients001": 31683040,
+    "Source2GameDirector001": 33166736,
+    "Source2GameEntities001": 31683680,
+    "Source2ServerConfig001": 34721384,
+    "EntitySubclassUtilsV001": 31198304,
+    "EmptyWorldService001_Server": 31527168
   },
   "engine2.dll": {
     "BugService001": 9933040,
@@ -90,7 +90,7 @@
     "NavSystem001": 1228800
   },
   "particles.dll": {
-    "ParticleSystemMgr003": 6663632
+    "ParticleSystemMgr003": 6663648
   },
   "vphysics2.dll": {
     "VPhysics2_Interface_001": 4591200

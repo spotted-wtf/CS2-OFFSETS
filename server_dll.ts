@@ -1832,7 +1832,7 @@ export namespace cs2_dumper {
                 export const m_numSpectatorsCountMax = 0xE04;
                 export const m_sRoundEndFunFactToken = 0x13E8;
                 export const m_szTournamentEventName = 0x150;
-                export const m_bForceTeamChangeSilent = 0xE20;
+                export const m_bForceTeamChangeSilent = 0xE24;
                 export const m_bHasHostageBeenTouched = 0xD78;
                 export const m_bMatchWaitingForResume = 0xF9;
                 export const m_flCTSpawnPointUsedTime = 0xFA0;
@@ -1848,7 +1848,7 @@ export namespace cs2_dumper {
                 export const m_szTournamentEventStage = 0x350;
                 export const m_CTSpawnPointsMasterList = 0xF68;
                 export const m_bIsUnreservedGameServer = 0xFE0;
-                export const m_bLoadingRoundBackupData = 0xE21;
+                export const m_bLoadingRoundBackupData = 0xE25;
                 export const m_bScrambleTeamsOnRestart = 0xDC7;
                 export const m_bTerroristTimeOutActive = 0xE4;
                 export const m_bVoiceWonMatchBragFired = 0xEA4;
@@ -1860,7 +1860,7 @@ export namespace cs2_dumper {
                 export const m_bRoundEndShowTimerDefend = 0x13E0;
                 export const m_iMatchStats_RoundResults = 0xA50;
                 export const m_iNextTerroristSpawnPoint = 0xFA4;
-                export const m_nCTsAliveAtFreezetimeEnd = 0xE18;
+                export const m_nCTsAliveAtFreezetimeEnd = 0xE1C;
                 export const m_nMatchAbortedEarlyReason = 0x1080;
                 export const m_numSpectatorsCountMaxLnk = 0xE0C;
                 export const m_timeUntilNextPhaseStarts = 0x118;
@@ -1895,12 +1895,13 @@ export namespace cs2_dumper {
                 export const m_TerroristSpawnPointsMasterList = 0xF80;
                 export const m_arrSelectedHostageSpawnIndices = 0xDA8;
                 export const m_nShorthandedBonusLastEvalRound = 0x1034;
-                export const m_nTerroristsAliveAtFreezetimeEnd = 0xE1C;
+                export const m_nTerroristsAliveAtFreezetimeEnd = 0xE20;
                 export const m_bNeedToAskPlayersForContinueVote = 0xDEC;
                 export const m_bRespawningAllRespawnablePlayers = 0xF98;
                 export const m_arrTournamentActiveCasterAccounts = 0xA28;
                 export const m_bTeamLastKillUsedUniqueWeaponMatch = 0x1398;
                 export const m_pQueuedMatchmakingReservationString = 0xDF8;
+                export const m_bQueuedMatchmakingReportedRoundStatsPendingSend = 0xE18;
             }
             export namespace CChangeLevel {
                 export const m_bNoTouch = 0x9F1;

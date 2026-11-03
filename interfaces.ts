@@ -17,27 +17,27 @@ export namespace cs2_dumper {
             export const VStringTokenSystem001 = 0x3D3300;
         }
         export namespace client_dll {
-            export const LegacyGameUI001 = 0x2244180;
-            export const Source2Client002 = 0x25635A0;
-            export const Source2ClientUI001 = 0x2242900;
+            export const LegacyGameUI001 = 0x2244190;
+            export const Source2Client002 = 0x2563620;
+            export const Source2ClientUI001 = 0x2242910;
             export const ClientToolsInfo_001 = 0x2237730;
             export const GameClientExports001 = 0x22343D8;
-            export const Source2ClientConfig001 = 0x24C0150;
-            export const Source2ClientPrediction001 = 0x25697D0;
+            export const Source2ClientConfig001 = 0x24C0160;
+            export const Source2ClientPrediction001 = 0x2569850;
             export const EmptyWorldService001_Client = 0x221B160;
             export const ClientBugBugServic001_Client = 0x2237760;
         }
         export namespace server_dll {
-            export const NavGameTest001 = 0x1E58D38;
-            export const Source2Server001 = 0x1E37220;
+            export const NavGameTest001 = 0x1E58DB8;
+            export const Source2Server001 = 0x1E372A0;
             export const customnavsystem001 = 0x1DAE558;
-            export const ServerToolsInfo_001 = 0x1E37C38;
-            export const Source2GameClients001 = 0x1E37160;
-            export const Source2GameDirector001 = 0x1FA1510;
-            export const Source2GameEntities001 = 0x1E373E0;
-            export const Source2ServerConfig001 = 0x211CDE8;
-            export const EntitySubclassUtilsV001 = 0x1DC0C40;
-            export const EmptyWorldService001_Server = 0x1E110C0;
+            export const ServerToolsInfo_001 = 0x1E37CB8;
+            export const Source2GameClients001 = 0x1E371E0;
+            export const Source2GameDirector001 = 0x1FA1590;
+            export const Source2GameEntities001 = 0x1E37460;
+            export const Source2ServerConfig001 = 0x211CE68;
+            export const EntitySubclassUtilsV001 = 0x1DC0C60;
+            export const EmptyWorldService001_Server = 0x1E11100;
         }
         export namespace engine2_dll {
             export const BugService001 = 0x9790F0;
@@ -91,7 +91,7 @@ export namespace cs2_dumper {
             export const NavSystem001 = 0x12C000;
         }
         export namespace particles_dll {
-            export const ParticleSystemMgr003 = 0x65ADD0;
+            export const ParticleSystemMgr003 = 0x65ADE0;
         }
         export namespace vphysics2_dll {
             export const VPhysics2_Interface_001 = 0x460E60;

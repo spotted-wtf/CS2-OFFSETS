@@ -6,7 +6,7 @@ class cs2_dumper:
             duck = 0x22384F0
             jump = 0x2238460
             left = 0x22382B0
-            zoom = 0x257F810
+            zoom = 0x257F8A0
             right = 0x2238340
             attack = 0x2237F50
             reload = 0x2237EC0
@@ -15,5 +15,5 @@ class cs2_dumper:
             forward = 0x2238190
             turnleft = 0x2238070
             turnright = 0x2238100
-            showscores = 0x257F780
-            lookatweapon = 0x257F8A0
+            showscores = 0x257F810
+            lookatweapon = 0x257F930

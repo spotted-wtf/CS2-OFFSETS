@@ -1677,7 +1677,7 @@ class cs2_dumper:
                 m_numSpectatorsCountMax = 0xE04
                 m_sRoundEndFunFactToken = 0x13E8
                 m_szTournamentEventName = 0x150
-                m_bForceTeamChangeSilent = 0xE20
+                m_bForceTeamChangeSilent = 0xE24
                 m_bHasHostageBeenTouched = 0xD78
                 m_bMatchWaitingForResume = 0xF9
                 m_flCTSpawnPointUsedTime = 0xFA0
@@ -1693,7 +1693,7 @@ class cs2_dumper:
                 m_szTournamentEventStage = 0x350
                 m_CTSpawnPointsMasterList = 0xF68
                 m_bIsUnreservedGameServer = 0xFE0
-                m_bLoadingRoundBackupData = 0xE21
+                m_bLoadingRoundBackupData = 0xE25
                 m_bScrambleTeamsOnRestart = 0xDC7
                 m_bTerroristTimeOutActive = 0xE4
                 m_bVoiceWonMatchBragFired = 0xEA4
@@ -1705,7 +1705,7 @@ class cs2_dumper:
                 m_bRoundEndShowTimerDefend = 0x13E0
                 m_iMatchStats_RoundResults = 0xA50
                 m_iNextTerroristSpawnPoint = 0xFA4
-                m_nCTsAliveAtFreezetimeEnd = 0xE18
+                m_nCTsAliveAtFreezetimeEnd = 0xE1C
                 m_nMatchAbortedEarlyReason = 0x1080
                 m_numSpectatorsCountMaxLnk = 0xE0C
                 m_timeUntilNextPhaseStarts = 0x118
@@ -1740,12 +1740,13 @@ class cs2_dumper:
                 m_TerroristSpawnPointsMasterList = 0xF80
                 m_arrSelectedHostageSpawnIndices = 0xDA8
                 m_nShorthandedBonusLastEvalRound = 0x1034
-                m_nTerroristsAliveAtFreezetimeEnd = 0xE1C
+                m_nTerroristsAliveAtFreezetimeEnd = 0xE20
                 m_bNeedToAskPlayersForContinueVote = 0xDEC
                 m_bRespawningAllRespawnablePlayers = 0xF98
                 m_arrTournamentActiveCasterAccounts = 0xA28
                 m_bTeamLastKillUsedUniqueWeaponMatch = 0x1398
                 m_pQueuedMatchmakingReservationString = 0xDF8
+                m_bQueuedMatchmakingReportedRoundStatsPendingSend = 0xE18
             class CChangeLevel:
                 m_bNoTouch = 0x9F1
                 m_bTouched = 0x9F0
