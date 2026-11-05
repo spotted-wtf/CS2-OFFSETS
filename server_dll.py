@@ -331,7 +331,7 @@ class cs2_dumper:
                 m_followMinuteTimer = 0x32A8
                 m_BlockDirectionTimer = 0x32C8
                 m_collisionStuckTimer = 0x1110
-                m_bSpawnDyingParticles = 0x32E2
+                m_bSpawnDyingParticles = 0x32E3
                 m_moveRateThrottleTimer = 0x1160
                 m_flActiveFollowStartTime = 0x32A4
             class CCredits:

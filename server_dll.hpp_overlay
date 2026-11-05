@@ -353,7 +353,7 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_followMinuteTimer = 0x32A8;
                 inline constexpr std::ptrdiff_t m_BlockDirectionTimer = 0x32C8;
                 inline constexpr std::ptrdiff_t m_collisionStuckTimer = 0x1110;
-                inline constexpr std::ptrdiff_t m_bSpawnDyingParticles = 0x32E2;
+                inline constexpr std::ptrdiff_t m_bSpawnDyingParticles = 0x32E3;
                 inline constexpr std::ptrdiff_t m_moveRateThrottleTimer = 0x1160;
                 inline constexpr std::ptrdiff_t m_flActiveFollowStartTime = 0x32A4;
             }

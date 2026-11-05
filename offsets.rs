@@ -2,20 +2,20 @@
 pub mod cs2_dumper {
     pub mod offsets {
         pub mod client_dll {
-            pub const dwWeaponC4: i64 = 0x24CE108;
-            pub const dwCSGOInput: i64 = 0x257FA10;
-            pub const dwGameRules: i64 = 0x25693F8;
-            pub const dwPlantedC4: i64 = 0x24CFB60;
-            pub const dwEntityList: i64 = 0x271EBA8;
-            pub const dwGlobalVars: i64 = 0x2234108;
-            pub const dwPrediction: i64 = 0x2569850;
-            pub const dwViewAngles: i64 = 0x2580098;
-            pub const dwViewMatrix: i64 = 0x256F250;
-            pub const dwViewRender: i64 = 0x256FC18;
-            pub const dwGlowManager: i64 = 0x2566120;
-            pub const dwLocalPlayerPawn: i64 = 0x2569948;
-            pub const dwGameEntitySystem: i64 = 0x271EBA8;
-            pub const dwLocalPlayerController: i64 = 0x2541538;
+            pub const dwWeaponC4: i64 = 0x24CF118;
+            pub const dwCSGOInput: i64 = 0x2580A10;
+            pub const dwGameRules: i64 = 0x256A3F8;
+            pub const dwPlantedC4: i64 = 0x24D0B70;
+            pub const dwEntityList: i64 = 0x271FBB8;
+            pub const dwGlobalVars: i64 = 0x2235108;
+            pub const dwPrediction: i64 = 0x256A850;
+            pub const dwViewAngles: i64 = 0x2581098;
+            pub const dwViewMatrix: i64 = 0x2570250;
+            pub const dwViewRender: i64 = 0x2570C18;
+            pub const dwGlowManager: i64 = 0x2567120;
+            pub const dwLocalPlayerPawn: i64 = 0x256A948;
+            pub const dwGameEntitySystem: i64 = 0x271FBB8;
+            pub const dwLocalPlayerController: i64 = 0x2542548;
             pub const dwGameEntitySystem_highestEntityIndex: i64 = 0x2120;
         }
         pub mod engine2_dll {

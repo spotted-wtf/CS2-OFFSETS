@@ -4292,7 +4292,7 @@
           "m_followMinuteTimer": 12968,
           "m_BlockDirectionTimer": 13000,
           "m_collisionStuckTimer": 4368,
-          "m_bSpawnDyingParticles": 13026,
+          "m_bSpawnDyingParticles": 13027,
           "m_moveRateThrottleTimer": 4448,
           "m_flActiveFollowStartTime": 12964
         },

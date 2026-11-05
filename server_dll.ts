@@ -351,7 +351,7 @@ export namespace cs2_dumper {
                 export const m_followMinuteTimer = 0x32A8;
                 export const m_BlockDirectionTimer = 0x32C8;
                 export const m_collisionStuckTimer = 0x1110;
-                export const m_bSpawnDyingParticles = 0x32E2;
+                export const m_bSpawnDyingParticles = 0x32E3;
                 export const m_moveRateThrottleTimer = 0x1160;
                 export const m_flActiveFollowStartTime = 0x32A4;
             }

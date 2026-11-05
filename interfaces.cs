@@ -17,27 +17,27 @@ public static partial class cs2_dumper {
             public const long VStringTokenSystem001 = 0x3D3300;
         }
         public static partial class client_dll {
-            public const long LegacyGameUI001 = 0x2244190;
-            public const long Source2Client002 = 0x2563620;
-            public const long Source2ClientUI001 = 0x2242910;
-            public const long ClientToolsInfo_001 = 0x2237730;
-            public const long GameClientExports001 = 0x22343D8;
-            public const long Source2ClientConfig001 = 0x24C0160;
-            public const long Source2ClientPrediction001 = 0x2569850;
-            public const long EmptyWorldService001_Client = 0x221B160;
-            public const long ClientBugBugServic001_Client = 0x2237760;
+            public const long LegacyGameUI001 = 0x2245180;
+            public const long Source2Client002 = 0x2564620;
+            public const long Source2ClientUI001 = 0x2243900;
+            public const long ClientToolsInfo_001 = 0x2238730;
+            public const long GameClientExports001 = 0x22353D8;
+            public const long Source2ClientConfig001 = 0x24C1160;
+            public const long Source2ClientPrediction001 = 0x256A850;
+            public const long EmptyWorldService001_Client = 0x221C160;
+            public const long ClientBugBugServic001_Client = 0x2238760;
         }
         public static partial class server_dll {
-            public const long NavGameTest001 = 0x1E58DB8;
-            public const long Source2Server001 = 0x1E372A0;
-            public const long customnavsystem001 = 0x1DAE558;
-            public const long ServerToolsInfo_001 = 0x1E37CB8;
-            public const long Source2GameClients001 = 0x1E371E0;
-            public const long Source2GameDirector001 = 0x1FA1590;
-            public const long Source2GameEntities001 = 0x1E37460;
-            public const long Source2ServerConfig001 = 0x211CE68;
-            public const long EntitySubclassUtilsV001 = 0x1DC0C60;
-            public const long EmptyWorldService001_Server = 0x1E11100;
+            public const long NavGameTest001 = 0x1E54D38;
+            public const long Source2Server001 = 0x1E33220;
+            public const long customnavsystem001 = 0x1DAA558;
+            public const long ServerToolsInfo_001 = 0x1E33C38;
+            public const long Source2GameClients001 = 0x1E33160;
+            public const long Source2GameDirector001 = 0x1F9D5D0;
+            public const long Source2GameEntities001 = 0x1E333E0;
+            public const long Source2ServerConfig001 = 0x2118EA8;
+            public const long EntitySubclassUtilsV001 = 0x1DBCC60;
+            public const long EmptyWorldService001_Server = 0x1E0D0E0;
         }
         public static partial class engine2_dll {
             public const long BugService001 = 0x9790F0;

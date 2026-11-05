@@ -17,27 +17,27 @@ export namespace cs2_dumper {
             export const VStringTokenSystem001 = 0x3D3300;
         }
         export namespace client_dll {
-            export const LegacyGameUI001 = 0x2244190;
-            export const Source2Client002 = 0x2563620;
-            export const Source2ClientUI001 = 0x2242910;
-            export const ClientToolsInfo_001 = 0x2237730;
-            export const GameClientExports001 = 0x22343D8;
-            export const Source2ClientConfig001 = 0x24C0160;
-            export const Source2ClientPrediction001 = 0x2569850;
-            export const EmptyWorldService001_Client = 0x221B160;
-            export const ClientBugBugServic001_Client = 0x2237760;
+            export const LegacyGameUI001 = 0x2245180;
+            export const Source2Client002 = 0x2564620;
+            export const Source2ClientUI001 = 0x2243900;
+            export const ClientToolsInfo_001 = 0x2238730;
+            export const GameClientExports001 = 0x22353D8;
+            export const Source2ClientConfig001 = 0x24C1160;
+            export const Source2ClientPrediction001 = 0x256A850;
+            export const EmptyWorldService001_Client = 0x221C160;
+            export const ClientBugBugServic001_Client = 0x2238760;
         }
         export namespace server_dll {
-            export const NavGameTest001 = 0x1E58DB8;
-            export const Source2Server001 = 0x1E372A0;
-            export const customnavsystem001 = 0x1DAE558;
-            export const ServerToolsInfo_001 = 0x1E37CB8;
-            export const Source2GameClients001 = 0x1E371E0;
-            export const Source2GameDirector001 = 0x1FA1590;
-            export const Source2GameEntities001 = 0x1E37460;
-            export const Source2ServerConfig001 = 0x211CE68;
-            export const EntitySubclassUtilsV001 = 0x1DC0C60;
-            export const EmptyWorldService001_Server = 0x1E11100;
+            export const NavGameTest001 = 0x1E54D38;
+            export const Source2Server001 = 0x1E33220;
+            export const customnavsystem001 = 0x1DAA558;
+            export const ServerToolsInfo_001 = 0x1E33C38;
+            export const Source2GameClients001 = 0x1E33160;
+            export const Source2GameDirector001 = 0x1F9D5D0;
+            export const Source2GameEntities001 = 0x1E333E0;
+            export const Source2ServerConfig001 = 0x2118EA8;
+            export const EntitySubclassUtilsV001 = 0x1DBCC60;
+            export const EmptyWorldService001_Server = 0x1E0D0E0;
         }
         export namespace engine2_dll {
             export const BugService001 = 0x9790F0;

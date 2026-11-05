@@ -1,20 +1,20 @@
 public static partial class cs2_dumper {
     public static partial class offsets {
         public static partial class client_dll {
-            public const long dwWeaponC4 = 0x24CE108;
-            public const long dwCSGOInput = 0x257FA10;
-            public const long dwGameRules = 0x25693F8;
-            public const long dwPlantedC4 = 0x24CFB60;
-            public const long dwEntityList = 0x271EBA8;
-            public const long dwGlobalVars = 0x2234108;
-            public const long dwPrediction = 0x2569850;
-            public const long dwViewAngles = 0x2580098;
-            public const long dwViewMatrix = 0x256F250;
-            public const long dwViewRender = 0x256FC18;
-            public const long dwGlowManager = 0x2566120;
-            public const long dwLocalPlayerPawn = 0x2569948;
-            public const long dwGameEntitySystem = 0x271EBA8;
-            public const long dwLocalPlayerController = 0x2541538;
+            public const long dwWeaponC4 = 0x24CF118;
+            public const long dwCSGOInput = 0x2580A10;
+            public const long dwGameRules = 0x256A3F8;
+            public const long dwPlantedC4 = 0x24D0B70;
+            public const long dwEntityList = 0x271FBB8;
+            public const long dwGlobalVars = 0x2235108;
+            public const long dwPrediction = 0x256A850;
+            public const long dwViewAngles = 0x2581098;
+            public const long dwViewMatrix = 0x2570250;
+            public const long dwViewRender = 0x2570C18;
+            public const long dwGlowManager = 0x2567120;
+            public const long dwLocalPlayerPawn = 0x256A948;
+            public const long dwGameEntitySystem = 0x271FBB8;
+            public const long dwLocalPlayerController = 0x2542548;
             public const long dwGameEntitySystem_highestEntityIndex = 0x2120;
         }
         public static partial class engine2_dll {

@@ -351,7 +351,7 @@ public static partial class cs2_dumper {
                 public const long m_followMinuteTimer = 0x32A8;
                 public const long m_BlockDirectionTimer = 0x32C8;
                 public const long m_collisionStuckTimer = 0x1110;
-                public const long m_bSpawnDyingParticles = 0x32E2;
+                public const long m_bSpawnDyingParticles = 0x32E3;
                 public const long m_moveRateThrottleTimer = 0x1160;
                 public const long m_flActiveFollowStartTime = 0x32A4;
             }
