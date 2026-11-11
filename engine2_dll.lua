@@ -188,6 +188,7 @@ return {
                 },
                 ["EventClientPollNetworking_t"] = {
                     ["m_nTickCount"] = 0x0,
+                    ["m_nTotalTicks"] = 0x4,
                 },
                 ["EventServerPollNetworking_t"] = {
 

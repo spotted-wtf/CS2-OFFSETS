@@ -351,7 +351,7 @@ export namespace cs2_dumper {
                 export const m_followMinuteTimer = 0x32A8;
                 export const m_BlockDirectionTimer = 0x32C8;
                 export const m_collisionStuckTimer = 0x1110;
-                export const m_bSpawnDyingParticles = 0x32E3;
+                export const m_bSpawnDyingParticles = 0x32E2;
                 export const m_moveRateThrottleTimer = 0x1160;
                 export const m_flActiveFollowStartTime = 0x32A4;
             }
@@ -475,6 +475,7 @@ export namespace cs2_dumper {
             }
             export namespace CMapInfo {
                 export const m_flBombRadius = 0x4AC;
+                export const m_bFrostEnabled = 0x4D8;
                 export const m_iBuyingStatus = 0x4A8;
                 export const m_iHostageCount = 0x4BC;
                 export const m_bGPUCullSkybox = 0x4C2;
@@ -7050,6 +7051,7 @@ export namespace cs2_dumper {
                 export const m_flActionBlendTimeSeconds = 0x2C;
                 export const m_flHandIKBlendInTimeSeconds = 0x28;
                 export const m_flPlantingBlendTimeSeconds = 0x30;
+                export const m_flTransitionBlendTimeSeconds = 0x34;
             }
             export namespace CNmEventConsumerBodyGroup {
 

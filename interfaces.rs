@@ -18,63 +18,63 @@ pub mod cs2_dumper {
             pub const VStringTokenSystem001: i64 = 0x3D3300;
         }
         pub mod client_dll {
-            pub const LegacyGameUI001: i64 = 0x2245180;
-            pub const Source2Client002: i64 = 0x2564620;
-            pub const Source2ClientUI001: i64 = 0x2243900;
-            pub const ClientToolsInfo_001: i64 = 0x2238730;
-            pub const GameClientExports001: i64 = 0x22353D8;
-            pub const Source2ClientConfig001: i64 = 0x24C1160;
-            pub const Source2ClientPrediction001: i64 = 0x256A850;
-            pub const EmptyWorldService001_Client: i64 = 0x221C160;
-            pub const ClientBugBugServic001_Client: i64 = 0x2238760;
+            pub const LegacyGameUI001: i64 = 0x2231AC0;
+            pub const Source2Client002: i64 = 0x254D9F0;
+            pub const Source2ClientUI001: i64 = 0x2230220;
+            pub const ClientToolsInfo_001: i64 = 0x22250E0;
+            pub const GameClientExports001: i64 = 0x2221D88;
+            pub const Source2ClientConfig001: i64 = 0x24AA330;
+            pub const Source2ClientPrediction001: i64 = 0x2553C40;
+            pub const EmptyWorldService001_Client: i64 = 0x2208E20;
+            pub const ClientBugBugServic001_Client: i64 = 0x2225110;
         }
         pub mod server_dll {
-            pub const NavGameTest001: i64 = 0x1E54D38;
-            pub const Source2Server001: i64 = 0x1E33220;
-            pub const customnavsystem001: i64 = 0x1DAA558;
-            pub const ServerToolsInfo_001: i64 = 0x1E33C38;
-            pub const Source2GameClients001: i64 = 0x1E33160;
-            pub const Source2GameDirector001: i64 = 0x1F9D5D0;
-            pub const Source2GameEntities001: i64 = 0x1E333E0;
-            pub const Source2ServerConfig001: i64 = 0x2118EA8;
-            pub const EntitySubclassUtilsV001: i64 = 0x1DBCC60;
-            pub const EmptyWorldService001_Server: i64 = 0x1E0D0E0;
+            pub const NavGameTest001: i64 = 0x1E3A808;
+            pub const Source2Server001: i64 = 0x1E18D20;
+            pub const customnavsystem001: i64 = 0x1D904A8;
+            pub const ServerToolsInfo_001: i64 = 0x1E19738;
+            pub const Source2GameClients001: i64 = 0x1E18C60;
+            pub const Source2GameDirector001: i64 = 0x1F7F820;
+            pub const Source2GameEntities001: i64 = 0x1E18EE0;
+            pub const Source2ServerConfig001: i64 = 0x20FB328;
+            pub const EntitySubclassUtilsV001: i64 = 0x1DA2B40;
+            pub const EmptyWorldService001_Server: i64 = 0x1DF2E10;
         }
         pub mod engine2_dll {
-            pub const BugService001: i64 = 0x9790F0;
-            pub const EngineGameUI001: i64 = 0x6BD720;
-            pub const HostStateMgr001: i64 = 0x6C02A0;
-            pub const INETSUPPORT_001: i64 = 0x6B8C70;
-            pub const ToolService_001: i64 = 0x6C0110;
-            pub const BugBugService001: i64 = 0x6BFDC0;
-            pub const InputService_001: i64 = 0x979820;
-            pub const KeyValueCache001: i64 = 0x6C0350;
-            pub const SoundService_001: i64 = 0x9B93F0;
-            pub const StatsService_001: i64 = 0x9B9930;
-            pub const VProfService_001: i64 = 0x6C0150;
-            pub const GameUIService_001: i64 = 0x979540;
-            pub const RenderService_001: i64 = 0x9B8F80;
-            pub const MapListService_001: i64 = 0x9B8690;
-            pub const NetworkService_001: i64 = 0x6BFFD0;
-            pub const BenchmarkService001: i64 = 0x6BFCC0;
-            pub const EngineServiceMgr001: i64 = 0x9BA3B0;
-            pub const ScreenshotService001: i64 = 0x9B9240;
-            pub const NetworkP2PService_001: i64 = 0x9B8B60;
-            pub const SplitScreenService_001: i64 = 0x6C0010;
-            pub const NetworkClientService_001: i64 = 0x9B8820;
-            pub const NetworkServerService_001: i64 = 0x9B8D10;
-            pub const Source2EngineToClient001: i64 = 0x6BD030;
-            pub const Source2EngineToServer001: i64 = 0x6BD108;
-            pub const GameEventSystemClientV001: i64 = 0x9BA690;
-            pub const GameEventSystemServerV001: i64 = 0x9BA7C0;
-            pub const SimpleEngineLoopService_001: i64 = 0x6C03B0;
-            pub const GameResourceServiceClientV001: i64 = 0x6BFE00;
-            pub const GameResourceServiceServerV001: i64 = 0x6BFE60;
-            pub const VENGINE_GAMEUIFUNCS_VERSION005: i64 = 0x6BD7B0;
-            pub const ClientServerEngineLoopService_001: i64 = 0x9BAAE0;
-            pub const ClientServerSharedHandleSystem001: i64 = 0x9BA0F0;
-            pub const Source2EngineToClientStringTable001: i64 = 0x6BD090;
-            pub const Source2EngineToServerStringTable001: i64 = 0x6BD130;
+            pub const BugService001: i64 = 0x970360;
+            pub const EngineGameUI001: i64 = 0x6B6430;
+            pub const HostStateMgr001: i64 = 0x6B8FB0;
+            pub const INETSUPPORT_001: i64 = 0x6B1980;
+            pub const ToolService_001: i64 = 0x6B8E20;
+            pub const BugBugService001: i64 = 0x6B8AD0;
+            pub const InputService_001: i64 = 0x970A90;
+            pub const KeyValueCache001: i64 = 0x6B9060;
+            pub const SoundService_001: i64 = 0x9B0670;
+            pub const StatsService_001: i64 = 0x9B0BB0;
+            pub const VProfService_001: i64 = 0x6B8E60;
+            pub const GameUIService_001: i64 = 0x9707B0;
+            pub const RenderService_001: i64 = 0x9B01F0;
+            pub const MapListService_001: i64 = 0x9AF900;
+            pub const NetworkService_001: i64 = 0x6B8CE0;
+            pub const BenchmarkService001: i64 = 0x6B89D0;
+            pub const EngineServiceMgr001: i64 = 0x9B1620;
+            pub const ScreenshotService001: i64 = 0x9B04C0;
+            pub const NetworkP2PService_001: i64 = 0x9AFDD0;
+            pub const SplitScreenService_001: i64 = 0x6B8D20;
+            pub const NetworkClientService_001: i64 = 0x9AFA90;
+            pub const NetworkServerService_001: i64 = 0x9AFF80;
+            pub const Source2EngineToClient001: i64 = 0x6B5D40;
+            pub const Source2EngineToServer001: i64 = 0x6B5E18;
+            pub const GameEventSystemClientV001: i64 = 0x9B1910;
+            pub const GameEventSystemServerV001: i64 = 0x9B1A40;
+            pub const SimpleEngineLoopService_001: i64 = 0x6B90C0;
+            pub const GameResourceServiceClientV001: i64 = 0x6B8B10;
+            pub const GameResourceServiceServerV001: i64 = 0x6B8B70;
+            pub const VENGINE_GAMEUIFUNCS_VERSION005: i64 = 0x6B64C0;
+            pub const ClientServerEngineLoopService_001: i64 = 0x9B1D80;
+            pub const ClientServerSharedHandleSystem001: i64 = 0x9B1370;
+            pub const Source2EngineToClientStringTable001: i64 = 0x6B5DA0;
+            pub const Source2EngineToServerStringTable001: i64 = 0x6B5E40;
         }
         pub mod vscript_dll {
             pub const VScriptManager010: i64 = 0x13E430;
@@ -92,7 +92,7 @@ pub mod cs2_dumper {
             pub const NavSystem001: i64 = 0x12C000;
         }
         pub mod particles_dll {
-            pub const ParticleSystemMgr003: i64 = 0x65ADE0;
+            pub const ParticleSystemMgr003: i64 = 0x65AEE0;
         }
         pub mod vphysics2_dll {
             pub const VPhysics2_Interface_001: i64 = 0x460E60;
@@ -111,20 +111,20 @@ pub mod cs2_dumper {
             pub const InputStackSystemVersion001: i64 = 0x44E90;
         }
         pub mod matchmaking_dll {
-            pub const GameTypes001: i64 = 0x1B0FD0;
-            pub const MATCHFRAMEWORK_001: i64 = 0x1B90A0;
+            pub const GameTypes001: i64 = 0x1AEFC0;
+            pub const MATCHFRAMEWORK_001: i64 = 0x1B7080;
         }
         pub mod scenesystem_dll {
-            pub const SceneUtils_001: i64 = 0x676750;
+            pub const SceneUtils_001: i64 = 0x676760;
             pub const SceneSystem_002: i64 = 0x91FB20;
-            pub const RenderingPipelines_001: i64 = 0x6759F0;
+            pub const RenderingPipelines_001: i64 = 0x675A00;
         }
         pub mod soundsystem_dll {
-            pub const SoundSystem001: i64 = 0x532420;
-            pub const VMixEditTool001: i64 = 0x5941C1F;
-            pub const SoundOpSystem001: i64 = 0x532B20;
-            pub const SoundOpSystemEdit001: i64 = 0x532A30;
-            pub const SoundBugBugService001_Client: i64 = 0x532C40;
+            pub const SoundSystem001: i64 = 0x532470;
+            pub const VMixEditTool001: i64 = 0x5941BBF;
+            pub const SoundOpSystem001: i64 = 0x532B70;
+            pub const SoundOpSystemEdit001: i64 = 0x532A80;
+            pub const SoundBugBugService001_Client: i64 = 0x532C90;
         }
         pub mod pulse_system_dll {
             pub const IPulseSystem_001: i64 = 0x238120;
@@ -133,10 +133,10 @@ pub mod cs2_dumper {
             pub const SchemaSystem_001: i64 = 0x76710;
         }
         pub mod networksystem_dll {
-            pub const NetworkSystemVersion001: i64 = 0x2911A0;
-            pub const NetworkMessagesVersion001: i64 = 0x2A3F30;
-            pub const SerializedEntitiesVersion001: i64 = 0x291290;
-            pub const FlattenedSerializersVersion001: i64 = 0x277A50;
+            pub const NetworkSystemVersion001: i64 = 0x28C450;
+            pub const NetworkMessagesVersion001: i64 = 0x29EE00;
+            pub const SerializedEntitiesVersion001: i64 = 0x28C530;
+            pub const FlattenedSerializersVersion001: i64 = 0x272A30;
         }
         pub mod worldrenderer_dll {
             pub const WorldRendererMgr001: i64 = 0x236D40;

@@ -351,7 +351,7 @@ public static partial class cs2_dumper {
                 public const long m_followMinuteTimer = 0x32A8;
                 public const long m_BlockDirectionTimer = 0x32C8;
                 public const long m_collisionStuckTimer = 0x1110;
-                public const long m_bSpawnDyingParticles = 0x32E3;
+                public const long m_bSpawnDyingParticles = 0x32E2;
                 public const long m_moveRateThrottleTimer = 0x1160;
                 public const long m_flActiveFollowStartTime = 0x32A4;
             }
@@ -475,6 +475,7 @@ public static partial class cs2_dumper {
             }
             public static partial class CMapInfo {
                 public const long m_flBombRadius = 0x4AC;
+                public const long m_bFrostEnabled = 0x4D8;
                 public const long m_iBuyingStatus = 0x4A8;
                 public const long m_iHostageCount = 0x4BC;
                 public const long m_bGPUCullSkybox = 0x4C2;
@@ -7050,6 +7051,7 @@ public static partial class cs2_dumper {
                 public const long m_flActionBlendTimeSeconds = 0x2C;
                 public const long m_flHandIKBlendInTimeSeconds = 0x28;
                 public const long m_flPlantingBlendTimeSeconds = 0x30;
+                public const long m_flTransitionBlendTimeSeconds = 0x34;
             }
             public static partial class CNmEventConsumerBodyGroup {
 

@@ -187,6 +187,7 @@ pub const cs2_dumper = struct {
             };
             pub const EventClientPollNetworking_t = struct {
                 pub const m_nTickCount: i64 = 0x0;
+                pub const m_nTotalTicks: i64 = 0x4;
             };
             pub const EventServerPollNetworking_t = struct {
 

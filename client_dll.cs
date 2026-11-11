@@ -2,16 +2,16 @@ public static partial class cs2_dumper {
     public static partial class schemas {
         public static partial class client_dll {
             public static partial class C_C4 {
-                public const long m_fArmedTime = 0x1F2C;
-                public const long m_nSpotRules = 0x1F50;
-                public const long m_bBombPlanted = 0x1F5B;
-                public const long m_bStartedArming = 0x1F28;
-                public const long m_bIsPlantingViaUse = 0x1F31;
-                public const long m_bPlayedArmingBeeps = 0x1F54;
-                public const long m_eActiveLightEffect = 0x1F24;
-                public const long m_entitySpottedState = 0x1F38;
-                public const long m_bBombPlacedAnimation = 0x1F30;
-                public const long m_activeLightParticleIndex = 0x1F20;
+                public const long m_fArmedTime = 0x1F6C;
+                public const long m_nSpotRules = 0x1F90;
+                public const long m_bBombPlanted = 0x1F9B;
+                public const long m_bStartedArming = 0x1F68;
+                public const long m_bIsPlantingViaUse = 0x1F71;
+                public const long m_bPlayedArmingBeeps = 0x1F94;
+                public const long m_eActiveLightEffect = 0x1F64;
+                public const long m_entitySpottedState = 0x1F78;
+                public const long m_bBombPlacedAnimation = 0x1F70;
+                public const long m_activeLightParticleIndex = 0x1F60;
             }
             public static partial class C_AK47 {
 
@@ -76,7 +76,7 @@ public static partial class cs2_dumper {
                 public const long m_aPlayerControllers = 0x600;
             }
             public static partial class C_Knife {
-                public const long m_bFirstAttack = 0x1F20;
+                public const long m_bFirstAttack = 0x1F60;
             }
             public static partial class C_World {
 
@@ -89,6 +89,7 @@ public static partial class cs2_dumper {
             }
             public static partial class CMapInfo {
                 public const long m_flBombRadius = 0x604;
+                public const long m_bFrostEnabled = 0x630;
                 public const long m_iBuyingStatus = 0x600;
                 public const long m_iHostageCount = 0x614;
                 public const long m_bGPUCullSkybox = 0x61A;
@@ -188,7 +189,7 @@ public static partial class cs2_dumper {
                 public const long m_bIsPreviewModel = 0x1AE0;
                 public const long m_AttributeManager = 0x14C8;
                 public const long m_hWaterWakeParticles = 0x1ADC;
-                public const long m_bSpawnDyingParticles = 0x1B68;
+                public const long m_bSpawnDyingParticles = 0x1B98;
                 public const long m_bAttributesInitialized = 0x1AD8;
             }
             public static partial class C_EnvWind {
@@ -196,28 +197,27 @@ public static partial class cs2_dumper {
             }
             public static partial class C_Hostage {
                 public const long m_vel = 0x1328;
-                public const long m_isInit = 0x13A8;
+                public const long m_isInit = 0x13A0;
                 public const long m_leader = 0x1308;
-                public const long m_lookAt = 0x1380;
+                public const long m_lookAt = 0x1378;
                 public const long m_isRescued = 0x1334;
-                public const long m_blinkTimer = 0x1368;
+                public const long m_blinkTimer = 0x1360;
                 public const long m_reuseTimer = 0x1310;
-                public const long m_eyeAttachment = 0x13A9;
+                public const long m_eyeAttachment = 0x13A1;
                 public const long m_fLastGrabTime = 0x1344;
                 public const long m_nHostageState = 0x1338;
                 public const long m_vecGrabbedPos = 0x1348;
-                public const long m_chestAttachment = 0x13AA;
+                public const long m_chestAttachment = 0x13A2;
                 public const long m_flDropStartTime = 0x135C;
                 public const long m_hHostageGrabber = 0x1340;
                 public const long m_jumpedThisFrame = 0x1335;
-                public const long m_lookAroundTimer = 0x1390;
-                public const long m_pPredictionOwner = 0x13B0;
+                public const long m_lookAroundTimer = 0x1388;
+                public const long m_pPredictionOwner = 0x13A8;
                 public const long m_bHandsHaveBeenCut = 0x133C;
                 public const long m_flGrabSuccessTime = 0x1358;
                 public const long m_flRescueStartTime = 0x1354;
                 public const long m_entitySpottedState = 0x12F0;
-                public const long m_flDeadOrRescuedTime = 0x1360;
-                public const long m_fNewestAlphaThinkTime = 0x13B8;
+                public const long m_fNewestAlphaThinkTime = 0x13B0;
             }
             public static partial class C_Inferno {
                 public const long m_blosCheck = 0x8664;
@@ -1045,7 +1045,7 @@ public static partial class cs2_dumper {
 
             }
             public static partial class C_WeaponCZ75a {
-                public const long m_bMagazineRemoved = 0x1F50;
+                public const long m_bMagazineRemoved = 0x1F90;
             }
             public static partial class C_WeaponElite {
 
@@ -1075,8 +1075,8 @@ public static partial class cs2_dumper {
 
             }
             public static partial class C_WeaponTaser {
-                public const long m_fFireTime = 0x1F50;
-                public const long m_nLastAttackTick = 0x1F54;
+                public const long m_fFireTime = 0x1F90;
+                public const long m_nLastAttackTick = 0x1F94;
             }
             public static partial class C_WeaponUMP45 {
 
@@ -1247,170 +1247,170 @@ public static partial class cs2_dumper {
                 public const long m_vWhereToSetLightingOrigin = 0x14E4;
             }
             public static partial class C_CSPlayerPawn {
-                public const long m_bIsScoped = 0x1EA0;
-                public const long m_ArmorValue = 0x1ED0;
-                public const long m_EconGloves = 0x1770;
+                public const long m_bIsScoped = 0x1ED0;
+                public const long m_ArmorValue = 0x1F00;
+                public const long m_EconGloves = 0x17A0;
                 public const long m_bInBuyZone = 0x15E0;
                 public const long m_bInLanding = 0x15E2;
-                public const long m_bIsWalking = 0x1E80;
+                public const long m_bIsWalking = 0x1EB0;
                 public const long m_bInBombZone = 0x15E9;
-                public const long m_bIsDefusing = 0x1EA2;
-                public const long m_bLeftHanded = 0x1DB8;
+                public const long m_bIsDefusing = 0x1ED2;
+                public const long m_bLeftHanded = 0x1DE8;
                 public const long m_bPrevHelmet = 0x15CF;
-                public const long m_bResumeZoom = 0x1EA1;
-                public const long m_iIDEntIndex = 0x36DC;
-                public const long m_iShotsFired = 0x1EB8;
-                public const long m_angEyeAngles = 0x3600;
-                public const long m_bOldIsScoped = 0x1EE0;
+                public const long m_bResumeZoom = 0x1ED1;
+                public const long m_iIDEntIndex = 0x370C;
+                public const long m_iShotsFired = 0x1EE8;
+                public const long m_angEyeAngles = 0x3630;
+                public const long m_bOldIsScoped = 0x1F10;
                 public const long m_bPrevDefuser = 0x15CE;
-                public const long m_lastLandTime = 0x1D84;
+                public const long m_lastLandTime = 0x1DB4;
                 public const long m_pBuyServices = 0x1580;
                 public const long m_unWeaponHash = 0x15DC;
-                public const long m_bHasDeathInfo = 0x1EE1;
-                public const long m_flFlinchStack = 0x1EBC;
-                public const long m_hHudModelArms = 0x1DA8;
+                public const long m_bHasDeathInfo = 0x1F11;
+                public const long m_flFlinchStack = 0x1EEC;
+                public const long m_hHudModelArms = 0x1DD8;
                 public const long m_nPrevArmorVal = 0x15D0;
                 public const long m_pGlowServices = 0x1588;
                 public const long m_bIsBuyMenuOpen = 0x15EA;
-                public const long m_flBigHeadScale = 0x3510;
-                public const long m_flViewmodelFOV = 0x1DCC;
-                public const long m_iOldIDEntIndex = 0x36FC;
-                public const long m_nWhichBombZone = 0x1EB4;
-                public const long m_arrOldEyeAngles = 0x36A0;
+                public const long m_flBigHeadScale = 0x3540;
+                public const long m_flViewmodelFOV = 0x1DFC;
+                public const long m_iOldIDEntIndex = 0x372C;
+                public const long m_nWhichBombZone = 0x1EE4;
+                public const long m_arrOldEyeAngles = 0x36D0;
                 public const long m_bHasFemaleVoice = 0x15B0;
-                public const long m_bInNoDefuseArea = 0x1EB0;
-                public const long m_flDeathInfoTime = 0x1EE4;
-                public const long m_flEmitSoundTime = 0x1EA8;
+                public const long m_bInNoDefuseArea = 0x1EE0;
+                public const long m_flDeathInfoTime = 0x1F14;
+                public const long m_flEmitSoundTime = 0x1ED8;
                 public const long m_pBulletServices = 0x1570;
-                public const long m_qDeathEyeAngles = 0x1DAC;
+                public const long m_qDeathEyeAngles = 0x1DDC;
                 public const long m_szLastPlaceName = 0x15BC;
-                public const long m_bGunGameImmunity = 0x3508;
-                public const long m_bWaitForNoAttack = 0x1EC4;
-                public const long m_iRetakesOffering = 0x1758;
-                public const long m_nLastKillerIndex = 0x1EDC;
+                public const long m_bGunGameImmunity = 0x3538;
+                public const long m_bWaitForNoAttack = 0x1EF4;
+                public const long m_iRetakesOffering = 0x1788;
+                public const long m_nLastKillerIndex = 0x1F0C;
                 public const long m_pHostageServices = 0x1578;
-                public const long m_bKilledByHeadshot = 0x1ECD;
-                public const long m_bOnGroundLastTick = 0x1D88;
+                public const long m_bKilledByHeadshot = 0x1EFD;
+                public const long m_bOnGroundLastTick = 0x1DB8;
                 public const long m_flOldFallVelocity = 0x15B8;
-                public const long m_holdTargetIDTimer = 0x3700;
-                public const long m_iTargetItemEntIdx = 0x36F8;
+                public const long m_holdTargetIDTimer = 0x3730;
+                public const long m_iTargetItemEntIdx = 0x3728;
                 public const long m_pAimPunchServices = 0x1598;
-                public const long m_bIsGrabbingHostage = 0x1EA3;
-                public const long m_delayTargetIDTimer = 0x36E0;
-                public const long m_entitySpottedState = 0x1E88;
-                public const long m_fMolotovDamageTime = 0x3514;
+                public const long m_bIsGrabbingHostage = 0x1ED3;
+                public const long m_delayTargetIDTimer = 0x3710;
+                public const long m_entitySpottedState = 0x1EB8;
+                public const long m_fMolotovDamageTime = 0x3544;
                 public const long m_flLandingStartTime = 0x15E4;
                 public const long m_flTimeOfLastInjury = 0x15EC;
-                public const long m_flVelocityModifier = 0x1EC0;
-                public const long m_flViewmodelOffsetX = 0x1DC0;
-                public const long m_flViewmodelOffsetY = 0x1DC4;
-                public const long m_flViewmodelOffsetZ = 0x1DC8;
-                public const long m_nEconGlovesChanged = 0x1D20;
-                public const long m_nRagdollDamageBone = 0x1D24;
-                public const long m_vecBulletHitModels = 0x1E68;
-                public const long m_vecDeathInfoOrigin = 0x1EE8;
-                public const long m_vecStashedVelocity = 0x1F4C;
-                public const long m_vRagdollDamageForce = 0x1D28;
-                public const long m_GunGameImmunityColor = 0x1E18;
-                public const long m_angEyeAnglesVelocity = 0x36D0;
-                public const long m_arrOldEyeAnglesTimes = 0x3690;
+                public const long m_flVelocityModifier = 0x1EF0;
+                public const long m_flViewmodelOffsetX = 0x1DF0;
+                public const long m_flViewmodelOffsetY = 0x1DF4;
+                public const long m_flViewmodelOffsetZ = 0x1DF8;
+                public const long m_nEconGlovesChanged = 0x1D50;
+                public const long m_nRagdollDamageBone = 0x1D54;
+                public const long m_vecBulletHitModels = 0x1E98;
+                public const long m_vecDeathInfoOrigin = 0x1F18;
+                public const long m_vecStashedVelocity = 0x1F7C;
+                public const long m_vRagdollDamageForce = 0x1D58;
+                public const long m_GunGameImmunityColor = 0x1E48;
+                public const long m_angEyeAnglesVelocity = 0x3700;
+                public const long m_arrOldEyeAnglesTimes = 0x36C0;
                 public const long m_bInHostageRescueZone = 0x15E8;
-                public const long m_bNeedToReApplyGloves = 0x176D;
+                public const long m_bNeedToReApplyGloves = 0x179D;
                 public const long m_bPreviouslyInBuyZone = 0x15E1;
-                public const long m_bRetakesHasDefuseKit = 0x1760;
-                public const long m_bRetakesMVPLastRound = 0x1761;
+                public const long m_bRetakesHasDefuseKit = 0x1790;
+                public const long m_bRetakesMVPLastRound = 0x1791;
                 public const long m_flLandingTimeSeconds = 0x15B4;
                 public const long m_flNextSprayDecalTime = 0x15F0;
-                public const long m_iRetakesMVPBoostItem = 0x1764;
-                public const long m_iRetakesOfferingCard = 0x175C;
-                public const long m_ignoreLadderJumpTime = 0x1EC8;
-                public const long m_nPlayerInfernoBodyFx = 0x3588;
+                public const long m_iRetakesMVPBoostItem = 0x1794;
+                public const long m_iRetakesOfferingCard = 0x178C;
+                public const long m_ignoreLadderJumpTime = 0x1EF8;
+                public const long m_nPlayerInfernoBodyFx = 0x35B8;
                 public const long m_pDamageReactServices = 0x15A0;
                 public const long m_unPreviousWeaponHash = 0x15D8;
-                public const long m_vRagdollServerOrigin = 0x1D78;
-                public const long m_angStashedShootAngles = 0x1F28;
-                public const long m_bMustSyncRagdollState = 0x1D21;
+                public const long m_vRagdollServerOrigin = 0x1DA8;
+                public const long m_angStashedShootAngles = 0x1F58;
+                public const long m_bMustSyncRagdollState = 0x1D51;
                 public const long m_flLastFiredWeaponTime = 0x15AC;
                 public const long m_nPrevGrenadeAmmoCount = 0x15D4;
-                public const long m_bRagdollDamageHeadshot = 0x1D74;
-                public const long m_flEmitSoundTime_Client = 0x1EAC;
-                public const long m_bShouldAutobuyDMWeapons = 0x3500;
-                public const long m_fSwitchedHandednessTime = 0x1DBC;
+                public const long m_bRagdollDamageHeadshot = 0x1DA4;
+                public const long m_flEmitSoundTime_Client = 0x1EDC;
+                public const long m_bShouldAutobuyDMWeapons = 0x3530;
+                public const long m_fSwitchedHandednessTime = 0x1DEC;
                 public const long m_pActionTrackingServices = 0x1590;
-                public const long m_unCurrentEquipmentValue = 0x1ED4;
-                public const long m_flInterpolatedInaccuracy = 0x1F58;
-                public const long m_bGrenadeParametersStashed = 0x1F24;
-                public const long m_grenadeParameterStashTime = 0x1F20;
-                public const long m_szRagdollDamageWeaponName = 0x1D34;
-                public const long m_vecPlayerPatchEconIndices = 0x1DD0;
-                public const long m_fImmuneToGunGameDamageTime = 0x3504;
-                public const long m_unRoundStartEquipmentValue = 0x1ED6;
-                public const long m_RetakesMVPBoostExtraUtility = 0x1768;
-                public const long m_iBlockingUseActionInProgress = 0x1EA4;
-                public const long m_unFreezetimeEndEquipmentValue = 0x1ED8;
-                public const long m_fImmuneToGunGameDamageTimeLast = 0x350C;
-                public const long m_vecStashedGrenadeThrowPosition = 0x1F34;
+                public const long m_unCurrentEquipmentValue = 0x1F04;
+                public const long m_flInterpolatedInaccuracy = 0x1F88;
+                public const long m_bGrenadeParametersStashed = 0x1F54;
+                public const long m_grenadeParameterStashTime = 0x1F50;
+                public const long m_szRagdollDamageWeaponName = 0x1D64;
+                public const long m_vecPlayerPatchEconIndices = 0x1E00;
+                public const long m_fImmuneToGunGameDamageTime = 0x3534;
+                public const long m_unRoundStartEquipmentValue = 0x1F06;
+                public const long m_RetakesMVPBoostExtraUtility = 0x1798;
+                public const long m_iBlockingUseActionInProgress = 0x1ED4;
+                public const long m_unFreezetimeEndEquipmentValue = 0x1F08;
+                public const long m_fImmuneToGunGameDamageTimeLast = 0x353C;
+                public const long m_vecStashedGrenadeThrowPosition = 0x1F64;
                 public const long m_flHealthShotBoostExpirationTime = 0x15A8;
-                public const long m_vecStashedGrenadeThrowPawnCenter = 0x1F40;
+                public const long m_vecStashedGrenadeThrowPawnCenter = 0x1F70;
             }
             public static partial class C_CSWeaponBase {
-                public const long m_donated = 0x1B64;
-                public const long m_bInReload = 0x1A3C;
-                public const long m_bUIWeapon = 0x1B22;
-                public const long m_nDropTick = 0x1B3C;
-                public const long m_bBurstMode = 0x1A2C;
-                public const long m_hPrevOwner = 0x1B38;
-                public const long m_weaponMode = 0x1A00;
-                public const long m_bSilencerOn = 0x1A51;
-                public const long m_nDeployTick = 0x1A40;
-                public const long m_bFireOnEmpty = 0x19E4;
-                public const long m_iRecoilIndex = 0x1A24;
-                public const long m_bIsHauledBack = 0x1A50;
-                public const long m_bWasOwnedByCT = 0x1B6C;
-                public const long m_fLastShotTime = 0x1B68;
-                public const long m_flRecoilIndex = 0x1A28;
-                public const long m_OnPlayerPickup = 0x19E8;
-                public const long m_bCanBePickedUp = 0x1B30;
-                public const long m_iIronSightMode = 0x1C80;
-                public const long m_bInspectPending = 0x19B4;
-                public const long m_bVisualsDataSet = 0x1B21;
-                public const long m_flDroppedAtTime = 0x1A48;
-                public const long m_flLastShakeTime = 0x1D6C;
-                public const long m_flWatTickOffset = 0x1D58;
-                public const long m_fAccuracyPenalty = 0x1A18;
-                public const long m_bInspectShouldLoop = 0x19B5;
-                public const long m_bIsInStealthReload = 0x1A58;
-                public const long m_IronSightController = 0x1BD0;
-                public const long m_bDroppedNearBuyZone = 0x1A70;
-                public const long m_flTurningInaccuracy = 0x1A14;
-                public const long m_iOriginalTeamNumber = 0x1A68;
-                public const long m_bWasOwnedByTerrorist = 0x1B6D;
-                public const long m_nextPrevOwnerUseTime = 0x1B34;
-                public const long m_bReloadHeldSinceStart = 0x1A60;
-                public const long m_flAttackHoldStartTime = 0x1A44;
-                public const long m_iMostRecentTeamNumber = 0x1A6C;
-                public const long m_nLastEmptySoundCmdNum = 0x19E0;
-                public const long m_bInSilentReloadSection = 0x1A59;
-                public const long m_flPostponeFireReadyFrac = 0x1A38;
-                public const long m_nPostponeFireReadyTicks = 0x1A34;
-                public const long m_fAccuracySmoothedForZoom = 0x1A20;
-                public const long m_flLastAccuracyUpdateTime = 0x1A1C;
-                public const long m_flTurningInaccuracyDelta = 0x1A04;
-                public const long m_iWeaponGameplayAnimState = 0x19A8;
-                public const long m_nCustomEconReloadEventId = 0x1B24;
-                public const long m_flLastBurstModeChangeTime = 0x1A30;
-                public const long m_flLastLOSTraceFailureTime = 0x1CF8;
-                public const long m_bClearWeaponIdentifyingUGC = 0x1B20;
-                public const long m_flNextClientFireBulletTime = 0x1B70;
-                public const long m_flWeaponActionPlaybackRate = 0x1A64;
-                public const long m_bWasActiveWeaponWhenDropped = 0x1B40;
-                public const long m_flInspectCancelCompleteTime = 0x19B0;
-                public const long m_flNextAttackRenderTimeOffset = 0x1A74;
-                public const long m_flStealthReloadHoldStartTime = 0x1A5C;
-                public const long m_flTimeSilencerSwitchComplete = 0x1A54;
-                public const long m_vecTurningInaccuracyEyeDirLast = 0x1A08;
-                public const long m_flWeaponGameplayAnimStateTimestamp = 0x19AC;
-                public const long m_flNextClientFireBulletTime_Repredict = 0x1B74;
+                public const long m_donated = 0x1BA4;
+                public const long m_bInReload = 0x1A7C;
+                public const long m_bUIWeapon = 0x1B62;
+                public const long m_nDropTick = 0x1B7C;
+                public const long m_bBurstMode = 0x1A6C;
+                public const long m_hPrevOwner = 0x1B78;
+                public const long m_weaponMode = 0x1A40;
+                public const long m_bSilencerOn = 0x1A91;
+                public const long m_nDeployTick = 0x1A80;
+                public const long m_bFireOnEmpty = 0x1A24;
+                public const long m_iRecoilIndex = 0x1A64;
+                public const long m_bIsHauledBack = 0x1A90;
+                public const long m_bWasOwnedByCT = 0x1BAC;
+                public const long m_fLastShotTime = 0x1BA8;
+                public const long m_flRecoilIndex = 0x1A68;
+                public const long m_OnPlayerPickup = 0x1A28;
+                public const long m_bCanBePickedUp = 0x1B70;
+                public const long m_iIronSightMode = 0x1CC0;
+                public const long m_bInspectPending = 0x19F4;
+                public const long m_bVisualsDataSet = 0x1B61;
+                public const long m_flDroppedAtTime = 0x1A88;
+                public const long m_flLastShakeTime = 0x1DAC;
+                public const long m_flWatTickOffset = 0x1D98;
+                public const long m_fAccuracyPenalty = 0x1A58;
+                public const long m_bInspectShouldLoop = 0x19F5;
+                public const long m_bIsInStealthReload = 0x1A98;
+                public const long m_IronSightController = 0x1C10;
+                public const long m_bDroppedNearBuyZone = 0x1AB0;
+                public const long m_flTurningInaccuracy = 0x1A54;
+                public const long m_iOriginalTeamNumber = 0x1AA8;
+                public const long m_bWasOwnedByTerrorist = 0x1BAD;
+                public const long m_nextPrevOwnerUseTime = 0x1B74;
+                public const long m_bReloadHeldSinceStart = 0x1AA0;
+                public const long m_flAttackHoldStartTime = 0x1A84;
+                public const long m_iMostRecentTeamNumber = 0x1AAC;
+                public const long m_nLastEmptySoundCmdNum = 0x1A20;
+                public const long m_bInSilentReloadSection = 0x1A99;
+                public const long m_flPostponeFireReadyFrac = 0x1A78;
+                public const long m_nPostponeFireReadyTicks = 0x1A74;
+                public const long m_fAccuracySmoothedForZoom = 0x1A60;
+                public const long m_flLastAccuracyUpdateTime = 0x1A5C;
+                public const long m_flTurningInaccuracyDelta = 0x1A44;
+                public const long m_iWeaponGameplayAnimState = 0x19E8;
+                public const long m_nCustomEconReloadEventId = 0x1B64;
+                public const long m_flLastBurstModeChangeTime = 0x1A70;
+                public const long m_flLastLOSTraceFailureTime = 0x1D38;
+                public const long m_bClearWeaponIdentifyingUGC = 0x1B60;
+                public const long m_flNextClientFireBulletTime = 0x1BB0;
+                public const long m_flWeaponActionPlaybackRate = 0x1AA4;
+                public const long m_bWasActiveWeaponWhenDropped = 0x1B80;
+                public const long m_flInspectCancelCompleteTime = 0x19F0;
+                public const long m_flNextAttackRenderTimeOffset = 0x1AB4;
+                public const long m_flStealthReloadHoldStartTime = 0x1A9C;
+                public const long m_flTimeSilencerSwitchComplete = 0x1A94;
+                public const long m_vecTurningInaccuracyEyeDirLast = 0x1A48;
+                public const long m_flWeaponGameplayAnimStateTimestamp = 0x19EC;
+                public const long m_flNextClientFireBulletTime_Repredict = 0x1BB4;
             }
             public static partial class C_DecoyGrenade {
 
@@ -1694,20 +1694,20 @@ public static partial class cs2_dumper {
 
             }
             public static partial class C_BaseCSGrenade {
-                public const long m_bRedraw = 0x1F21;
-                public const long m_fDropTime = 0x1FA8;
-                public const long m_bJumpThrow = 0x1F24;
-                public const long m_bPinPulled = 0x1F23;
-                public const long m_fThrowTime = 0x1F28;
-                public const long m_fPinPullTime = 0x1FAC;
-                public const long m_nNextHoldTick = 0x1FB4;
-                public const long m_bJustPulledPin = 0x1FB0;
-                public const long m_flNextHoldFrac = 0x1FB8;
-                public const long m_bIsHeldByPlayer = 0x1F22;
-                public const long m_bThrowAnimating = 0x1F25;
-                public const long m_flThrowStrength = 0x1F30;
-                public const long m_bClientPredictDelete = 0x1F20;
-                public const long m_hSwitchToWeaponAfterThrow = 0x1FBC;
+                public const long m_bRedraw = 0x1F61;
+                public const long m_fDropTime = 0x1FE8;
+                public const long m_bJumpThrow = 0x1F64;
+                public const long m_bPinPulled = 0x1F63;
+                public const long m_fThrowTime = 0x1F68;
+                public const long m_fPinPullTime = 0x1FEC;
+                public const long m_nNextHoldTick = 0x1FF4;
+                public const long m_bJustPulledPin = 0x1FF0;
+                public const long m_flNextHoldFrac = 0x1FF8;
+                public const long m_bIsHeldByPlayer = 0x1F62;
+                public const long m_bThrowAnimating = 0x1F65;
+                public const long m_flThrowStrength = 0x1F70;
+                public const long m_bClientPredictDelete = 0x1F60;
+                public const long m_hSwitchToWeaponAfterThrow = 0x1FFC;
             }
             public static partial class C_BreakableProp {
                 public const long m_OnBreak = 0x12F8;
@@ -2121,8 +2121,8 @@ public static partial class cs2_dumper {
                 public const long m_iActiveIssueIndex = 0x610;
             }
             public static partial class C_WeaponBaseItem {
-                public const long m_bRedraw = 0x1F21;
-                public const long m_bSequenceInProgress = 0x1F20;
+                public const long m_bRedraw = 0x1F61;
+                public const long m_bSequenceInProgress = 0x1F60;
             }
             public static partial class C_WeaponRevolver {
 
@@ -2254,13 +2254,13 @@ public static partial class cs2_dumper {
 
             }
             public static partial class C_CSWeaponBaseGun {
-                public const long m_zoomLevel = 0x1F20;
-                public const long m_inPrecache = 0x1F3C;
-                public const long m_bNeedsBoltAction = 0x1F3D;
-                public const long m_iSilencerBodygroup = 0x1F28;
-                public const long m_silencedModelIndex = 0x1F38;
-                public const long m_iBurstShotsRemaining = 0x1F24;
-                public const long m_nRevolverCylinderIdx = 0x1F40;
+                public const long m_zoomLevel = 0x1F60;
+                public const long m_inPrecache = 0x1F7C;
+                public const long m_bNeedsBoltAction = 0x1F7D;
+                public const long m_iSilencerBodygroup = 0x1F68;
+                public const long m_silencedModelIndex = 0x1F78;
+                public const long m_iBurstShotsRemaining = 0x1F64;
+                public const long m_nRevolverCylinderIdx = 0x1F80;
             }
             public static partial class C_ColorCorrection {
                 public const long m_bMaster = 0x825;
@@ -2960,8 +2960,8 @@ public static partial class cs2_dumper {
                 public const long m_PanelClassName = 0x10B0;
             }
             public static partial class C_CSGO_PreviewPlayer {
-                public const long m_flInitialModelScale = 0x3728;
-                public const long m_animgraphCharacterModeString = 0x3720;
+                public const long m_flInitialModelScale = 0x3758;
+                public const long m_animgraphCharacterModeString = 0x3750;
             }
             public static partial class C_InfoLadderDismount {
 

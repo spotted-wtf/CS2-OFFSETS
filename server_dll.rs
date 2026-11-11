@@ -352,7 +352,7 @@ pub mod cs2_dumper {
                 pub const m_followMinuteTimer: i64 = 0x32A8;
                 pub const m_BlockDirectionTimer: i64 = 0x32C8;
                 pub const m_collisionStuckTimer: i64 = 0x1110;
-                pub const m_bSpawnDyingParticles: i64 = 0x32E3;
+                pub const m_bSpawnDyingParticles: i64 = 0x32E2;
                 pub const m_moveRateThrottleTimer: i64 = 0x1160;
                 pub const m_flActiveFollowStartTime: i64 = 0x32A4;
             }
@@ -476,6 +476,7 @@ pub mod cs2_dumper {
             }
             pub mod CMapInfo {
                 pub const m_flBombRadius: i64 = 0x4AC;
+                pub const m_bFrostEnabled: i64 = 0x4D8;
                 pub const m_iBuyingStatus: i64 = 0x4A8;
                 pub const m_iHostageCount: i64 = 0x4BC;
                 pub const m_bGPUCullSkybox: i64 = 0x4C2;
@@ -7051,6 +7052,7 @@ pub mod cs2_dumper {
                 pub const m_flActionBlendTimeSeconds: i64 = 0x2C;
                 pub const m_flHandIKBlendInTimeSeconds: i64 = 0x28;
                 pub const m_flPlantingBlendTimeSeconds: i64 = 0x30;
+                pub const m_flTransitionBlendTimeSeconds: i64 = 0x34;
             }
             pub mod CNmEventConsumerBodyGroup {
 

@@ -146,6 +146,7 @@ class cs2_dumper:
                 pass
             class EventClientPollNetworking_t:
                 m_nTickCount = 0x0
+                m_nTotalTicks = 0x4
             class EventServerPollNetworking_t:
                 pass
             class EventClientPostAdvanceTick_t:

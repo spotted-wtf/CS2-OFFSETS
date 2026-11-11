@@ -353,7 +353,7 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_followMinuteTimer = 0x32A8;
                 inline constexpr std::ptrdiff_t m_BlockDirectionTimer = 0x32C8;
                 inline constexpr std::ptrdiff_t m_collisionStuckTimer = 0x1110;
-                inline constexpr std::ptrdiff_t m_bSpawnDyingParticles = 0x32E3;
+                inline constexpr std::ptrdiff_t m_bSpawnDyingParticles = 0x32E2;
                 inline constexpr std::ptrdiff_t m_moveRateThrottleTimer = 0x1160;
                 inline constexpr std::ptrdiff_t m_flActiveFollowStartTime = 0x32A4;
             }
@@ -477,6 +477,7 @@ namespace cs2_dumper {
             }
             namespace CMapInfo {
                 inline constexpr std::ptrdiff_t m_flBombRadius = 0x4AC;
+                inline constexpr std::ptrdiff_t m_bFrostEnabled = 0x4D8;
                 inline constexpr std::ptrdiff_t m_iBuyingStatus = 0x4A8;
                 inline constexpr std::ptrdiff_t m_iHostageCount = 0x4BC;
                 inline constexpr std::ptrdiff_t m_bGPUCullSkybox = 0x4C2;
@@ -7052,6 +7053,7 @@ namespace cs2_dumper {
                 inline constexpr std::ptrdiff_t m_flActionBlendTimeSeconds = 0x2C;
                 inline constexpr std::ptrdiff_t m_flHandIKBlendInTimeSeconds = 0x28;
                 inline constexpr std::ptrdiff_t m_flPlantingBlendTimeSeconds = 0x30;
+                inline constexpr std::ptrdiff_t m_flTransitionBlendTimeSeconds = 0x34;
             }
             namespace CNmEventConsumerBodyGroup {
 

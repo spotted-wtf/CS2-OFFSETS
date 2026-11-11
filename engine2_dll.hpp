@@ -189,6 +189,7 @@ namespace cs2_dumper {
             }
             namespace EventClientPollNetworking_t {
                 inline constexpr std::ptrdiff_t m_nTickCount = 0x0;
+                inline constexpr std::ptrdiff_t m_nTotalTicks = 0x4;
             }
             namespace EventServerPollNetworking_t {
 

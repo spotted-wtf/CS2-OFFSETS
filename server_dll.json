@@ -4292,7 +4292,7 @@
           "m_followMinuteTimer": 12968,
           "m_BlockDirectionTimer": 13000,
           "m_collisionStuckTimer": 4368,
-          "m_bSpawnDyingParticles": 13027,
+          "m_bSpawnDyingParticles": 13026,
           "m_moveRateThrottleTimer": 4448,
           "m_flActiveFollowStartTime": 12964
         },
@@ -4454,6 +4454,7 @@
       "CMapInfo": {
         "fields": {
           "m_flBombRadius": 1196,
+          "m_bFrostEnabled": 1240,
           "m_iBuyingStatus": 1192,
           "m_iHostageCount": 1212,
           "m_bGPUCullSkybox": 1218,
@@ -14573,7 +14574,8 @@
           "m_nHorizontalAngleNodeIdx": 26,
           "m_flActionBlendTimeSeconds": 44,
           "m_flHandIKBlendInTimeSeconds": 40,
-          "m_flPlantingBlendTimeSeconds": 48
+          "m_flPlantingBlendTimeSeconds": 48,
+          "m_flTransitionBlendTimeSeconds": 52
         },
         "parent": null,
         "metadata": [

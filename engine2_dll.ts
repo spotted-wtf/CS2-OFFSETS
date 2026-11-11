@@ -187,6 +187,7 @@ export namespace cs2_dumper {
             }
             export namespace EventClientPollNetworking_t {
                 export const m_nTickCount = 0x0;
+                export const m_nTotalTicks = 0x4;
             }
             export namespace EventServerPollNetworking_t {
 

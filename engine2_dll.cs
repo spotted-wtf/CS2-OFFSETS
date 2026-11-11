@@ -187,6 +187,7 @@ public static partial class cs2_dumper {
             }
             public static partial class EventClientPollNetworking_t {
                 public const long m_nTickCount = 0x0;
+                public const long m_nTotalTicks = 0x4;
             }
             public static partial class EventServerPollNetworking_t {
 

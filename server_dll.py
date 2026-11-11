@@ -331,7 +331,7 @@ class cs2_dumper:
                 m_followMinuteTimer = 0x32A8
                 m_BlockDirectionTimer = 0x32C8
                 m_collisionStuckTimer = 0x1110
-                m_bSpawnDyingParticles = 0x32E3
+                m_bSpawnDyingParticles = 0x32E2
                 m_moveRateThrottleTimer = 0x1160
                 m_flActiveFollowStartTime = 0x32A4
             class CCredits:
@@ -445,6 +445,7 @@ class cs2_dumper:
                 m_FanForceCurveString = 0x4F8
             class CMapInfo:
                 m_flBombRadius = 0x4AC
+                m_bFrostEnabled = 0x4D8
                 m_iBuyingStatus = 0x4A8
                 m_iHostageCount = 0x4BC
                 m_bGPUCullSkybox = 0x4C2
@@ -6291,6 +6292,7 @@ class cs2_dumper:
                 m_flActionBlendTimeSeconds = 0x2C
                 m_flHandIKBlendInTimeSeconds = 0x28
                 m_flPlantingBlendTimeSeconds = 0x30
+                m_flTransitionBlendTimeSeconds = 0x34
             class CNmEventConsumerBodyGroup:
                 pass
             class CPulseCell_Value_Gradient:

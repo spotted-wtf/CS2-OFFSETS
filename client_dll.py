@@ -2,16 +2,16 @@ class cs2_dumper:
     class schemas:
         class client_dll:
             class C_C4:
-                m_fArmedTime = 0x1F2C
-                m_nSpotRules = 0x1F50
-                m_bBombPlanted = 0x1F5B
-                m_bStartedArming = 0x1F28
-                m_bIsPlantingViaUse = 0x1F31
-                m_bPlayedArmingBeeps = 0x1F54
-                m_eActiveLightEffect = 0x1F24
-                m_entitySpottedState = 0x1F38
-                m_bBombPlacedAnimation = 0x1F30
-                m_activeLightParticleIndex = 0x1F20
+                m_fArmedTime = 0x1F6C
+                m_nSpotRules = 0x1F90
+                m_bBombPlanted = 0x1F9B
+                m_bStartedArming = 0x1F68
+                m_bIsPlantingViaUse = 0x1F71
+                m_bPlayedArmingBeeps = 0x1F94
+                m_eActiveLightEffect = 0x1F64
+                m_entitySpottedState = 0x1F78
+                m_bBombPlacedAnimation = 0x1F70
+                m_activeLightParticleIndex = 0x1F60
             class C_AK47:
                 pass
             class C_Beam:
@@ -70,7 +70,7 @@ class cs2_dumper:
                 m_szTeamname = 0x634
                 m_aPlayerControllers = 0x600
             class C_Knife:
-                m_bFirstAttack = 0x1F20
+                m_bFirstAttack = 0x1F60
             class C_World:
                 pass
             class CInfoFan:
@@ -80,6 +80,7 @@ class cs2_dumper:
                 m_FanForceCurveString = 0x650
             class CMapInfo:
                 m_flBombRadius = 0x604
+                m_bFrostEnabled = 0x630
                 m_iBuyingStatus = 0x600
                 m_iHostageCount = 0x614
                 m_bGPUCullSkybox = 0x61A
@@ -171,34 +172,33 @@ class cs2_dumper:
                 m_bIsPreviewModel = 0x1AE0
                 m_AttributeManager = 0x14C8
                 m_hWaterWakeParticles = 0x1ADC
-                m_bSpawnDyingParticles = 0x1B68
+                m_bSpawnDyingParticles = 0x1B98
                 m_bAttributesInitialized = 0x1AD8
             class C_EnvWind:
                 m_EnvWindShared = 0x600
             class C_Hostage:
                 m_vel = 0x1328
-                m_isInit = 0x13A8
+                m_isInit = 0x13A0
                 m_leader = 0x1308
-                m_lookAt = 0x1380
+                m_lookAt = 0x1378
                 m_isRescued = 0x1334
-                m_blinkTimer = 0x1368
+                m_blinkTimer = 0x1360
                 m_reuseTimer = 0x1310
-                m_eyeAttachment = 0x13A9
+                m_eyeAttachment = 0x13A1
                 m_fLastGrabTime = 0x1344
                 m_nHostageState = 0x1338
                 m_vecGrabbedPos = 0x1348
-                m_chestAttachment = 0x13AA
+                m_chestAttachment = 0x13A2
                 m_flDropStartTime = 0x135C
                 m_hHostageGrabber = 0x1340
                 m_jumpedThisFrame = 0x1335
-                m_lookAroundTimer = 0x1390
-                m_pPredictionOwner = 0x13B0
+                m_lookAroundTimer = 0x1388
+                m_pPredictionOwner = 0x13A8
                 m_bHandsHaveBeenCut = 0x133C
                 m_flGrabSuccessTime = 0x1358
                 m_flRescueStartTime = 0x1354
                 m_entitySpottedState = 0x12F0
-                m_flDeadOrRescuedTime = 0x1360
-                m_fNewestAlphaThinkTime = 0x13B8
+                m_fNewestAlphaThinkTime = 0x13B0
             class C_Inferno:
                 m_blosCheck = 0x8664
                 m_fireCount = 0x1A48
@@ -950,7 +950,7 @@ class cs2_dumper:
             class C_WeaponBizon:
                 pass
             class C_WeaponCZ75a:
-                m_bMagazineRemoved = 0x1F50
+                m_bMagazineRemoved = 0x1F90
             class C_WeaponElite:
                 pass
             class C_WeaponFamas:
@@ -970,8 +970,8 @@ class cs2_dumper:
             class C_WeaponSSG08:
                 pass
             class C_WeaponTaser:
-                m_fFireTime = 0x1F50
-                m_nLastAttackTick = 0x1F54
+                m_fFireTime = 0x1F90
+                m_nLastAttackTick = 0x1F94
             class C_WeaponUMP45:
                 pass
             class IntervalTimer:
@@ -1124,169 +1124,169 @@ class cs2_dumper:
                 m_closedPosition = 0x14C8
                 m_vWhereToSetLightingOrigin = 0x14E4
             class C_CSPlayerPawn:
-                m_bIsScoped = 0x1EA0
-                m_ArmorValue = 0x1ED0
-                m_EconGloves = 0x1770
+                m_bIsScoped = 0x1ED0
+                m_ArmorValue = 0x1F00
+                m_EconGloves = 0x17A0
                 m_bInBuyZone = 0x15E0
                 m_bInLanding = 0x15E2
-                m_bIsWalking = 0x1E80
+                m_bIsWalking = 0x1EB0
                 m_bInBombZone = 0x15E9
-                m_bIsDefusing = 0x1EA2
-                m_bLeftHanded = 0x1DB8
+                m_bIsDefusing = 0x1ED2
+                m_bLeftHanded = 0x1DE8
                 m_bPrevHelmet = 0x15CF
-                m_bResumeZoom = 0x1EA1
-                m_iIDEntIndex = 0x36DC
-                m_iShotsFired = 0x1EB8
-                m_angEyeAngles = 0x3600
-                m_bOldIsScoped = 0x1EE0
+                m_bResumeZoom = 0x1ED1
+                m_iIDEntIndex = 0x370C
+                m_iShotsFired = 0x1EE8
+                m_angEyeAngles = 0x3630
+                m_bOldIsScoped = 0x1F10
                 m_bPrevDefuser = 0x15CE
-                m_lastLandTime = 0x1D84
+                m_lastLandTime = 0x1DB4
                 m_pBuyServices = 0x1580
                 m_unWeaponHash = 0x15DC
-                m_bHasDeathInfo = 0x1EE1
-                m_flFlinchStack = 0x1EBC
-                m_hHudModelArms = 0x1DA8
+                m_bHasDeathInfo = 0x1F11
+                m_flFlinchStack = 0x1EEC
+                m_hHudModelArms = 0x1DD8
                 m_nPrevArmorVal = 0x15D0
                 m_pGlowServices = 0x1588
                 m_bIsBuyMenuOpen = 0x15EA
-                m_flBigHeadScale = 0x3510
-                m_flViewmodelFOV = 0x1DCC
-                m_iOldIDEntIndex = 0x36FC
-                m_nWhichBombZone = 0x1EB4
-                m_arrOldEyeAngles = 0x36A0
+                m_flBigHeadScale = 0x3540
+                m_flViewmodelFOV = 0x1DFC
+                m_iOldIDEntIndex = 0x372C
+                m_nWhichBombZone = 0x1EE4
+                m_arrOldEyeAngles = 0x36D0
                 m_bHasFemaleVoice = 0x15B0
-                m_bInNoDefuseArea = 0x1EB0
-                m_flDeathInfoTime = 0x1EE4
-                m_flEmitSoundTime = 0x1EA8
+                m_bInNoDefuseArea = 0x1EE0
+                m_flDeathInfoTime = 0x1F14
+                m_flEmitSoundTime = 0x1ED8
                 m_pBulletServices = 0x1570
-                m_qDeathEyeAngles = 0x1DAC
+                m_qDeathEyeAngles = 0x1DDC
                 m_szLastPlaceName = 0x15BC
-                m_bGunGameImmunity = 0x3508
-                m_bWaitForNoAttack = 0x1EC4
-                m_iRetakesOffering = 0x1758
-                m_nLastKillerIndex = 0x1EDC
+                m_bGunGameImmunity = 0x3538
+                m_bWaitForNoAttack = 0x1EF4
+                m_iRetakesOffering = 0x1788
+                m_nLastKillerIndex = 0x1F0C
                 m_pHostageServices = 0x1578
-                m_bKilledByHeadshot = 0x1ECD
-                m_bOnGroundLastTick = 0x1D88
+                m_bKilledByHeadshot = 0x1EFD
+                m_bOnGroundLastTick = 0x1DB8
                 m_flOldFallVelocity = 0x15B8
-                m_holdTargetIDTimer = 0x3700
-                m_iTargetItemEntIdx = 0x36F8
+                m_holdTargetIDTimer = 0x3730
+                m_iTargetItemEntIdx = 0x3728
                 m_pAimPunchServices = 0x1598
-                m_bIsGrabbingHostage = 0x1EA3
-                m_delayTargetIDTimer = 0x36E0
-                m_entitySpottedState = 0x1E88
-                m_fMolotovDamageTime = 0x3514
+                m_bIsGrabbingHostage = 0x1ED3
+                m_delayTargetIDTimer = 0x3710
+                m_entitySpottedState = 0x1EB8
+                m_fMolotovDamageTime = 0x3544
                 m_flLandingStartTime = 0x15E4
                 m_flTimeOfLastInjury = 0x15EC
-                m_flVelocityModifier = 0x1EC0
-                m_flViewmodelOffsetX = 0x1DC0
-                m_flViewmodelOffsetY = 0x1DC4
-                m_flViewmodelOffsetZ = 0x1DC8
-                m_nEconGlovesChanged = 0x1D20
-                m_nRagdollDamageBone = 0x1D24
-                m_vecBulletHitModels = 0x1E68
-                m_vecDeathInfoOrigin = 0x1EE8
-                m_vecStashedVelocity = 0x1F4C
-                m_vRagdollDamageForce = 0x1D28
-                m_GunGameImmunityColor = 0x1E18
-                m_angEyeAnglesVelocity = 0x36D0
-                m_arrOldEyeAnglesTimes = 0x3690
+                m_flVelocityModifier = 0x1EF0
+                m_flViewmodelOffsetX = 0x1DF0
+                m_flViewmodelOffsetY = 0x1DF4
+                m_flViewmodelOffsetZ = 0x1DF8
+                m_nEconGlovesChanged = 0x1D50
+                m_nRagdollDamageBone = 0x1D54
+                m_vecBulletHitModels = 0x1E98
+                m_vecDeathInfoOrigin = 0x1F18
+                m_vecStashedVelocity = 0x1F7C
+                m_vRagdollDamageForce = 0x1D58
+                m_GunGameImmunityColor = 0x1E48
+                m_angEyeAnglesVelocity = 0x3700
+                m_arrOldEyeAnglesTimes = 0x36C0
                 m_bInHostageRescueZone = 0x15E8
-                m_bNeedToReApplyGloves = 0x176D
+                m_bNeedToReApplyGloves = 0x179D
                 m_bPreviouslyInBuyZone = 0x15E1
-                m_bRetakesHasDefuseKit = 0x1760
-                m_bRetakesMVPLastRound = 0x1761
+                m_bRetakesHasDefuseKit = 0x1790
+                m_bRetakesMVPLastRound = 0x1791
                 m_flLandingTimeSeconds = 0x15B4
                 m_flNextSprayDecalTime = 0x15F0
-                m_iRetakesMVPBoostItem = 0x1764
-                m_iRetakesOfferingCard = 0x175C
-                m_ignoreLadderJumpTime = 0x1EC8
-                m_nPlayerInfernoBodyFx = 0x3588
+                m_iRetakesMVPBoostItem = 0x1794
+                m_iRetakesOfferingCard = 0x178C
+                m_ignoreLadderJumpTime = 0x1EF8
+                m_nPlayerInfernoBodyFx = 0x35B8
                 m_pDamageReactServices = 0x15A0
                 m_unPreviousWeaponHash = 0x15D8
-                m_vRagdollServerOrigin = 0x1D78
-                m_angStashedShootAngles = 0x1F28
-                m_bMustSyncRagdollState = 0x1D21
+                m_vRagdollServerOrigin = 0x1DA8
+                m_angStashedShootAngles = 0x1F58
+                m_bMustSyncRagdollState = 0x1D51
                 m_flLastFiredWeaponTime = 0x15AC
                 m_nPrevGrenadeAmmoCount = 0x15D4
-                m_bRagdollDamageHeadshot = 0x1D74
-                m_flEmitSoundTime_Client = 0x1EAC
-                m_bShouldAutobuyDMWeapons = 0x3500
-                m_fSwitchedHandednessTime = 0x1DBC
+                m_bRagdollDamageHeadshot = 0x1DA4
+                m_flEmitSoundTime_Client = 0x1EDC
+                m_bShouldAutobuyDMWeapons = 0x3530
+                m_fSwitchedHandednessTime = 0x1DEC
                 m_pActionTrackingServices = 0x1590
-                m_unCurrentEquipmentValue = 0x1ED4
-                m_flInterpolatedInaccuracy = 0x1F58
-                m_bGrenadeParametersStashed = 0x1F24
-                m_grenadeParameterStashTime = 0x1F20
-                m_szRagdollDamageWeaponName = 0x1D34
-                m_vecPlayerPatchEconIndices = 0x1DD0
-                m_fImmuneToGunGameDamageTime = 0x3504
-                m_unRoundStartEquipmentValue = 0x1ED6
-                m_RetakesMVPBoostExtraUtility = 0x1768
-                m_iBlockingUseActionInProgress = 0x1EA4
-                m_unFreezetimeEndEquipmentValue = 0x1ED8
-                m_fImmuneToGunGameDamageTimeLast = 0x350C
-                m_vecStashedGrenadeThrowPosition = 0x1F34
+                m_unCurrentEquipmentValue = 0x1F04
+                m_flInterpolatedInaccuracy = 0x1F88
+                m_bGrenadeParametersStashed = 0x1F54
+                m_grenadeParameterStashTime = 0x1F50
+                m_szRagdollDamageWeaponName = 0x1D64
+                m_vecPlayerPatchEconIndices = 0x1E00
+                m_fImmuneToGunGameDamageTime = 0x3534
+                m_unRoundStartEquipmentValue = 0x1F06
+                m_RetakesMVPBoostExtraUtility = 0x1798
+                m_iBlockingUseActionInProgress = 0x1ED4
+                m_unFreezetimeEndEquipmentValue = 0x1F08
+                m_fImmuneToGunGameDamageTimeLast = 0x353C
+                m_vecStashedGrenadeThrowPosition = 0x1F64
                 m_flHealthShotBoostExpirationTime = 0x15A8
-                m_vecStashedGrenadeThrowPawnCenter = 0x1F40
+                m_vecStashedGrenadeThrowPawnCenter = 0x1F70
             class C_CSWeaponBase:
-                m_donated = 0x1B64
-                m_bInReload = 0x1A3C
-                m_bUIWeapon = 0x1B22
-                m_nDropTick = 0x1B3C
-                m_bBurstMode = 0x1A2C
-                m_hPrevOwner = 0x1B38
-                m_weaponMode = 0x1A00
-                m_bSilencerOn = 0x1A51
-                m_nDeployTick = 0x1A40
-                m_bFireOnEmpty = 0x19E4
-                m_iRecoilIndex = 0x1A24
-                m_bIsHauledBack = 0x1A50
-                m_bWasOwnedByCT = 0x1B6C
-                m_fLastShotTime = 0x1B68
-                m_flRecoilIndex = 0x1A28
-                m_OnPlayerPickup = 0x19E8
-                m_bCanBePickedUp = 0x1B30
-                m_iIronSightMode = 0x1C80
-                m_bInspectPending = 0x19B4
-                m_bVisualsDataSet = 0x1B21
-                m_flDroppedAtTime = 0x1A48
-                m_flLastShakeTime = 0x1D6C
-                m_flWatTickOffset = 0x1D58
-                m_fAccuracyPenalty = 0x1A18
-                m_bInspectShouldLoop = 0x19B5
-                m_bIsInStealthReload = 0x1A58
-                m_IronSightController = 0x1BD0
-                m_bDroppedNearBuyZone = 0x1A70
-                m_flTurningInaccuracy = 0x1A14
-                m_iOriginalTeamNumber = 0x1A68
-                m_bWasOwnedByTerrorist = 0x1B6D
-                m_nextPrevOwnerUseTime = 0x1B34
-                m_bReloadHeldSinceStart = 0x1A60
-                m_flAttackHoldStartTime = 0x1A44
-                m_iMostRecentTeamNumber = 0x1A6C
-                m_nLastEmptySoundCmdNum = 0x19E0
-                m_bInSilentReloadSection = 0x1A59
-                m_flPostponeFireReadyFrac = 0x1A38
-                m_nPostponeFireReadyTicks = 0x1A34
-                m_fAccuracySmoothedForZoom = 0x1A20
-                m_flLastAccuracyUpdateTime = 0x1A1C
-                m_flTurningInaccuracyDelta = 0x1A04
-                m_iWeaponGameplayAnimState = 0x19A8
-                m_nCustomEconReloadEventId = 0x1B24
-                m_flLastBurstModeChangeTime = 0x1A30
-                m_flLastLOSTraceFailureTime = 0x1CF8
-                m_bClearWeaponIdentifyingUGC = 0x1B20
-                m_flNextClientFireBulletTime = 0x1B70
-                m_flWeaponActionPlaybackRate = 0x1A64
-                m_bWasActiveWeaponWhenDropped = 0x1B40
-                m_flInspectCancelCompleteTime = 0x19B0
-                m_flNextAttackRenderTimeOffset = 0x1A74
-                m_flStealthReloadHoldStartTime = 0x1A5C
-                m_flTimeSilencerSwitchComplete = 0x1A54
-                m_vecTurningInaccuracyEyeDirLast = 0x1A08
-                m_flWeaponGameplayAnimStateTimestamp = 0x19AC
-                m_flNextClientFireBulletTime_Repredict = 0x1B74
+                m_donated = 0x1BA4
+                m_bInReload = 0x1A7C
+                m_bUIWeapon = 0x1B62
+                m_nDropTick = 0x1B7C
+                m_bBurstMode = 0x1A6C
+                m_hPrevOwner = 0x1B78
+                m_weaponMode = 0x1A40
+                m_bSilencerOn = 0x1A91
+                m_nDeployTick = 0x1A80
+                m_bFireOnEmpty = 0x1A24
+                m_iRecoilIndex = 0x1A64
+                m_bIsHauledBack = 0x1A90
+                m_bWasOwnedByCT = 0x1BAC
+                m_fLastShotTime = 0x1BA8
+                m_flRecoilIndex = 0x1A68
+                m_OnPlayerPickup = 0x1A28
+                m_bCanBePickedUp = 0x1B70
+                m_iIronSightMode = 0x1CC0
+                m_bInspectPending = 0x19F4
+                m_bVisualsDataSet = 0x1B61
+                m_flDroppedAtTime = 0x1A88
+                m_flLastShakeTime = 0x1DAC
+                m_flWatTickOffset = 0x1D98
+                m_fAccuracyPenalty = 0x1A58
+                m_bInspectShouldLoop = 0x19F5
+                m_bIsInStealthReload = 0x1A98
+                m_IronSightController = 0x1C10
+                m_bDroppedNearBuyZone = 0x1AB0
+                m_flTurningInaccuracy = 0x1A54
+                m_iOriginalTeamNumber = 0x1AA8
+                m_bWasOwnedByTerrorist = 0x1BAD
+                m_nextPrevOwnerUseTime = 0x1B74
+                m_bReloadHeldSinceStart = 0x1AA0
+                m_flAttackHoldStartTime = 0x1A84
+                m_iMostRecentTeamNumber = 0x1AAC
+                m_nLastEmptySoundCmdNum = 0x1A20
+                m_bInSilentReloadSection = 0x1A99
+                m_flPostponeFireReadyFrac = 0x1A78
+                m_nPostponeFireReadyTicks = 0x1A74
+                m_fAccuracySmoothedForZoom = 0x1A60
+                m_flLastAccuracyUpdateTime = 0x1A5C
+                m_flTurningInaccuracyDelta = 0x1A44
+                m_iWeaponGameplayAnimState = 0x19E8
+                m_nCustomEconReloadEventId = 0x1B64
+                m_flLastBurstModeChangeTime = 0x1A70
+                m_flLastLOSTraceFailureTime = 0x1D38
+                m_bClearWeaponIdentifyingUGC = 0x1B60
+                m_flNextClientFireBulletTime = 0x1BB0
+                m_flWeaponActionPlaybackRate = 0x1AA4
+                m_bWasActiveWeaponWhenDropped = 0x1B80
+                m_flInspectCancelCompleteTime = 0x19F0
+                m_flNextAttackRenderTimeOffset = 0x1AB4
+                m_flStealthReloadHoldStartTime = 0x1A9C
+                m_flTimeSilencerSwitchComplete = 0x1A94
+                m_vecTurningInaccuracyEyeDirLast = 0x1A48
+                m_flWeaponGameplayAnimStateTimestamp = 0x19EC
+                m_flNextClientFireBulletTime_Repredict = 0x1BB4
             class C_DecoyGrenade:
                 pass
             class C_DynamicLight:
@@ -1546,20 +1546,20 @@ class cs2_dumper:
             class CSpriteOriented:
                 pass
             class C_BaseCSGrenade:
-                m_bRedraw = 0x1F21
-                m_fDropTime = 0x1FA8
-                m_bJumpThrow = 0x1F24
-                m_bPinPulled = 0x1F23
-                m_fThrowTime = 0x1F28
-                m_fPinPullTime = 0x1FAC
-                m_nNextHoldTick = 0x1FB4
-                m_bJustPulledPin = 0x1FB0
-                m_flNextHoldFrac = 0x1FB8
-                m_bIsHeldByPlayer = 0x1F22
-                m_bThrowAnimating = 0x1F25
-                m_flThrowStrength = 0x1F30
-                m_bClientPredictDelete = 0x1F20
-                m_hSwitchToWeaponAfterThrow = 0x1FBC
+                m_bRedraw = 0x1F61
+                m_fDropTime = 0x1FE8
+                m_bJumpThrow = 0x1F64
+                m_bPinPulled = 0x1F63
+                m_fThrowTime = 0x1F68
+                m_fPinPullTime = 0x1FEC
+                m_nNextHoldTick = 0x1FF4
+                m_bJustPulledPin = 0x1FF0
+                m_flNextHoldFrac = 0x1FF8
+                m_bIsHeldByPlayer = 0x1F62
+                m_bThrowAnimating = 0x1F65
+                m_flThrowStrength = 0x1F70
+                m_bClientPredictDelete = 0x1F60
+                m_hSwitchToWeaponAfterThrow = 0x1FFC
             class C_BreakableProp:
                 m_OnBreak = 0x12F8
                 m_hBreaker = 0x1364
@@ -1925,8 +1925,8 @@ class cs2_dumper:
                 m_nVoteOptionCount = 0x618
                 m_iActiveIssueIndex = 0x610
             class C_WeaponBaseItem:
-                m_bRedraw = 0x1F21
-                m_bSequenceInProgress = 0x1F20
+                m_bRedraw = 0x1F61
+                m_bSequenceInProgress = 0x1F60
             class C_WeaponRevolver:
                 pass
             class C_WeaponSawedoff:
@@ -2044,13 +2044,13 @@ class cs2_dumper:
             class C_CS2HudModelBase:
                 pass
             class C_CSWeaponBaseGun:
-                m_zoomLevel = 0x1F20
-                m_inPrecache = 0x1F3C
-                m_bNeedsBoltAction = 0x1F3D
-                m_iSilencerBodygroup = 0x1F28
-                m_silencedModelIndex = 0x1F38
-                m_iBurstShotsRemaining = 0x1F24
-                m_nRevolverCylinderIdx = 0x1F40
+                m_zoomLevel = 0x1F60
+                m_inPrecache = 0x1F7C
+                m_bNeedsBoltAction = 0x1F7D
+                m_iSilencerBodygroup = 0x1F68
+                m_silencedModelIndex = 0x1F78
+                m_iBurstShotsRemaining = 0x1F64
+                m_nRevolverCylinderIdx = 0x1F80
             class C_ColorCorrection:
                 m_bMaster = 0x825
                 m_bEnabled = 0x824
@@ -2668,8 +2668,8 @@ class cs2_dumper:
                 m_DialogXMLName = 0x10A8
                 m_PanelClassName = 0x10B0
             class C_CSGO_PreviewPlayer:
-                m_flInitialModelScale = 0x3728
-                m_animgraphCharacterModeString = 0x3720
+                m_flInitialModelScale = 0x3758
+                m_animgraphCharacterModeString = 0x3750
             class C_InfoLadderDismount:
                 pass
             class C_PhysPropClientside:
