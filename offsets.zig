@@ -4,6 +4,7 @@ pub const cs2_dumper = struct {
             pub const dwWeaponC4: i64 = 0x24BB680;
             pub const dwCSGOInput: i64 = 0x256CFE0;
             pub const dwGameRules: i64 = 0x2556E78;
+            pub const dwPlantedC4: i64 = 0x24BD9E8;
             pub const dwEntityList: i64 = 0x270C680;
             pub const dwGlobalVars: i64 = 0x2223AD0;
             pub const dwPrediction: i64 = 0x2557440;
@@ -11,9 +12,12 @@ pub const cs2_dumper = struct {
             pub const dwViewMatrix: i64 = 0x255CE50;
             pub const dwViewRender: i64 = 0x255D818;
             pub const dwGlowManager: i64 = 0x2553B90;
+            pub const dwSensitivity: i64 = 0x25546C8;
             pub const dwLocalPlayerPawn: i64 = 0x2557538;
             pub const dwGameEntitySystem: i64 = 0x270C680;
             pub const dwLocalPlayerController: i64 = 0x252ED78;
+            pub const dwSensitivity_sensitivity: i64 = 0x58;
+            pub const dwServerConfirmedReservation: i64 = 0x256E1C8;
             pub const dwGameEntitySystem_highestEntityIndex: i64 = 0x2120;
         };
         pub const engine2_dll = struct {
@@ -37,6 +41,7 @@ pub const cs2_dumper = struct {
         };
         pub const soundsystem_dll = struct {
             pub const dwSoundSystem: i64 = 0x532470;
+            pub const dwSoundSystem_engineViewData: i64 = 0x6C;
         };
     };
 };

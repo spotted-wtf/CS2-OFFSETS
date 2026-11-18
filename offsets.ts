@@ -4,6 +4,7 @@ export namespace cs2_dumper {
             export const dwWeaponC4 = 0x24BB680;
             export const dwCSGOInput = 0x256CFE0;
             export const dwGameRules = 0x2556E78;
+            export const dwPlantedC4 = 0x24BD9E8;
             export const dwEntityList = 0x270C680;
             export const dwGlobalVars = 0x2223AD0;
             export const dwPrediction = 0x2557440;
@@ -11,9 +12,12 @@ export namespace cs2_dumper {
             export const dwViewMatrix = 0x255CE50;
             export const dwViewRender = 0x255D818;
             export const dwGlowManager = 0x2553B90;
+            export const dwSensitivity = 0x25546C8;
             export const dwLocalPlayerPawn = 0x2557538;
             export const dwGameEntitySystem = 0x270C680;
             export const dwLocalPlayerController = 0x252ED78;
+            export const dwSensitivity_sensitivity = 0x58;
+            export const dwServerConfirmedReservation = 0x256E1C8;
             export const dwGameEntitySystem_highestEntityIndex = 0x2120;
         }
         export namespace engine2_dll {
@@ -37,6 +41,7 @@ export namespace cs2_dumper {
         }
         export namespace soundsystem_dll {
             export const dwSoundSystem = 0x532470;
+            export const dwSoundSystem_engineViewData = 0x6C;
         }
     }
 }

@@ -3,6 +3,7 @@
     "dwWeaponC4": 38516352,
     "dwCSGOInput": 39243744,
     "dwGameRules": 39153272,
+    "dwPlantedC4": 38525416,
     "dwEntityList": 40945280,
     "dwGlobalVars": 35797712,
     "dwPrediction": 39154752,
@@ -10,9 +11,12 @@
     "dwViewMatrix": 39177808,
     "dwViewRender": 39180312,
     "dwGlowManager": 39140240,
+    "dwSensitivity": 39143112,
     "dwLocalPlayerPawn": 39155000,
     "dwGameEntitySystem": 40945280,
     "dwLocalPlayerController": 38989176,
+    "dwSensitivity_sensitivity": 88,
+    "dwServerConfirmedReservation": 39248328,
     "dwGameEntitySystem_highestEntityIndex": 8480
   },
   "engine2.dll": {
@@ -35,6 +39,7 @@
     "dwGameTypes": 1765312
   },
   "soundsystem.dll": {
-    "dwSoundSystem": 5448816
+    "dwSoundSystem": 5448816,
+    "dwSoundSystem_engineViewData": 108
   }
 }
