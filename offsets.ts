@@ -21,10 +21,10 @@ export namespace cs2_dumper {
             export const dwGameEntitySystem_highestEntityIndex = 0x2120;
         }
         export namespace engine2_dll {
-            export const dwBuildNumber = 0x6B2D18;
-            export const dwWindowWidth = 0x9B4290;
-            export const dwWindowHeight = 0x9B4294;
-            export const dwNetworkGameClient = 0x9AFB30;
+            export const dwBuildNumber = 0x6B2D1C;
+            export const dwWindowWidth = 0x9B42E8;
+            export const dwWindowHeight = 0x9B42EC;
+            export const dwNetworkGameClient = 0x9AFB90;
             export const dwNetworkGameClient_deltaTick = 0x24C;
             export const dwNetworkGameClient_maxClients = 0x240;
             export const dwNetworkGameClient_localPlayer = 0xF8;

@@ -22,10 +22,10 @@ pub mod cs2_dumper {
             pub const dwGameEntitySystem_highestEntityIndex: i64 = 0x2120;
         }
         pub mod engine2_dll {
-            pub const dwBuildNumber: i64 = 0x6B2D18;
-            pub const dwWindowWidth: i64 = 0x9B4290;
-            pub const dwWindowHeight: i64 = 0x9B4294;
-            pub const dwNetworkGameClient: i64 = 0x9AFB30;
+            pub const dwBuildNumber: i64 = 0x6B2D1C;
+            pub const dwWindowWidth: i64 = 0x9B42E8;
+            pub const dwWindowHeight: i64 = 0x9B42EC;
+            pub const dwNetworkGameClient: i64 = 0x9AFB90;
             pub const dwNetworkGameClient_deltaTick: i64 = 0x24C;
             pub const dwNetworkGameClient_maxClients: i64 = 0x240;
             pub const dwNetworkGameClient_localPlayer: i64 = 0xF8;

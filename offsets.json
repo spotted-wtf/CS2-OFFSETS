@@ -20,10 +20,10 @@
     "dwGameEntitySystem_highestEntityIndex": 8480
   },
   "engine2.dll": {
-    "dwBuildNumber": 7023896,
-    "dwWindowWidth": 10175120,
-    "dwWindowHeight": 10175124,
-    "dwNetworkGameClient": 10156848,
+    "dwBuildNumber": 7023900,
+    "dwWindowWidth": 10175208,
+    "dwWindowHeight": 10175212,
+    "dwNetworkGameClient": 10156944,
     "dwNetworkGameClient_deltaTick": 588,
     "dwNetworkGameClient_maxClients": 576,
     "dwNetworkGameClient_localPlayer": 248,

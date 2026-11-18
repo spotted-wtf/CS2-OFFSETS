@@ -20,10 +20,10 @@ class cs2_dumper:
             dwServerConfirmedReservation = 0x256E1C8
             dwGameEntitySystem_highestEntityIndex = 0x2120
         class engine2_dll:
-            dwBuildNumber = 0x6B2D18
-            dwWindowWidth = 0x9B4290
-            dwWindowHeight = 0x9B4294
-            dwNetworkGameClient = 0x9AFB30
+            dwBuildNumber = 0x6B2D1C
+            dwWindowWidth = 0x9B42E8
+            dwWindowHeight = 0x9B42EC
+            dwNetworkGameClient = 0x9AFB90
             dwNetworkGameClient_deltaTick = 0x24C
             dwNetworkGameClient_maxClients = 0x240
             dwNetworkGameClient_localPlayer = 0xF8

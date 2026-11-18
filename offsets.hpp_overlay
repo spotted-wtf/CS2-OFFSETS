@@ -23,10 +23,10 @@ namespace cs2_dumper {
             inline constexpr std::ptrdiff_t dwGameEntitySystem_highestEntityIndex = 0x2120;
         }
         namespace engine2_dll {
-            inline constexpr std::ptrdiff_t dwBuildNumber = 0x6B2D18;
-            inline constexpr std::ptrdiff_t dwWindowWidth = 0x9B4290;
-            inline constexpr std::ptrdiff_t dwWindowHeight = 0x9B4294;
-            inline constexpr std::ptrdiff_t dwNetworkGameClient = 0x9AFB30;
+            inline constexpr std::ptrdiff_t dwBuildNumber = 0x6B2D1C;
+            inline constexpr std::ptrdiff_t dwWindowWidth = 0x9B42E8;
+            inline constexpr std::ptrdiff_t dwWindowHeight = 0x9B42EC;
+            inline constexpr std::ptrdiff_t dwNetworkGameClient = 0x9AFB90;
             inline constexpr std::ptrdiff_t dwNetworkGameClient_deltaTick = 0x24C;
             inline constexpr std::ptrdiff_t dwNetworkGameClient_maxClients = 0x240;
             inline constexpr std::ptrdiff_t dwNetworkGameClient_localPlayer = 0xF8;

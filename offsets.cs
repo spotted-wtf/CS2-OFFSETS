@@ -21,10 +21,10 @@ public static partial class cs2_dumper {
             public const long dwGameEntitySystem_highestEntityIndex = 0x2120;
         }
         public static partial class engine2_dll {
-            public const long dwBuildNumber = 0x6B2D18;
-            public const long dwWindowWidth = 0x9B4290;
-            public const long dwWindowHeight = 0x9B4294;
-            public const long dwNetworkGameClient = 0x9AFB30;
+            public const long dwBuildNumber = 0x6B2D1C;
+            public const long dwWindowWidth = 0x9B42E8;
+            public const long dwWindowHeight = 0x9B42EC;
+            public const long dwNetworkGameClient = 0x9AFB90;
             public const long dwNetworkGameClient_deltaTick = 0x24C;
             public const long dwNetworkGameClient_maxClients = 0x240;
             public const long dwNetworkGameClient_localPlayer = 0xF8;
