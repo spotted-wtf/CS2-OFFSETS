@@ -18,12 +18,12 @@ pub const cs2_dumper = struct {
         };
         pub const client_dll = struct {
             pub const LegacyGameUI001: i64 = 0x22351A0;
-            pub const Source2Client002: i64 = 0x2551080;
+            pub const Source2Client002: i64 = 0x2551600;
             pub const Source2ClientUI001: i64 = 0x22322A0;
             pub const ClientToolsInfo_001: i64 = 0x2227160;
             pub const GameClientExports001: i64 = 0x2223E08;
-            pub const Source2ClientConfig001: i64 = 0x24ADB00;
-            pub const Source2ClientPrediction001: i64 = 0x2557440;
+            pub const Source2ClientConfig001: i64 = 0x24AE080;
+            pub const Source2ClientPrediction001: i64 = 0x25579C0;
             pub const EmptyWorldService001_Client: i64 = 0x220AEA0;
             pub const ClientBugBugServic001_Client: i64 = 0x2227190;
         };

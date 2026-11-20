@@ -18,12 +18,12 @@ export namespace cs2_dumper {
         }
         export namespace client_dll {
             export const LegacyGameUI001 = 0x22351A0;
-            export const Source2Client002 = 0x2551080;
+            export const Source2Client002 = 0x2551600;
             export const Source2ClientUI001 = 0x22322A0;
             export const ClientToolsInfo_001 = 0x2227160;
             export const GameClientExports001 = 0x2223E08;
-            export const Source2ClientConfig001 = 0x24ADB00;
-            export const Source2ClientPrediction001 = 0x2557440;
+            export const Source2ClientConfig001 = 0x24AE080;
+            export const Source2ClientPrediction001 = 0x25579C0;
             export const EmptyWorldService001_Client = 0x220AEA0;
             export const ClientBugBugServic001_Client = 0x2227190;
         }

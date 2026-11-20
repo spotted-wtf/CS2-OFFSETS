@@ -1,23 +1,23 @@
 export namespace cs2_dumper {
     export namespace offsets {
         export namespace client_dll {
-            export const dwWeaponC4 = 0x24BB680;
-            export const dwCSGOInput = 0x256CFE0;
-            export const dwGameRules = 0x2556E78;
-            export const dwPlantedC4 = 0x24BD9E8;
-            export const dwEntityList = 0x270C680;
+            export const dwWeaponC4 = 0x24BBC00;
+            export const dwCSGOInput = 0x256D560;
+            export const dwGameRules = 0x25573F8;
+            export const dwPlantedC4 = 0x24BDF68;
+            export const dwEntityList = 0x270D5B0;
             export const dwGlobalVars = 0x2223AD0;
-            export const dwPrediction = 0x2557440;
-            export const dwViewAngles = 0x256D668;
-            export const dwViewMatrix = 0x255CE50;
-            export const dwViewRender = 0x255D818;
-            export const dwGlowManager = 0x2553B90;
-            export const dwSensitivity = 0x25546C8;
-            export const dwLocalPlayerPawn = 0x2557538;
-            export const dwGameEntitySystem = 0x270C680;
-            export const dwLocalPlayerController = 0x252ED78;
+            export const dwPrediction = 0x25579C0;
+            export const dwViewAngles = 0x256DBE8;
+            export const dwViewMatrix = 0x255D3D0;
+            export const dwViewRender = 0x255DD98;
+            export const dwGlowManager = 0x2554110;
+            export const dwSensitivity = 0x2554C48;
+            export const dwLocalPlayerPawn = 0x2557AB8;
+            export const dwGameEntitySystem = 0x270D5B0;
+            export const dwLocalPlayerController = 0x252F300;
             export const dwSensitivity_sensitivity = 0x58;
-            export const dwServerConfirmedReservation = 0x256E1C8;
+            export const dwServerConfirmedReservation = 0x256E748;
             export const dwGameEntitySystem_highestEntityIndex = 0x2120;
         }
         export namespace engine2_dll {

@@ -1,23 +1,23 @@
 class cs2_dumper:
     class offsets:
         class client_dll:
-            dwWeaponC4 = 0x24BB680
-            dwCSGOInput = 0x256CFE0
-            dwGameRules = 0x2556E78
-            dwPlantedC4 = 0x24BD9E8
-            dwEntityList = 0x270C680
+            dwWeaponC4 = 0x24BBC00
+            dwCSGOInput = 0x256D560
+            dwGameRules = 0x25573F8
+            dwPlantedC4 = 0x24BDF68
+            dwEntityList = 0x270D5B0
             dwGlobalVars = 0x2223AD0
-            dwPrediction = 0x2557440
-            dwViewAngles = 0x256D668
-            dwViewMatrix = 0x255CE50
-            dwViewRender = 0x255D818
-            dwGlowManager = 0x2553B90
-            dwSensitivity = 0x25546C8
-            dwLocalPlayerPawn = 0x2557538
-            dwGameEntitySystem = 0x270C680
-            dwLocalPlayerController = 0x252ED78
+            dwPrediction = 0x25579C0
+            dwViewAngles = 0x256DBE8
+            dwViewMatrix = 0x255D3D0
+            dwViewRender = 0x255DD98
+            dwGlowManager = 0x2554110
+            dwSensitivity = 0x2554C48
+            dwLocalPlayerPawn = 0x2557AB8
+            dwGameEntitySystem = 0x270D5B0
+            dwLocalPlayerController = 0x252F300
             dwSensitivity_sensitivity = 0x58
-            dwServerConfirmedReservation = 0x256E1C8
+            dwServerConfirmedReservation = 0x256E748
             dwGameEntitySystem_highestEntityIndex = 0x2120
         class engine2_dll:
             dwBuildNumber = 0x6B2D1C

@@ -6,7 +6,7 @@ pub const cs2_dumper = struct {
             pub const duck: i64 = 0x2227F20;
             pub const jump: i64 = 0x2227E90;
             pub const left: i64 = 0x2227CE0;
-            pub const zoom: i64 = 0x256CE70;
+            pub const zoom: i64 = 0x256D3F0;
             pub const right: i64 = 0x2227D70;
             pub const attack: i64 = 0x2227980;
             pub const reload: i64 = 0x22278F0;
@@ -15,8 +15,8 @@ pub const cs2_dumper = struct {
             pub const forward: i64 = 0x2227BC0;
             pub const turnleft: i64 = 0x2227AA0;
             pub const turnright: i64 = 0x2227B30;
-            pub const showscores: i64 = 0x256CDE0;
-            pub const lookatweapon: i64 = 0x256CF00;
+            pub const showscores: i64 = 0x256D360;
+            pub const lookatweapon: i64 = 0x256D480;
         };
     };
 };

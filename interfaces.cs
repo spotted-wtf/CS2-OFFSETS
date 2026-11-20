@@ -18,12 +18,12 @@ public static partial class cs2_dumper {
         }
         public static partial class client_dll {
             public const long LegacyGameUI001 = 0x22351A0;
-            public const long Source2Client002 = 0x2551080;
+            public const long Source2Client002 = 0x2551600;
             public const long Source2ClientUI001 = 0x22322A0;
             public const long ClientToolsInfo_001 = 0x2227160;
             public const long GameClientExports001 = 0x2223E08;
-            public const long Source2ClientConfig001 = 0x24ADB00;
-            public const long Source2ClientPrediction001 = 0x2557440;
+            public const long Source2ClientConfig001 = 0x24AE080;
+            public const long Source2ClientPrediction001 = 0x25579C0;
             public const long EmptyWorldService001_Client = 0x220AEA0;
             public const long ClientBugBugServic001_Client = 0x2227190;
         }

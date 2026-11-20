@@ -16,12 +16,12 @@ class cs2_dumper:
             VStringTokenSystem001 = 0x3D3300
         class client_dll:
             LegacyGameUI001 = 0x22351A0
-            Source2Client002 = 0x2551080
+            Source2Client002 = 0x2551600
             Source2ClientUI001 = 0x22322A0
             ClientToolsInfo_001 = 0x2227160
             GameClientExports001 = 0x2223E08
-            Source2ClientConfig001 = 0x24ADB00
-            Source2ClientPrediction001 = 0x2557440
+            Source2ClientConfig001 = 0x24AE080
+            Source2ClientPrediction001 = 0x25579C0
             EmptyWorldService001_Client = 0x220AEA0
             ClientBugBugServic001_Client = 0x2227190
         class server_dll:
