@@ -1,29 +1,29 @@
 class cs2_dumper:
     class offsets:
         class client_dll:
-            dwWeaponC4 = 0x24BBC00
-            dwCSGOInput = 0x256D560
-            dwGameRules = 0x25573F8
-            dwPlantedC4 = 0x24BDF68
-            dwEntityList = 0x270D5B0
-            dwGlobalVars = 0x2223AD0
-            dwPrediction = 0x25579C0
-            dwViewAngles = 0x256DBE8
-            dwViewMatrix = 0x255D3D0
-            dwViewRender = 0x255DD98
-            dwGlowManager = 0x2554110
-            dwSensitivity = 0x2554C48
-            dwLocalPlayerPawn = 0x2557AB8
-            dwGameEntitySystem = 0x270D5B0
-            dwLocalPlayerController = 0x252F300
+            dwWeaponC4 = 0x24C2C00
+            dwCSGOInput = 0x2574560
+            dwGameRules = 0x255E3F8
+            dwPlantedC4 = 0x24C4F68
+            dwEntityList = 0x27145B0
+            dwGlobalVars = 0x222AAD0
+            dwPrediction = 0x255E9C0
+            dwViewAngles = 0x2574BE8
+            dwViewMatrix = 0x25643D0
+            dwViewRender = 0x2564D98
+            dwGlowManager = 0x255B110
+            dwSensitivity = 0x255BC48
+            dwLocalPlayerPawn = 0x255EAB8
+            dwGameEntitySystem = 0x27145B0
+            dwLocalPlayerController = 0x2536300
             dwSensitivity_sensitivity = 0x58
-            dwServerConfirmedReservation = 0x256E748
+            dwServerConfirmedReservation = 0x2575748
             dwGameEntitySystem_highestEntityIndex = 0x2120
         class engine2_dll:
             dwBuildNumber = 0x6B2D1C
-            dwWindowWidth = 0x9B42E8
-            dwWindowHeight = 0x9B42EC
-            dwNetworkGameClient = 0x9AFB90
+            dwWindowWidth = 0x9B42D0
+            dwWindowHeight = 0x9B42D4
+            dwNetworkGameClient = 0x9AFB70
             dwNetworkGameClient_deltaTick = 0x24C
             dwNetworkGameClient_maxClients = 0x240
             dwNetworkGameClient_localPlayer = 0xF8

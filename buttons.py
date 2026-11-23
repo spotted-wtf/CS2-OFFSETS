@@ -1,19 +1,19 @@
 class cs2_dumper:
     class buttons:
         class client_dll:
-            _use = 0x2227E00
-            back = 0x2227C50
-            duck = 0x2227F20
-            jump = 0x2227E90
-            left = 0x2227CE0
-            zoom = 0x256D3F0
-            right = 0x2227D70
-            attack = 0x2227980
-            reload = 0x22278F0
-            sprint = 0x2227860
-            attack2 = 0x2227A10
-            forward = 0x2227BC0
-            turnleft = 0x2227AA0
-            turnright = 0x2227B30
-            showscores = 0x256D360
-            lookatweapon = 0x256D480
+            _use = 0x222EE00
+            back = 0x222EC50
+            duck = 0x222EF20
+            jump = 0x222EE90
+            left = 0x222ECE0
+            zoom = 0x25743F0
+            right = 0x222ED70
+            attack = 0x222E980
+            reload = 0x222E8F0
+            sprint = 0x222E860
+            attack2 = 0x222EA10
+            forward = 0x222EBC0
+            turnleft = 0x222EAA0
+            turnright = 0x222EB30
+            showscores = 0x2574360
+            lookatweapon = 0x2574480
